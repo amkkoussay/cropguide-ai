@@ -1,84 +1,54 @@
-# CropGuide AI
+# CropGuide AI — Concept Proposal
 
-## Summary
+> **Project status:** Concept / proposal. This repository currently contains a product concept and technical direction only; it does not contain an implemented application, trained model, mobile client, API, or field-tested diagnostic workflow.
 
-An AI application that diagnoses plant diseases (olive trees, cereals, vegetables) from a phone photo of an affected leaf, and provides instant treatment, irrigation, and fertilization recommendations based on local weather and soil conditions in Tunisia.
+## Overview
 
----
+CropGuide AI is a proposed agricultural decision-support concept for Tunisian farmers and field advisors. The idea is to explore how a phone image of an affected leaf or fruit could be combined with local weather and soil context to provide a probabilistic crop-health assessment and practical follow-up guidance.
 
-## Background
+This repository is intentionally a starting point for requirements discovery and systems design. It should not be presented as a shipped product or as an operational plant-disease diagnosis service.
 
-**The problem:** Tunisian farmers often don't have easy access to a nearby agricultural engineer, so they resort to using pesticides at random, leading to financial losses and environmental pollution.
+## The problem to explore
 
-**Scale of the problem:** Agriculture represents 12% of Tunisia's GDP. Diseases such as olive fruit fly and powdery mildew affect thousands of hectares every year.
+Farmers may have limited access to agricultural extension services and may respond to crop symptoms without enough information. A carefully designed decision-support tool could help structure observations, surface possible explanations, and encourage appropriate consultation rather than promote blind treatment.
 
-**Personal motivation:** Tunisia is an agricultural country, and most families depend directly or indirectly on olives and cereals. Helping farmers means stronger food security and a stronger local economy.
+The concept is relevant to olive, cereal, and vegetable production in Tunisia, but the scope, data requirements, model performance, and field value still need to be validated with agricultural specialists and farmers.
 
-**Why it matters:** Reducing crop loss by 30% could save millions of Tunisian dinars annually across the sector.
+## Proposed user workflow
 
----
+The future product concept would allow a user to submit a photo of an affected plant part and provide contextual information such as crop type, location, recent weather, and soil conditions. A future implementation could then return:
 
-## How to Use It
+- A ranked list of possible conditions with uncertainty clearly displayed.
+- A request for additional images or information when the input is not reliable enough.
+- Non-prescriptive guidance for observation, prevention, and consultation.
+- Links to local agricultural extension resources.
 
-**Who uses it:** Tunisian farmers (individuals or small agricultural cooperatives), as well as field agricultural advisors who can use it as a quick support tool.
+Any recommendation would need to remain advisory and probabilistic. The system should not encourage pesticide use without appropriate local and professional guidance.
 
-**Context of use:** Olive, cereal, and vegetable fields, especially in rural areas far from agricultural extension centers.
+## Proposed technical direction
 
-**Workflow:**
-1. The farmer takes a photo of the affected leaf or fruit with their phone.
-2. The application displays:
-   - The likely disease name (e.g., olive leaf spot).
-   - A confidence score (%).
-   - A recommended treatment (pesticide or natural method).
-   - A reminder for irrigation and fertilization timing based on local weather.
-3. The app works offline (lightweight embedded model) for basic diagnosis, and only needs internet access for weather updates.
+The following technologies are hypotheses for a future proof of concept, not technologies currently implemented in this repository:
 
----
+- Image classification using a carefully curated and licensed dataset.
+- Transfer learning with a model such as EfficientNet or a comparable mobile-friendly architecture.
+- A rule-based context layer for weather, soil, crop stage, and local agronomy guidance.
+- A lightweight API and mobile interface, potentially using Python with TensorFlow Lite and Flutter or React Native.
+- Offline-first behaviour for basic image processing where the data and model quality justify it.
 
-## Data Sources and AI Techniques
+## Data, validation, and safety requirements
 
-**Data required:**
-- A dataset of healthy and diseased olive/wheat/tomato leaf images (from Tunisian agricultural research institutes such as INRAT).
-- Weather data from Tunisian meteorological stations.
-- Soil maps from the Ministry of Agriculture.
+A credible implementation would require representative images collected under varied lighting, cultivars, growth stages, and disease conditions. It would also require documented data provenance, expert-labelled evaluation sets, bias analysis, calibration of confidence scores, and field testing with qualified agricultural professionals.
 
-**Suitable techniques:**
-- **CNN** (Convolutional Neural Network) for image classification.
-- **Transfer Learning** using a pretrained model such as ResNet or EfficientNet to reduce the need for massive amounts of data.
-- A **rule-based recommendation system** or decision tree to link diagnosis to treatment, irrigation, and fertilization advice.
+The proposed tool would not replace an agricultural engineer. It would need a clear notice that automated outputs are uncertain and should be checked by a specialist, especially before any treatment decision. No claim of accuracy, agronomic efficacy, environmental benefit, or regulatory approval is made by this concept repository.
 
----
+## Suggested next steps
 
-## Challenges
+The next stage should be requirements interviews with farmers and agricultural advisors, followed by a small feasibility study using a properly licensed dataset. Only after that should a baseline model, evaluation protocol, and narrow prototype be built. Field testing in regions such as Sfax or Kairouan would be considered only after the safety, data, and governance prerequisites are defined.
 
-**What the project does not solve:**
-- The app is not a replacement for a qualified agricultural engineer, especially in complex or unusual cases.
-- It does not guarantee 100% diagnostic accuracy, particularly for rare or visually similar diseases.
+## What is currently in this repository
 
-**Constraints:**
-- Data quality: difficulty obtaining diverse images for every disease under different lighting conditions.
-- Dialect: the app needs to support Tunisian Arabic (Derja) to make it accessible to farmers who may not be comfortable with standard Arabic or French.
-- Connectivity: poor internet coverage in some rural areas requires the core model to run offline.
+At present, this repository contains this concept document only. There are no source-code modules, trained weights, datasets, deployment files, mobile screens, or production integrations included yet.
 
-**Ethics:**
-- The app must include a clear warning that the diagnosis is automated and probabilistic, not final, and is not a substitute for consulting a specialist when in doubt.
+## License and attribution
 
----
-
-## Next Steps
-
-1. Partner with **INRAT** and the Ministry of Agriculture to obtain reliable data.
-2. Build an initial MVP using **Python** and **TensorFlow**.
-3. Develop a simple mobile interface (**Flutter** or **React Native**).
-4. Run a field test with real farmers in regions such as Sfax or Kairouan.
-5. Later expand the app to cover livestock and poultry disease diagnosis.
-
----
-
-## Acknowledgements
-
-Inspired by open projects and resources, including:
-- [PlantVillage Dataset](https://plantvillage.psu.edu/)
-- [TensorFlow Lite examples](https://www.tensorflow.org/lite/examples)
-
-Any library, dataset, or image used going forward will be credited with its original license explicitly.
+Any future dataset, image, model, or library must be credited according to its original license. Potential references include the [PlantVillage Dataset](https://plantvillage.psu.edu/) and [TensorFlow Lite examples](https://www.tensorflow.org/lite/examples); neither reference implies that this repository currently uses or integrates those resources.
