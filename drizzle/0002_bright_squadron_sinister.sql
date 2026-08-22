@@ -1,0 +1,1 @@
+ALTER TABLE `field_observations` ADD `status` enum('completed') DEFAULT 'completed' NOT NULL;

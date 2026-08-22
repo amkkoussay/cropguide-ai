@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1786906496775,
+      "tag": "0000_real_dragon_lord",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786907482651,
+      "tag": "0001_solid_vulcan",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786908054093,
+      "tag": "0002_bright_squadron_sinister",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1786985918856,
+      "tag": "0003_lovely_shadow_king",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1786989453964,
+      "tag": "0004_eminent_prima",
+      "breakpoints": true
+    }
+  ]
+}

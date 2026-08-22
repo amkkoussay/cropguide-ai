@@ -1,0 +1,70 @@
+# Project TODO
+
+- [x] Define the observation data model for species, GPS coordinates, stored image references, API payloads, compact results, and status.
+- [x] Create and apply the database migration for field observations.
+- [x] Add authenticated server procedures for photo analysis, paginated history, observation detail, and map markers.
+- [x] Upload original leaf photos to S3 and persist only storage key and URL metadata in the database.
+- [x] Integrate Plant.id v3 server-side through a protected environment variable and record raw API responses.
+- [x] Build the mobile-first scan flow with camera/file-picker input and exact species options: olive, pomegranate, fig, almond, unknown.
+- [x] Capture and bind GPS coordinates to each scan before submission when the device grants permission.
+- [x] Build results UI with plant and health probability bars, raw JSON link, and an experimental only disclaimer.
+- [x] Build paginated observation history with species filtering and thumbnail previews.
+- [x] Build an observation map with GPS pins and scan-zone overview.
+- [x] Add an IndexedDB-backed offline queue that automatically retries queued scans when connectivity returns.
+- [x] Add responsive organic visual styling with warm cream, terracotta, ochre, sage, translucent forms, and accessible contrast.
+- [x] Add Vitest coverage for core observation parsing and validation.
+- [x] Run type checking, tests, browser-based flow checks, and mobile visual verification.
+- [x] Save a final project checkpoint after all completed work is accurately marked.
+- [x] Investigate and fix the reported issue preventing the published CropGuide app from opening.
+- [x] Verify the published URL and core scan page after the access fix.
+- [x] Remove the mandatory login wall and provide a public scan experience with privacy-preserving anonymous ownership.
+- [x] Add a clear gallery/file upload path that does not prompt for direct camera capture.
+- [x] Compress and resize selected photos in the browser before upload to improve mobile performance.
+- [x] Refine scan feedback, loading states, and offline notices for a faster, calmer field workflow.
+- [x] Establish a distinctive CropGuide concept identity across copy, navigation, and visual elements.
+- [x] Verify the public mobile flow, save an updated checkpoint, and confirm the published URL.
+- [x] Confirm that the live service worker replaces the prior login-gated cached shell.
+- [x] Run a live mobile end-to-end scan using a gallery image and confirm the result, history, and GPS map behavior on the published domain.
+- [x] Record final production QA evidence for the public mobile flow.
+- [x] Diagnose and fix the production scan request that is incorrectly falling back to the offline queue.
+- [x] Prevent the scan flow from hanging while GPS permission or location resolution is delayed or unavailable.
+- [x] Show an accurate completed health state in the archive when Plant.id returns no health candidates.
+- [x] Ensure the PWA service worker refreshes deployed application assets instead of serving an outdated interface from cache.
+- [x] Add complete Arabic and French interface translations with a persistent language selector and RTL support for Arabic.
+- [x] Expand CropGuide species support beyond olive, pomegranate, fig, and almond using a documented field-appropriate species list.
+- [x] Improve mobile image preparation with quality checks and safe enhancement before Plant.id analysis.
+- [x] Optimize scan-page performance, loading feedback, and image-upload resource use on phones.
+- [x] Test multilingual scanning, extended species records, and image preparation with automated and live browser checks.
+- [x] Correct the Arabic RTL archive layout so the complete field-history page remains within the mobile viewport.
+- [x] Run a complete Arabic or French gallery scan through the result and archive screens after release.
+- [x] Verify a saved observation for one newly supported species appears with the correct label in the history filter and map.
+- [x] Redact provider access tokens from stored raw analysis responses and verification output.
+- [x] Confirm the new citrus label renders in the browser archive and map for its visitor-scoped record.
+- [x] Repeat provider-response verification after redaction without printing raw provider response data.
+- [x] Fix direct French language selection so `?lang=fr` renders localized field-log content on first page load.
+- [x] Verify that the history species filter exposes all newly added species with their localized labels.
+- [x] Ensure existing PWA sessions adopt the multilingual release instead of retaining the prior cached interface.
+- [x] Run a published-domain Arabic or French browser E2E scan using the file picker, then confirm the result and archive in the same session.
+- [x] Confirm during the published browser E2E scan that the client-side image-preparation path runs before submission.
+- [x] Capture non-sensitive published-browser evidence of prepared image dimensions or byte size before submission, then repeat the Arabic file-picker scan.
+- [x] Show non-sensitive prepared-image dimensions and compressed size in the scan UI before analysis.
+- [x] Read the final scan-page implementation and capture explicit current-build evidence that prepared dimensions and compressed size render before analysis.
+- [x] Fix the prepared-image indicator so it renders both dimensions and compressed byte size on the published scan card.
+- [x] Repeat the published Arabic file-picker scan after the prepared-image metadata is visible, then confirm the result page and archive entry in the same session.
+- [x] Record concise QA evidence linking the same run: prepared dimensions and size before submit, analysis action, result page, and archive entry.
+- [x] Audit the current client-side preparation and Plant.id health-response paths using a real olive leaf-spot photo.
+- [x] Add conservative automatic photo normalization for ordinary field images without asking users to manually crop or edit them.
+- [x] Preserve diagnostic evidence while improving lighting, contrast, orientation, and compression for Plant.id analysis.
+- [x] Improve the no-health-result message so users understand that plant identification succeeded but disease assessment was inconclusive.
+- [x] Add regression tests and a published-browser QA run for the strengthened ordinary-photo analysis path.
+- [x] Ensure existing published PWA sessions adopt the ordinary-photo release instead of retaining a prior service-worker shell.
+- [x] Diagnose and recover the published-domain 500 error that appeared after the ordinary-photo PWA release.
+- [x] Prevent stale PWA shells from requesting removed lazy-loaded JavaScript chunks after a deployment.
+- [x] Serve the published service-worker script with a revalidation policy so an existing PWA can receive the v6 worker.
+- [x] Prove automatic upgrade from a genuinely stale published PWA session to the ordinary-photo release without manual worker registration.
+- [x] Serve the legacy published `/sw.js` path with verified revalidation headers, or replace it with a verified dynamic same-origin worker endpoint for future releases.
+- [x] Register the dynamic worker explicitly with root scope and verify it replaces the prior root-scoped controller without manual registration.
+- [ ] Research practical second-opinion disease-assessment options for ordinary olive-leaf photos when Plant.id returns no health candidate.
+- [ ] Select an evidence-based, privacy-conscious fallback that does not fabricate a plant disease diagnosis.
+- [ ] Implement the selected olive-disease assistant path with explicit uncertainty and safe field next steps.
+- [ ] Test the user-provided leaf-spot photo on the published app and record what the second opinion actually returns.
