@@ -105,6 +105,7 @@ temp/
 *.db
 *.sqlite
 *.sqlite3
+!data/cropguide.sqlite
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/

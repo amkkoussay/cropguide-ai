@@ -1,1 +1,0 @@
-ALTER TABLE `field_observations` MODIFY COLUMN `species` enum('olive','pomegranate','fig','almond','citrus','grapevine','date_palm','stone_fruit','unknown') NOT NULL;
