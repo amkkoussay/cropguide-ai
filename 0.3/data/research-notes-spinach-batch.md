@@ -1,0 +1,13 @@
+# Spinach source-specific batch — research notes
+
+**Research date:** 2026-08-18  
+**Acceptance rule:** Promote only a crop-and-disease page with visible symptoms, a usable field distinction, conservative management context, and a URL that passes the full automated availability review.
+
+## Candidate record evidence
+
+| Record | Direct source | Visual evidence retained | Scope decision |
+| --- | --- | --- | --- |
+| `spinach_downy_mildew` | [PNW Plant Disease Management Handbook: Spinach Downy Mildew](https://pnwhandbooks.org/plantdisease/host-disease/spinach-spinacia-oleracea-downy-mildew) | Pale yellowish leaf spots with gray-to-purple downy growth on the leaf underside in wet weather; numerous infections may coalesce, and severe plants can be stunted or die. | Accepted as `record_specific` after the 2026-08-18 availability review returned 200 and the complete remediation validation suite passed. |
+| `spinach_white_rust` | [PNW Plant Disease Management Handbook: Spinach White Rust](https://pnwhandbooks.org/plantdisease/host-disease/spinach-spinacia-oleracea-white-rust) | White pustules develop on the lower and sometimes upper leaf surfaces and petioles; the upper leaf surface is yellowish. Warm days followed by cool, dew-forming nights favor the disease. | Accepted as `record_specific` after the 2026-08-18 availability review returned 200 and the complete remediation validation suite passed. The Cornell image-only page was not used because its accessible text lacked a sufficient symptom description. |
+| `spinach_fusarium_wilt` | [PNW Plant Disease Management Handbook: Spinach Fusarium Wilt](https://pnwhandbooks.org/plantdisease/host-disease/spinach-spinacia-oleracea-fusarium-wilt) | Seedlings wilt after true leaves form and can die within 7–10 days; roots may have a black basal lesion, few feeder roots, and dark vascular tissue. Older plants show lower-leaf yellowing, early death, a discoloured stem base, and may resemble severe drought or root rot. | Accepted as `record_specific` after the 2026-08-18 availability review returned 200 and the complete remediation validation suite passed; root and vascular checks remain mandatory because foliage overlaps with drought and root rots. |
+| `spinach_anthracnose` | [UC IPM: Spinach Anthracnose](https://ipm.ucanr.edu/agriculture/spinach/anthracnose/) | Small circular water-soaked lesions on young or old leaves enlarge, turn brown to tan, then become thin and papery; lesions can coalesce to blight foliage. Tiny black acervuli form abundantly in diseased tissue. | Accepted as a dedicated `record_specific` profile after the 2026-08-18 availability review returned 200 and the complete remediation validation suite passed. |

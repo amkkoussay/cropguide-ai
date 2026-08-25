@@ -1,0 +1,14 @@
+# Carrot batch — research notes
+
+## Candidate record evidence
+
+| Record | Direct source | Visual evidence retained | Scope decision |
+| --- | --- | --- | --- |
+| `carrot_alternaria_leaf_spot` | [UW Vegetable Pathology: Carrot Alternaria and Cercospora Leaf Blights](https://vegpath.plantpath.wisc.edu/diseases/carrot-alternaria-and-cercospora-leaf-blights/) | Small greenish-brown water-soaked leaf and petiole lesions may develop diffuse yellow halos. Alternaria petiole lesions are brown and irregular; disease is chiefly associated with older plants. | Accepted as `record_specific` after the 2026-08-18 availability review returned 200 and the complete validation suite passed. The record retains an explicit overlap warning for Cercospora. |
+| `carrot_cercospora_leaf_blight` | [UW Vegetable Pathology: Carrot Alternaria and Cercospora Leaf Blights](https://vegpath.plantpath.wisc.edu/diseases/carrot-alternaria-and-cercospora-leaf-blights/) | In humid weather the lower surface of Cercospora lesions can become pale gray with tiny black structures; petiole lesions are elliptical with tan centers and brown borders. Cercospora is associated principally with young rapidly growing plants. | Accepted as a dedicated `record_specific` profile after the 2026-08-18 availability review returned 200 and the complete validation suite passed. |
+| `carrot_sclerotinia` | [PNW Plant Disease Management Handbook: Carrot Cottony Rot](https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-cottony-rot) | Soft root lesions with cottony white mycelium on their surface. The source includes root and storage imagery and identifies *Sclerotinia sclerotiorum* or *S. minor*. | Accepted as `record_specific` after the 2026-08-18 availability review returned 200 and the complete validation suite passed. |
+| `carrot_cavity_spot` | [PNW Plant Disease Management Handbook: Carrot Cavity Spot](https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-cavity-spot) | Small horizontal lesions emerge near harvest, then may darken and enlarge. The source identifies multiple soilborne *Pythium* and *Globisporangium* species and notes that secondary soft rot is usually absent. | Accepted as a dedicated root-only `record_specific` profile after the 2026-08-18 availability review returned 200 and the complete validation suite passed; the record retains a harvest-stage field check and does not imply diagnosis from a leaf image. |
+
+## Diagnostic guardrail
+
+The UW source states that Alternaria and Cercospora can be difficult to distinguish in the field and can occur on the same plant. Its suggested contrast for bacterial blight is the more angular, vein-bounded lesion pattern. These records therefore require an explicit overlap warning and a field check rather than a definitive image-only claim.
