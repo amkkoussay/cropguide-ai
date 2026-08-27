@@ -1,0 +1,7236 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-08-18T10:11:49.373Z",
+  "purpose": "Inventory only. Candidate relationships require scientific review before any aliases are merged.",
+  "summary": {
+    "diseaseRecords": 439,
+    "uniqueTokens": 139,
+    "totalDiseaseToTokenAssertions": 1338,
+    "singleUseTokens": 71,
+    "candidateNormalizationPairs": 672
+  },
+  "vocabulary": [
+    {
+      "token": "bacterial_ooze",
+      "descriptor": "ooze",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "apple_fire_blight",
+        "pear_fire_blight",
+        "quince_fire_blight"
+      ],
+      "cropIds": [
+        "apple",
+        "pear",
+        "quince"
+      ]
+    },
+    {
+      "token": "berry_surface_scarring",
+      "descriptor": "scarring",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "grape_powdery_mildew"
+      ],
+      "cropIds": [
+        "grapevine"
+      ]
+    },
+    {
+      "token": "black_acervuli",
+      "descriptor": "acervuli",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "spinach_anthracnose"
+      ],
+      "cropIds": [
+        "spinach"
+      ]
+    },
+    {
+      "token": "black_centered_shoot_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "grapevine_phomopsis_cane_leaf_spot"
+      ],
+      "cropIds": [
+        "grapevine"
+      ]
+    },
+    {
+      "token": "black_charcoal_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "date_palm_black_scorch"
+      ],
+      "cropIds": [
+        "date_palm"
+      ]
+    },
+    {
+      "token": "black_pycnidia",
+      "descriptor": "pycnidia",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "celery_late_blight",
+        "parsley_septoria_leaf_spot"
+      ],
+      "cropIds": [
+        "celery",
+        "parsley"
+      ]
+    },
+    {
+      "token": "black_sclerotia",
+      "descriptor": "sclerotia",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_pink_rot"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "blackened_leaf_or_stem",
+      "descriptor": "stem",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "faba_bean_chocolate_spot"
+      ],
+      "cropIds": [
+        "faba_bean"
+      ]
+    },
+    {
+      "token": "blackened_shoot_tip",
+      "descriptor": "tip",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "apple_fire_blight",
+        "pear_fire_blight",
+        "quince_fire_blight"
+      ],
+      "cropIds": [
+        "apple",
+        "pear",
+        "quince"
+      ]
+    },
+    {
+      "token": "bleached_spikelet",
+      "descriptor": "spikelet",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "barley_fusarium_head_blight",
+        "maize_fusarium_head_blight",
+        "wheat_fusarium_head_blight"
+      ],
+      "cropIds": [
+        "barley",
+        "maize",
+        "wheat"
+      ]
+    },
+    {
+      "token": "blotchy_mottle",
+      "descriptor": "mottle",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_citrus_greening"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "brown_black_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "potato_late_blight"
+      ],
+      "cropIds": [
+        "potato"
+      ]
+    },
+    {
+      "token": "brown_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "parsley_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "parsley"
+      ]
+    },
+    {
+      "token": "brown_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 5,
+      "cropCount": 5,
+      "diseaseIds": [
+        "bean_ascochyta",
+        "chickpea_ascochyta",
+        "faba_bean_ascochyta",
+        "lentil_ascochyta",
+        "pea_ascochyta"
+      ],
+      "cropIds": [
+        "bean",
+        "chickpea",
+        "faba_bean",
+        "lentil",
+        "pea"
+      ]
+    },
+    {
+      "token": "brown_petiolar_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "celery_pink_rot",
+        "parsley_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "celery",
+        "parsley"
+      ]
+    },
+    {
+      "token": "brown_petiolar_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_late_blight"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "brown_tan_papery_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "spinach_anthracnose"
+      ],
+      "cropIds": [
+        "spinach"
+      ]
+    },
+    {
+      "token": "brown_withered_blossom",
+      "descriptor": "blossom",
+      "diseaseCount": 30,
+      "cropCount": 29,
+      "diseaseIds": [
+        "almond_brown_rot",
+        "almond_brown_rot_blossom_blight",
+        "apple_botrytis",
+        "apricot_brown_rot",
+        "artichoke_botrytis",
+        "bean_botrytis",
+        "carob_botrytis",
+        "chickpea_botrytis",
+        "cucumber_botrytis",
+        "fig_botrytis",
+        "garlic_botrytis",
+        "grapevine_botrytis",
+        "lentil_botrytis",
+        "lettuce_botrytis",
+        "melon_botrytis",
+        "onion_botrytis",
+        "pea_botrytis",
+        "peach_brown_rot",
+        "pear_botrytis",
+        "pepper_botrytis",
+        "pistachio_botrytis",
+        "plum_brown_rot",
+        "pomegranate_botrytis",
+        "pumpkin_botrytis",
+        "quince_botrytis",
+        "spinach_botrytis",
+        "strawberry_botrytis",
+        "tomato_botrytis",
+        "watermelon_botrytis",
+        "zucchini_botrytis"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "bean",
+        "carob",
+        "chickpea",
+        "cucumber",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "melon",
+        "onion",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "bud_rot",
+      "descriptor": "rot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "date_palm_black_scorch"
+      ],
+      "cropIds": [
+        "date_palm"
+      ]
+    },
+    {
+      "token": "calyx_end_darkening",
+      "descriptor": "darkening",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "pomegranate_black_heart"
+      ],
+      "cropIds": [
+        "pomegranate"
+      ]
+    },
+    {
+      "token": "cigar_shaped_leaf_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "maize_northern_corn_leaf_blight"
+      ],
+      "cropIds": [
+        "maize"
+      ]
+    },
+    {
+      "token": "circular_dark_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "olive_peacock_spot"
+      ],
+      "cropIds": [
+        "olive"
+      ]
+    },
+    {
+      "token": "coalescing_leaf_blight",
+      "descriptor": "blight",
+      "diseaseCount": 3,
+      "cropCount": 2,
+      "diseaseIds": [
+        "celery_early_blight",
+        "celery_late_blight",
+        "spinach_anthracnose"
+      ],
+      "cropIds": [
+        "celery",
+        "spinach"
+      ]
+    },
+    {
+      "token": "collapsed_spur",
+      "descriptor": "spur",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "almond_brown_rot_blossom_blight"
+      ],
+      "cropIds": [
+        "almond"
+      ]
+    },
+    {
+      "token": "concentric_ring",
+      "descriptor": "ring",
+      "diseaseCount": 13,
+      "cropCount": 12,
+      "diseaseIds": [
+        "carob_alternaria_leaf_spot",
+        "carrot_alternaria_leaf_spot",
+        "celery_alternaria_leaf_spot",
+        "citrus_alternaria_leaf_spot",
+        "date_palm_alternaria_leaf_spot",
+        "olive_alternaria_leaf_spot",
+        "parsley_alternaria_leaf_spot",
+        "pepper_alternaria_leaf_spot",
+        "pistachio_alternaria_leaf_spot",
+        "pomegranate_alternaria_leaf_spot",
+        "potato_alternaria_leaf_spot",
+        "tomato_alternaria_leaf_spot",
+        "tomato_early_blight"
+      ],
+      "cropIds": [
+        "carob",
+        "carrot",
+        "celery",
+        "citrus",
+        "date_palm",
+        "olive",
+        "parsley",
+        "pepper",
+        "pistachio",
+        "pomegranate",
+        "potato",
+        "tomato"
+      ]
+    },
+    {
+      "token": "corky_tuber_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "potato_potato_common_scab"
+      ],
+      "cropIds": [
+        "potato"
+      ]
+    },
+    {
+      "token": "crown_browning",
+      "descriptor": "browning",
+      "diseaseCount": 35,
+      "cropCount": 35,
+      "diseaseIds": [
+        "almond_phytophthora_root_rot",
+        "apple_phytophthora_root_rot",
+        "apricot_phytophthora_root_rot",
+        "artichoke_phytophthora_root_rot",
+        "bean_phytophthora_root_rot",
+        "carob_phytophthora_root_rot",
+        "carrot_phytophthora_root_rot",
+        "celery_phytophthora_root_rot",
+        "chickpea_phytophthora_root_rot",
+        "citrus_phytophthora_root_rot",
+        "cucumber_phytophthora_root_rot",
+        "date_palm_phytophthora_root_rot",
+        "faba_bean_phytophthora_root_rot",
+        "fig_phytophthora_root_rot",
+        "grapevine_phytophthora_root_rot",
+        "lentil_phytophthora_root_rot",
+        "lettuce_phytophthora_root_rot",
+        "melon_phytophthora_root_rot",
+        "olive_phytophthora_root_rot",
+        "parsley_phytophthora_root_rot",
+        "pea_phytophthora_root_rot",
+        "peach_phytophthora_root_rot",
+        "pear_phytophthora_root_rot",
+        "pepper_phytophthora_root_rot",
+        "pistachio_phytophthora_root_rot",
+        "plum_phytophthora_root_rot",
+        "pomegranate_phytophthora_root_rot",
+        "potato_phytophthora_root_rot",
+        "pumpkin_phytophthora_root_rot",
+        "quince_phytophthora_root_rot",
+        "spinach_phytophthora_root_rot",
+        "strawberry_phytophthora_root_rot",
+        "tomato_phytophthora_root_rot",
+        "watermelon_phytophthora_root_rot",
+        "zucchini_phytophthora_root_rot"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "melon",
+        "olive",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "dark_brown_spot",
+      "descriptor": "spot",
+      "diseaseCount": 39,
+      "cropCount": 29,
+      "diseaseIds": [
+        "almond_bacterial_leaf_spot",
+        "apricot_bacterial_leaf_spot",
+        "artichoke_bacterial_leaf_spot",
+        "carob_alternaria_leaf_spot",
+        "carrot_alternaria_leaf_spot",
+        "carrot_bacterial_leaf_spot",
+        "celery_alternaria_leaf_spot",
+        "celery_bacterial_leaf_spot",
+        "citrus_alternaria_leaf_spot",
+        "cucumber_bacterial_leaf_spot",
+        "date_palm_alternaria_leaf_spot",
+        "date_palm_bacterial_leaf_spot",
+        "fig_bacterial_leaf_spot",
+        "garlic_bacterial_leaf_spot",
+        "garlic_stemphylium_leaf_blight",
+        "lettuce_bacterial_leaf_spot",
+        "maize_bacterial_leaf_spot",
+        "melon_bacterial_leaf_spot",
+        "olive_alternaria_leaf_spot",
+        "onion_bacterial_leaf_spot",
+        "onion_stemphylium_leaf_blight",
+        "parsley_alternaria_leaf_spot",
+        "peach_bacterial_leaf_spot",
+        "pepper_alternaria_leaf_spot",
+        "pepper_bacterial_leaf_spot",
+        "pistachio_alternaria_leaf_spot",
+        "plum_bacterial_leaf_spot",
+        "pomegranate_alternaria_leaf_spot",
+        "pomegranate_bacterial_leaf_spot",
+        "potato_alternaria_leaf_spot",
+        "potato_bacterial_leaf_spot",
+        "pumpkin_bacterial_leaf_spot",
+        "spinach_bacterial_leaf_spot",
+        "strawberry_bacterial_leaf_spot",
+        "tomato_alternaria_leaf_spot",
+        "tomato_bacterial_leaf_spot",
+        "tomato_early_blight",
+        "watermelon_bacterial_leaf_spot",
+        "zucchini_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "carob",
+        "carrot",
+        "celery",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "fig",
+        "garlic",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "peach",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "dark_canker",
+      "descriptor": "canker",
+      "diseaseCount": 4,
+      "cropCount": 4,
+      "diseaseIds": [
+        "barley_rhizoctonia",
+        "maize_rhizoctonia",
+        "potato_rhizoctonia",
+        "wheat_rhizoctonia"
+      ],
+      "cropIds": [
+        "barley",
+        "maize",
+        "potato",
+        "wheat"
+      ]
+    },
+    {
+      "token": "dark_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "grapevine_black_rot",
+        "potato_black_rot"
+      ],
+      "cropIds": [
+        "grapevine",
+        "potato"
+      ]
+    },
+    {
+      "token": "dark_shoot_spot",
+      "descriptor": "spot",
+      "diseaseCount": 3,
+      "cropCount": 2,
+      "diseaseIds": [
+        "grape_powdery_mildew",
+        "grapevine_black_rot",
+        "potato_black_rot"
+      ],
+      "cropIds": [
+        "grapevine",
+        "potato"
+      ]
+    },
+    {
+      "token": "dark_sunken_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 27,
+      "cropCount": 27,
+      "diseaseIds": [
+        "almond_anthracnose",
+        "apple_anthracnose",
+        "apricot_anthracnose",
+        "bean_anthracnose",
+        "carob_anthracnose",
+        "chickpea_anthracnose",
+        "citrus_anthracnose",
+        "cucumber_anthracnose",
+        "faba_bean_anthracnose",
+        "fig_anthracnose",
+        "grapevine_anthracnose",
+        "lentil_anthracnose",
+        "maize_anthracnose",
+        "melon_anthracnose",
+        "olive_anthracnose",
+        "pea_anthracnose",
+        "peach_anthracnose",
+        "pear_anthracnose",
+        "pepper_anthracnose",
+        "pistachio_anthracnose",
+        "plum_anthracnose",
+        "pomegranate_anthracnose",
+        "pumpkin_anthracnose",
+        "quince_anthracnose",
+        "strawberry_anthracnose",
+        "watermelon_anthracnose",
+        "zucchini_anthracnose"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "bean",
+        "carob",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "faba_bean",
+        "fig",
+        "grapevine",
+        "lentil",
+        "maize",
+        "melon",
+        "olive",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "strawberry",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "darkened_root_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "carrot_cavity_spot"
+      ],
+      "cropIds": [
+        "carrot"
+      ]
+    },
+    {
+      "token": "decline",
+      "descriptor": "decline",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_tristeza"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "deep_tuber_pit",
+      "descriptor": "pit",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "potato_potato_common_scab"
+      ],
+      "cropIds": [
+        "potato"
+      ]
+    },
+    {
+      "token": "distorted_new_growth",
+      "descriptor": "growth",
+      "diseaseCount": 33,
+      "cropCount": 33,
+      "diseaseIds": [
+        "almond_powdery_mildew",
+        "apple_powdery_mildew",
+        "apricot_powdery_mildew",
+        "artichoke_powdery_mildew",
+        "barley_powdery_mildew",
+        "bean_powdery_mildew",
+        "carob_powdery_mildew",
+        "carrot_powdery_mildew",
+        "celery_powdery_mildew",
+        "chickpea_powdery_mildew",
+        "cucumber_powdery_mildew",
+        "faba_bean_powdery_mildew",
+        "grapevine_powdery_mildew",
+        "lentil_powdery_mildew",
+        "lettuce_powdery_mildew",
+        "maize_powdery_mildew",
+        "melon_powdery_mildew",
+        "parsley_powdery_mildew",
+        "pea_powdery_mildew",
+        "peach_powdery_mildew",
+        "pear_powdery_mildew",
+        "pepper_powdery_mildew",
+        "pistachio_powdery_mildew",
+        "plum_powdery_mildew",
+        "potato_powdery_mildew",
+        "pumpkin_powdery_mildew",
+        "quince_powdery_mildew",
+        "spinach_powdery_mildew",
+        "strawberry_powdery_mildew",
+        "tomato_powdery_mildew",
+        "watermelon_powdery_mildew",
+        "wheat_powdery_mildew",
+        "zucchini_powdery_mildew"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "barley",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "frond_necrosis",
+      "descriptor": "necrosis",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "date_palm_black_scorch"
+      ],
+      "cropIds": [
+        "date_palm"
+      ]
+    },
+    {
+      "token": "frond_whitening",
+      "descriptor": "whitening",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "date_palm_bayoud"
+      ],
+      "cropIds": [
+        "date_palm"
+      ]
+    },
+    {
+      "token": "fruit_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_citrus_canker"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "fruit_mummification",
+      "descriptor": "mummification",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "grapevine_black_rot",
+        "potato_black_rot"
+      ],
+      "cropIds": [
+        "grapevine",
+        "potato"
+      ]
+    },
+    {
+      "token": "fruit_rot",
+      "descriptor": "rot",
+      "diseaseCount": 31,
+      "cropCount": 27,
+      "diseaseIds": [
+        "almond_anthracnose",
+        "almond_brown_rot",
+        "apple_anthracnose",
+        "apricot_anthracnose",
+        "apricot_brown_rot",
+        "bean_anthracnose",
+        "carob_anthracnose",
+        "chickpea_anthracnose",
+        "citrus_anthracnose",
+        "cucumber_anthracnose",
+        "faba_bean_anthracnose",
+        "fig_anthracnose",
+        "grapevine_anthracnose",
+        "lentil_anthracnose",
+        "maize_anthracnose",
+        "melon_anthracnose",
+        "olive_anthracnose",
+        "pea_anthracnose",
+        "peach_anthracnose",
+        "peach_brown_rot",
+        "pear_anthracnose",
+        "pepper_anthracnose",
+        "pistachio_anthracnose",
+        "plum_anthracnose",
+        "plum_brown_rot",
+        "pomegranate_anthracnose",
+        "pumpkin_anthracnose",
+        "quince_anthracnose",
+        "strawberry_anthracnose",
+        "watermelon_anthracnose",
+        "zucchini_anthracnose"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "bean",
+        "carob",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "faba_bean",
+        "fig",
+        "grapevine",
+        "lentil",
+        "maize",
+        "melon",
+        "olive",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "strawberry",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "fruit_scarring",
+      "descriptor": "scarring",
+      "diseaseCount": 4,
+      "cropCount": 4,
+      "diseaseIds": [
+        "apple_scab",
+        "citrus_scab",
+        "pear_scab",
+        "quince_scab"
+      ],
+      "cropIds": [
+        "apple",
+        "citrus",
+        "pear",
+        "quince"
+      ]
+    },
+    {
+      "token": "gray_brown_target_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "faba_bean_chocolate_spot"
+      ],
+      "cropIds": [
+        "faba_bean"
+      ]
+    },
+    {
+      "token": "gray_circular_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_early_blight"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "gray_fuzzy_growth",
+      "descriptor": "growth",
+      "diseaseCount": 25,
+      "cropCount": 25,
+      "diseaseIds": [
+        "apple_botrytis",
+        "artichoke_botrytis",
+        "bean_botrytis",
+        "carob_botrytis",
+        "chickpea_botrytis",
+        "cucumber_botrytis",
+        "fig_botrytis",
+        "garlic_botrytis",
+        "grapevine_botrytis",
+        "lentil_botrytis",
+        "lettuce_botrytis",
+        "melon_botrytis",
+        "onion_botrytis",
+        "pea_botrytis",
+        "pear_botrytis",
+        "pepper_botrytis",
+        "pistachio_botrytis",
+        "pomegranate_botrytis",
+        "pumpkin_botrytis",
+        "quince_botrytis",
+        "spinach_botrytis",
+        "strawberry_botrytis",
+        "tomato_botrytis",
+        "watermelon_botrytis",
+        "zucchini_botrytis"
+      ],
+      "cropIds": [
+        "apple",
+        "artichoke",
+        "bean",
+        "carob",
+        "chickpea",
+        "cucumber",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "melon",
+        "onion",
+        "pea",
+        "pear",
+        "pepper",
+        "pistachio",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "gray_green_leaf_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "maize_northern_corn_leaf_blight"
+      ],
+      "cropIds": [
+        "maize"
+      ]
+    },
+    {
+      "token": "gray_green_margin",
+      "descriptor": "margin",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "tomato_late_blight"
+      ],
+      "cropIds": [
+        "tomato"
+      ]
+    },
+    {
+      "token": "grayish_brown_angular_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "parsley_septoria_leaf_spot"
+      ],
+      "cropIds": [
+        "parsley"
+      ]
+    },
+    {
+      "token": "gumming",
+      "descriptor": "gumming",
+      "diseaseCount": 14,
+      "cropCount": 14,
+      "diseaseIds": [
+        "almond_bacterial_canker",
+        "apple_bacterial_canker",
+        "apricot_bacterial_canker",
+        "carob_bacterial_canker",
+        "grapevine_bacterial_canker",
+        "olive_bacterial_canker",
+        "peach_bacterial_canker",
+        "pear_bacterial_canker",
+        "pepper_bacterial_canker",
+        "pistachio_bacterial_canker",
+        "plum_bacterial_canker",
+        "potato_bacterial_canker",
+        "quince_bacterial_canker",
+        "tomato_bacterial_canker"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "carob",
+        "grapevine",
+        "olive",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "quince",
+        "tomato"
+      ]
+    },
+    {
+      "token": "gumming_flower_base",
+      "descriptor": "base",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "almond_brown_rot_blossom_blight"
+      ],
+      "cropIds": [
+        "almond"
+      ]
+    },
+    {
+      "token": "gummy_exudate",
+      "descriptor": "exudate",
+      "diseaseCount": 5,
+      "cropCount": 5,
+      "diseaseIds": [
+        "cucumber_gummy_stem_blight",
+        "melon_gummy_stem_blight",
+        "pumpkin_gummy_stem_blight",
+        "watermelon_gummy_stem_blight",
+        "zucchini_gummy_stem_blight"
+      ],
+      "cropIds": [
+        "cucumber",
+        "melon",
+        "pumpkin",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "internal_fruit_decay",
+      "descriptor": "decay",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "pomegranate_black_heart"
+      ],
+      "cropIds": [
+        "pomegranate"
+      ]
+    },
+    {
+      "token": "irregular_water_soaked_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "tomato_late_blight"
+      ],
+      "cropIds": [
+        "tomato"
+      ]
+    },
+    {
+      "token": "leaf_blight",
+      "descriptor": "blight",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "maize_northern_corn_leaf_blight"
+      ],
+      "cropIds": [
+        "maize"
+      ]
+    },
+    {
+      "token": "leaf_browning",
+      "descriptor": "browning",
+      "diseaseCount": 10,
+      "cropCount": 8,
+      "diseaseIds": [
+        "barley_bacterial_blight",
+        "barley_net_blotch",
+        "bean_bacterial_blight",
+        "chickpea_bacterial_blight",
+        "citrus_bacterial_blight",
+        "faba_bean_bacterial_blight",
+        "lentil_bacterial_blight",
+        "pea_bacterial_blight",
+        "wheat_bacterial_blight",
+        "wheat_net_blotch"
+      ],
+      "cropIds": [
+        "barley",
+        "bean",
+        "chickpea",
+        "citrus",
+        "faba_bean",
+        "lentil",
+        "pea",
+        "wheat"
+      ]
+    },
+    {
+      "token": "leaf_collapse",
+      "descriptor": "collapse",
+      "diseaseCount": 5,
+      "cropCount": 5,
+      "diseaseIds": [
+        "cucumber_cucurbit_bacterial_wilt",
+        "melon_cucurbit_bacterial_wilt",
+        "pumpkin_cucurbit_bacterial_wilt",
+        "watermelon_cucurbit_bacterial_wilt",
+        "zucchini_cucurbit_bacterial_wilt"
+      ],
+      "cropIds": [
+        "cucumber",
+        "melon",
+        "pumpkin",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "leaf_curl",
+      "descriptor": "curl",
+      "diseaseCount": 34,
+      "cropCount": 33,
+      "diseaseIds": [
+        "almond_powdery_mildew",
+        "apple_powdery_mildew",
+        "apricot_powdery_mildew",
+        "artichoke_powdery_mildew",
+        "barley_powdery_mildew",
+        "bean_powdery_mildew",
+        "carob_powdery_mildew",
+        "carrot_powdery_mildew",
+        "celery_powdery_mildew",
+        "chickpea_powdery_mildew",
+        "cucumber_powdery_mildew",
+        "faba_bean_powdery_mildew",
+        "grape_powdery_mildew",
+        "grapevine_powdery_mildew",
+        "lentil_powdery_mildew",
+        "lettuce_powdery_mildew",
+        "maize_powdery_mildew",
+        "melon_powdery_mildew",
+        "parsley_powdery_mildew",
+        "pea_powdery_mildew",
+        "peach_powdery_mildew",
+        "pear_powdery_mildew",
+        "pepper_powdery_mildew",
+        "pistachio_powdery_mildew",
+        "plum_powdery_mildew",
+        "potato_powdery_mildew",
+        "pumpkin_powdery_mildew",
+        "quince_powdery_mildew",
+        "spinach_powdery_mildew",
+        "strawberry_powdery_mildew",
+        "tomato_powdery_mildew",
+        "watermelon_powdery_mildew",
+        "wheat_powdery_mildew",
+        "zucchini_powdery_mildew"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "barley",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "leaf_distortion",
+      "descriptor": "distortion",
+      "diseaseCount": 33,
+      "cropCount": 33,
+      "diseaseIds": [
+        "apple_virus_mosaic",
+        "artichoke_virus_mosaic",
+        "barley_virus_mosaic",
+        "bean_virus_mosaic",
+        "carrot_virus_mosaic",
+        "celery_virus_mosaic",
+        "chickpea_virus_mosaic",
+        "citrus_virus_mosaic",
+        "cucumber_virus_mosaic",
+        "date_palm_virus_mosaic",
+        "faba_bean_virus_mosaic",
+        "fig_virus_mosaic",
+        "garlic_virus_mosaic",
+        "grapevine_virus_mosaic",
+        "lentil_virus_mosaic",
+        "lettuce_virus_mosaic",
+        "maize_virus_mosaic",
+        "melon_virus_mosaic",
+        "onion_virus_mosaic",
+        "parsley_virus_mosaic",
+        "pea_virus_mosaic",
+        "pear_virus_mosaic",
+        "pepper_virus_mosaic",
+        "pomegranate_virus_mosaic",
+        "potato_virus_mosaic",
+        "pumpkin_virus_mosaic",
+        "quince_virus_mosaic",
+        "spinach_virus_mosaic",
+        "strawberry_virus_mosaic",
+        "tomato_virus_mosaic",
+        "watermelon_virus_mosaic",
+        "wheat_virus_mosaic",
+        "zucchini_virus_mosaic"
+      ],
+      "cropIds": [
+        "apple",
+        "artichoke",
+        "barley",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "onion",
+        "parsley",
+        "pea",
+        "pear",
+        "pepper",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "leaf_drop",
+      "descriptor": "drop",
+      "diseaseCount": 42,
+      "cropCount": 32,
+      "diseaseIds": [
+        "almond_rust",
+        "almond_shot_hole",
+        "apple_rust",
+        "apricot_rust",
+        "artichoke_downy_mildew",
+        "bean_downy_mildew",
+        "bean_rust",
+        "carob_rust",
+        "carrot_rust",
+        "celery_rust",
+        "chickpea_downy_mildew",
+        "chickpea_rust",
+        "cucumber_downy_mildew",
+        "faba_bean_downy_mildew",
+        "faba_bean_rust",
+        "fig_rust",
+        "garlic_downy_mildew",
+        "garlic_rust",
+        "grapevine_downy_mildew",
+        "grapevine_rust",
+        "lentil_downy_mildew",
+        "lentil_rust",
+        "lettuce_downy_mildew",
+        "maize_rust",
+        "melon_downy_mildew",
+        "olive_peacock_spot",
+        "olive_rust",
+        "onion_downy_mildew",
+        "onion_rust",
+        "parsley_rust",
+        "pea_downy_mildew",
+        "pea_rust",
+        "peach_rust",
+        "pear_rust",
+        "pistachio_rust",
+        "plum_rust",
+        "pomegranate_rust",
+        "pumpkin_downy_mildew",
+        "quince_rust",
+        "spinach_downy_mildew",
+        "watermelon_downy_mildew",
+        "zucchini_downy_mildew"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "leaf_hole",
+      "descriptor": "hole",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "almond_shot_hole"
+      ],
+      "cropIds": [
+        "almond"
+      ]
+    },
+    {
+      "token": "leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 36,
+      "cropCount": 27,
+      "diseaseIds": [
+        "almond_anthracnose",
+        "apple_anthracnose",
+        "apple_scab",
+        "apricot_anthracnose",
+        "bean_anthracnose",
+        "carob_anthracnose",
+        "chickpea_anthracnose",
+        "citrus_anthracnose",
+        "citrus_scab",
+        "cucumber_anthracnose",
+        "cucumber_gummy_stem_blight",
+        "faba_bean_anthracnose",
+        "fig_anthracnose",
+        "grapevine_anthracnose",
+        "lentil_anthracnose",
+        "maize_anthracnose",
+        "melon_anthracnose",
+        "melon_gummy_stem_blight",
+        "olive_anthracnose",
+        "pea_anthracnose",
+        "peach_anthracnose",
+        "pear_anthracnose",
+        "pear_scab",
+        "pepper_anthracnose",
+        "pistachio_anthracnose",
+        "plum_anthracnose",
+        "pomegranate_anthracnose",
+        "pumpkin_anthracnose",
+        "pumpkin_gummy_stem_blight",
+        "quince_anthracnose",
+        "quince_scab",
+        "strawberry_anthracnose",
+        "watermelon_anthracnose",
+        "watermelon_gummy_stem_blight",
+        "zucchini_anthracnose",
+        "zucchini_gummy_stem_blight"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "bean",
+        "carob",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "faba_bean",
+        "fig",
+        "grapevine",
+        "lentil",
+        "maize",
+        "melon",
+        "olive",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "strawberry",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "leaf_tip_dieback",
+      "descriptor": "dieback",
+      "diseaseCount": 6,
+      "cropCount": 2,
+      "diseaseIds": [
+        "garlic_botrytis_leaf_blight",
+        "garlic_onion_purple_blotch",
+        "garlic_stemphylium_leaf_blight",
+        "onion_botrytis_leaf_blight",
+        "onion_onion_purple_blotch",
+        "onion_stemphylium_leaf_blight"
+      ],
+      "cropIds": [
+        "garlic",
+        "onion"
+      ]
+    },
+    {
+      "token": "leaf_yellowing",
+      "descriptor": "yellowing",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "barley_stripe_rust",
+        "parsley_septoria_leaf_spot",
+        "wheat_stripe_rust"
+      ],
+      "cropIds": [
+        "barley",
+        "parsley",
+        "wheat"
+      ]
+    },
+    {
+      "token": "light_yellow_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_late_blight"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "lower_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 9,
+      "cropCount": 9,
+      "diseaseIds": [
+        "artichoke_septoria",
+        "barley_septoria",
+        "carrot_septoria",
+        "celery_septoria",
+        "lettuce_septoria",
+        "parsley_septoria",
+        "spinach_septoria",
+        "tomato_septoria",
+        "wheat_septoria"
+      ],
+      "cropIds": [
+        "artichoke",
+        "barley",
+        "carrot",
+        "celery",
+        "lettuce",
+        "parsley",
+        "spinach",
+        "tomato",
+        "wheat"
+      ]
+    },
+    {
+      "token": "mosaic_pattern",
+      "descriptor": "pattern",
+      "diseaseCount": 33,
+      "cropCount": 33,
+      "diseaseIds": [
+        "apple_virus_mosaic",
+        "artichoke_virus_mosaic",
+        "barley_virus_mosaic",
+        "bean_virus_mosaic",
+        "carrot_virus_mosaic",
+        "celery_virus_mosaic",
+        "chickpea_virus_mosaic",
+        "citrus_virus_mosaic",
+        "cucumber_virus_mosaic",
+        "date_palm_virus_mosaic",
+        "faba_bean_virus_mosaic",
+        "fig_virus_mosaic",
+        "garlic_virus_mosaic",
+        "grapevine_virus_mosaic",
+        "lentil_virus_mosaic",
+        "lettuce_virus_mosaic",
+        "maize_virus_mosaic",
+        "melon_virus_mosaic",
+        "onion_virus_mosaic",
+        "parsley_virus_mosaic",
+        "pea_virus_mosaic",
+        "pear_virus_mosaic",
+        "pepper_virus_mosaic",
+        "pomegranate_virus_mosaic",
+        "potato_virus_mosaic",
+        "pumpkin_virus_mosaic",
+        "quince_virus_mosaic",
+        "spinach_virus_mosaic",
+        "strawberry_virus_mosaic",
+        "tomato_virus_mosaic",
+        "watermelon_virus_mosaic",
+        "wheat_virus_mosaic",
+        "zucchini_virus_mosaic"
+      ],
+      "cropIds": [
+        "apple",
+        "artichoke",
+        "barley",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "onion",
+        "parsley",
+        "pea",
+        "pear",
+        "pepper",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "mummified_berry",
+      "descriptor": "berry",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "grapevine_phomopsis_cane_leaf_spot"
+      ],
+      "cropIds": [
+        "grapevine"
+      ]
+    },
+    {
+      "token": "net_like_brown_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "barley_net_blotch",
+        "wheat_net_blotch"
+      ],
+      "cropIds": [
+        "barley",
+        "wheat"
+      ]
+    },
+    {
+      "token": "no_secondary_soft_rot",
+      "descriptor": "rot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "carrot_cavity_spot"
+      ],
+      "cropIds": [
+        "carrot"
+      ]
+    },
+    {
+      "token": "older_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "tomato_early_blight"
+      ],
+      "cropIds": [
+        "tomato"
+      ]
+    },
+    {
+      "token": "older_leaf_yellowing",
+      "descriptor": "yellowing",
+      "diseaseCount": 10,
+      "cropCount": 10,
+      "diseaseIds": [
+        "almond_verticillium_wilt",
+        "apricot_verticillium_wilt",
+        "olive_verticillium_wilt",
+        "peach_verticillium_wilt",
+        "pepper_verticillium_wilt",
+        "pistachio_verticillium_wilt",
+        "plum_verticillium_wilt",
+        "potato_verticillium_wilt",
+        "strawberry_verticillium_wilt",
+        "tomato_verticillium_wilt"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "olive",
+        "peach",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "strawberry",
+        "tomato"
+      ]
+    },
+    {
+      "token": "olive_black_spot",
+      "descriptor": "spot",
+      "diseaseCount": 4,
+      "cropCount": 4,
+      "diseaseIds": [
+        "apple_scab",
+        "citrus_scab",
+        "pear_scab",
+        "quince_scab"
+      ],
+      "cropIds": [
+        "apple",
+        "citrus",
+        "pear",
+        "quince"
+      ]
+    },
+    {
+      "token": "one_sided_frond_wilting",
+      "descriptor": "wilting",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "date_palm_bayoud"
+      ],
+      "cropIds": [
+        "date_palm"
+      ]
+    },
+    {
+      "token": "one_sided_wilting",
+      "descriptor": "wilting",
+      "diseaseCount": 30,
+      "cropCount": 27,
+      "diseaseIds": [
+        "almond_verticillium_wilt",
+        "apricot_verticillium_wilt",
+        "artichoke_fusarium_wilt",
+        "bean_fusarium_wilt",
+        "chickpea_fusarium_wilt",
+        "cucumber_fusarium_wilt",
+        "date_palm_fusarium_wilt",
+        "faba_bean_fusarium_wilt",
+        "garlic_fusarium_wilt",
+        "lentil_fusarium_wilt",
+        "lettuce_fusarium_wilt",
+        "maize_fusarium_wilt",
+        "melon_fusarium_wilt",
+        "olive_verticillium_wilt",
+        "onion_fusarium_wilt",
+        "pea_fusarium_wilt",
+        "peach_verticillium_wilt",
+        "pepper_fusarium_wilt",
+        "pepper_verticillium_wilt",
+        "pistachio_verticillium_wilt",
+        "plum_verticillium_wilt",
+        "potato_fusarium_wilt",
+        "potato_verticillium_wilt",
+        "pumpkin_fusarium_wilt",
+        "spinach_fusarium_wilt",
+        "strawberry_verticillium_wilt",
+        "tomato_fusarium_wilt",
+        "tomato_verticillium_wilt",
+        "watermelon_fusarium_wilt",
+        "zucchini_fusarium_wilt"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "bean",
+        "chickpea",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "pea",
+        "peach",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "orange_pustules",
+      "descriptor": "pustules",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "barley_stripe_rust",
+        "wheat_stripe_rust"
+      ],
+      "cropIds": [
+        "barley",
+        "wheat"
+      ]
+    },
+    {
+      "token": "orange_underside_pustules",
+      "descriptor": "pustules",
+      "diseaseCount": 24,
+      "cropCount": 24,
+      "diseaseIds": [
+        "almond_rust",
+        "apple_rust",
+        "apricot_rust",
+        "bean_rust",
+        "carob_rust",
+        "carrot_rust",
+        "celery_rust",
+        "chickpea_rust",
+        "faba_bean_rust",
+        "fig_rust",
+        "garlic_rust",
+        "grapevine_rust",
+        "lentil_rust",
+        "maize_rust",
+        "olive_rust",
+        "onion_rust",
+        "parsley_rust",
+        "pea_rust",
+        "peach_rust",
+        "pear_rust",
+        "pistachio_rust",
+        "plum_rust",
+        "pomegranate_rust",
+        "quince_rust"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "maize",
+        "olive",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "quince"
+      ]
+    },
+    {
+      "token": "oval_petiolar_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "parsley_septoria_leaf_spot"
+      ],
+      "cropIds": [
+        "parsley"
+      ]
+    },
+    {
+      "token": "pale_gray_underside_growth",
+      "descriptor": "growth",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "carrot_cercospora_leaf_blight"
+      ],
+      "cropIds": [
+        "carrot"
+      ]
+    },
+    {
+      "token": "papery_cracked_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_early_blight"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "pink_spore_mass",
+      "descriptor": "mass",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "barley_fusarium_head_blight",
+        "maize_fusarium_head_blight",
+        "wheat_fusarium_head_blight"
+      ],
+      "cropIds": [
+        "barley",
+        "maize",
+        "wheat"
+      ]
+    },
+    {
+      "token": "pink_surrounding_tissue",
+      "descriptor": "tissue",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_pink_rot"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "plant_base_collapse",
+      "descriptor": "collapse",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_pink_rot"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "pod_spot",
+      "descriptor": "spot",
+      "diseaseCount": 5,
+      "cropCount": 5,
+      "diseaseIds": [
+        "bean_ascochyta",
+        "chickpea_ascochyta",
+        "faba_bean_ascochyta",
+        "lentil_ascochyta",
+        "pea_ascochyta"
+      ],
+      "cropIds": [
+        "bean",
+        "chickpea",
+        "faba_bean",
+        "lentil",
+        "pea"
+      ]
+    },
+    {
+      "token": "poor_emergence",
+      "descriptor": "emergence",
+      "diseaseCount": 25,
+      "cropCount": 25,
+      "diseaseIds": [
+        "artichoke_damping_off",
+        "barley_damping_off",
+        "bean_damping_off",
+        "carrot_damping_off",
+        "celery_damping_off",
+        "chickpea_damping_off",
+        "cucumber_damping_off",
+        "faba_bean_damping_off",
+        "garlic_damping_off",
+        "lentil_damping_off",
+        "lettuce_damping_off",
+        "maize_damping_off",
+        "melon_damping_off",
+        "onion_damping_off",
+        "parsley_damping_off",
+        "pea_damping_off",
+        "pepper_damping_off",
+        "potato_damping_off",
+        "pumpkin_damping_off",
+        "spinach_damping_off",
+        "strawberry_damping_off",
+        "tomato_damping_off",
+        "watermelon_damping_off",
+        "wheat_damping_off",
+        "zucchini_damping_off"
+      ],
+      "cropIds": [
+        "artichoke",
+        "barley",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "onion",
+        "parsley",
+        "pea",
+        "pepper",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "premature_fruit_drop",
+      "descriptor": "drop",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "pomegranate_black_heart"
+      ],
+      "cropIds": [
+        "pomegranate"
+      ]
+    },
+    {
+      "token": "purple_elliptical_spot",
+      "descriptor": "spot",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "garlic_onion_purple_blotch",
+        "onion_onion_purple_blotch"
+      ],
+      "cropIds": [
+        "garlic",
+        "onion"
+      ]
+    },
+    {
+      "token": "purple_red_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "almond_shot_hole"
+      ],
+      "cropIds": [
+        "almond"
+      ]
+    },
+    {
+      "token": "rachis_brown_streak",
+      "descriptor": "streak",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "date_palm_bayoud"
+      ],
+      "cropIds": [
+        "date_palm"
+      ]
+    },
+    {
+      "token": "raised_corky_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_citrus_canker"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "reddish_brown_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "faba_bean_chocolate_spot"
+      ],
+      "cropIds": [
+        "faba_bean"
+      ]
+    },
+    {
+      "token": "root_galls",
+      "descriptor": "galls",
+      "diseaseCount": 32,
+      "cropCount": 32,
+      "diseaseIds": [
+        "almond_root_knot",
+        "apple_root_knot",
+        "apricot_root_knot",
+        "barley_root_knot",
+        "carob_root_knot",
+        "carrot_root_knot",
+        "celery_root_knot",
+        "citrus_root_knot",
+        "cucumber_root_knot",
+        "date_palm_root_knot",
+        "fig_root_knot",
+        "garlic_root_knot",
+        "grapevine_root_knot",
+        "maize_root_knot",
+        "melon_root_knot",
+        "olive_root_knot",
+        "onion_root_knot",
+        "parsley_root_knot",
+        "peach_root_knot",
+        "pear_root_knot",
+        "pepper_root_knot",
+        "pistachio_root_knot",
+        "plum_root_knot",
+        "pomegranate_root_knot",
+        "potato_root_knot",
+        "pumpkin_root_knot",
+        "quince_root_knot",
+        "strawberry_root_knot",
+        "tomato_root_knot",
+        "watermelon_root_knot",
+        "wheat_root_knot",
+        "zucchini_root_knot"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "barley",
+        "carob",
+        "carrot",
+        "celery",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "fig",
+        "garlic",
+        "grapevine",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "rough_gall",
+      "descriptor": "gall",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "olive_olive_knot"
+      ],
+      "cropIds": [
+        "olive"
+      ]
+    },
+    {
+      "token": "rough_tuber_surface",
+      "descriptor": "surface",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "potato_potato_common_scab"
+      ],
+      "cropIds": [
+        "potato"
+      ]
+    },
+    {
+      "token": "scabby_cane",
+      "descriptor": "cane",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "grapevine_phomopsis_cane_leaf_spot"
+      ],
+      "cropIds": [
+        "grapevine"
+      ]
+    },
+    {
+      "token": "seedling_collapse",
+      "descriptor": "collapse",
+      "diseaseCount": 29,
+      "cropCount": 25,
+      "diseaseIds": [
+        "artichoke_damping_off",
+        "barley_damping_off",
+        "barley_rhizoctonia",
+        "bean_damping_off",
+        "carrot_damping_off",
+        "celery_damping_off",
+        "chickpea_damping_off",
+        "cucumber_damping_off",
+        "faba_bean_damping_off",
+        "garlic_damping_off",
+        "lentil_damping_off",
+        "lettuce_damping_off",
+        "maize_damping_off",
+        "maize_rhizoctonia",
+        "melon_damping_off",
+        "onion_damping_off",
+        "parsley_damping_off",
+        "pea_damping_off",
+        "pepper_damping_off",
+        "potato_damping_off",
+        "potato_rhizoctonia",
+        "pumpkin_damping_off",
+        "spinach_damping_off",
+        "strawberry_damping_off",
+        "tomato_damping_off",
+        "watermelon_damping_off",
+        "wheat_damping_off",
+        "wheat_rhizoctonia",
+        "zucchini_damping_off"
+      ],
+      "cropIds": [
+        "artichoke",
+        "barley",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "onion",
+        "parsley",
+        "pea",
+        "pepper",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "shepherd_crook",
+      "descriptor": "crook",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "apple_fire_blight",
+        "pear_fire_blight",
+        "quince_fire_blight"
+      ],
+      "cropIds": [
+        "apple",
+        "pear",
+        "quince"
+      ]
+    },
+    {
+      "token": "shoot_dieback",
+      "descriptor": "dieback",
+      "diseaseCount": 9,
+      "cropCount": 9,
+      "diseaseIds": [
+        "barley_bacterial_blight",
+        "bean_bacterial_blight",
+        "chickpea_bacterial_blight",
+        "citrus_bacterial_blight",
+        "faba_bean_bacterial_blight",
+        "lentil_bacterial_blight",
+        "olive_olive_knot",
+        "pea_bacterial_blight",
+        "wheat_bacterial_blight"
+      ],
+      "cropIds": [
+        "barley",
+        "bean",
+        "chickpea",
+        "citrus",
+        "faba_bean",
+        "lentil",
+        "olive",
+        "pea",
+        "wheat"
+      ]
+    },
+    {
+      "token": "shoot_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "parsley_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "parsley"
+      ]
+    },
+    {
+      "token": "shriveled_grain",
+      "descriptor": "grain",
+      "diseaseCount": 3,
+      "cropCount": 3,
+      "diseaseIds": [
+        "barley_fusarium_head_blight",
+        "maize_fusarium_head_blight",
+        "wheat_fusarium_head_blight"
+      ],
+      "cropIds": [
+        "barley",
+        "maize",
+        "wheat"
+      ]
+    },
+    {
+      "token": "small_circular_water_soaked_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "spinach_anthracnose"
+      ],
+      "cropIds": [
+        "spinach"
+      ]
+    },
+    {
+      "token": "small_dark_spot",
+      "descriptor": "spot",
+      "diseaseCount": 9,
+      "cropCount": 9,
+      "diseaseIds": [
+        "artichoke_septoria",
+        "barley_septoria",
+        "carrot_septoria",
+        "celery_septoria",
+        "lettuce_septoria",
+        "parsley_septoria",
+        "spinach_septoria",
+        "tomato_septoria",
+        "wheat_septoria"
+      ],
+      "cropIds": [
+        "artichoke",
+        "barley",
+        "carrot",
+        "celery",
+        "lettuce",
+        "parsley",
+        "spinach",
+        "tomato",
+        "wheat"
+      ]
+    },
+    {
+      "token": "small_horizontal_root_cavity",
+      "descriptor": "cavity",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "carrot_cavity_spot"
+      ],
+      "cropIds": [
+        "carrot"
+      ]
+    },
+    {
+      "token": "small_lopsided_fruit",
+      "descriptor": "fruit",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_citrus_greening"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "small_white_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "garlic_botrytis_leaf_blight"
+      ],
+      "cropIds": [
+        "garlic"
+      ]
+    },
+    {
+      "token": "small_yellow_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_early_blight"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "soft_rot",
+      "descriptor": "rot",
+      "diseaseCount": 25,
+      "cropCount": 25,
+      "diseaseIds": [
+        "apple_botrytis",
+        "artichoke_botrytis",
+        "bean_botrytis",
+        "carob_botrytis",
+        "chickpea_botrytis",
+        "cucumber_botrytis",
+        "fig_botrytis",
+        "garlic_botrytis",
+        "grapevine_botrytis",
+        "lentil_botrytis",
+        "lettuce_botrytis",
+        "melon_botrytis",
+        "onion_botrytis",
+        "pea_botrytis",
+        "pear_botrytis",
+        "pepper_botrytis",
+        "pistachio_botrytis",
+        "pomegranate_botrytis",
+        "pumpkin_botrytis",
+        "quince_botrytis",
+        "spinach_botrytis",
+        "strawberry_botrytis",
+        "tomato_botrytis",
+        "watermelon_botrytis",
+        "zucchini_botrytis"
+      ],
+      "cropIds": [
+        "apple",
+        "artichoke",
+        "bean",
+        "carob",
+        "chickpea",
+        "cucumber",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "melon",
+        "onion",
+        "pea",
+        "pear",
+        "pepper",
+        "pistachio",
+        "pomegranate",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "soft_watery_decay",
+      "descriptor": "decay",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_pink_rot"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "stem_base_rot",
+      "descriptor": "rot",
+      "diseaseCount": 29,
+      "cropCount": 25,
+      "diseaseIds": [
+        "artichoke_damping_off",
+        "barley_damping_off",
+        "barley_rhizoctonia",
+        "bean_damping_off",
+        "carrot_damping_off",
+        "celery_damping_off",
+        "chickpea_damping_off",
+        "cucumber_damping_off",
+        "faba_bean_damping_off",
+        "garlic_damping_off",
+        "lentil_damping_off",
+        "lettuce_damping_off",
+        "maize_damping_off",
+        "maize_rhizoctonia",
+        "melon_damping_off",
+        "onion_damping_off",
+        "parsley_damping_off",
+        "pea_damping_off",
+        "pepper_damping_off",
+        "potato_damping_off",
+        "potato_rhizoctonia",
+        "pumpkin_damping_off",
+        "spinach_damping_off",
+        "strawberry_damping_off",
+        "tomato_damping_off",
+        "watermelon_damping_off",
+        "wheat_damping_off",
+        "wheat_rhizoctonia",
+        "zucchini_damping_off"
+      ],
+      "cropIds": [
+        "artichoke",
+        "barley",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "onion",
+        "parsley",
+        "pea",
+        "pepper",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "stem_canker",
+      "descriptor": "canker",
+      "diseaseCount": 5,
+      "cropCount": 5,
+      "diseaseIds": [
+        "cucumber_gummy_stem_blight",
+        "melon_gummy_stem_blight",
+        "pumpkin_gummy_stem_blight",
+        "watermelon_gummy_stem_blight",
+        "zucchini_gummy_stem_blight"
+      ],
+      "cropIds": [
+        "cucumber",
+        "melon",
+        "pumpkin",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "stem_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 6,
+      "cropCount": 6,
+      "diseaseIds": [
+        "bean_ascochyta",
+        "chickpea_ascochyta",
+        "faba_bean_ascochyta",
+        "lentil_ascochyta",
+        "pea_ascochyta",
+        "potato_late_blight"
+      ],
+      "cropIds": [
+        "bean",
+        "chickpea",
+        "faba_bean",
+        "lentil",
+        "pea",
+        "potato"
+      ]
+    },
+    {
+      "token": "stem_pitting",
+      "descriptor": "pitting",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_tristeza"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "stem_rot",
+      "descriptor": "rot",
+      "diseaseCount": 19,
+      "cropCount": 19,
+      "diseaseIds": [
+        "almond_sclerotinia",
+        "apricot_sclerotinia",
+        "artichoke_sclerotinia",
+        "bean_sclerotinia",
+        "carrot_sclerotinia",
+        "celery_sclerotinia",
+        "chickpea_sclerotinia",
+        "faba_bean_sclerotinia",
+        "fig_sclerotinia",
+        "lentil_sclerotinia",
+        "lettuce_sclerotinia",
+        "parsley_sclerotinia",
+        "pea_sclerotinia",
+        "peach_sclerotinia",
+        "pistachio_sclerotinia",
+        "plum_sclerotinia",
+        "pomegranate_sclerotinia",
+        "spinach_sclerotinia",
+        "strawberry_sclerotinia"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "faba_bean",
+        "fig",
+        "lentil",
+        "lettuce",
+        "parsley",
+        "pea",
+        "peach",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "spinach",
+        "strawberry"
+      ]
+    },
+    {
+      "token": "stunting",
+      "descriptor": "stunting",
+      "diseaseCount": 65,
+      "cropCount": 40,
+      "diseaseIds": [
+        "almond_root_knot",
+        "apple_root_knot",
+        "apple_virus_mosaic",
+        "apricot_root_knot",
+        "artichoke_virus_mosaic",
+        "barley_root_knot",
+        "barley_virus_mosaic",
+        "bean_virus_mosaic",
+        "carob_root_knot",
+        "carrot_root_knot",
+        "carrot_virus_mosaic",
+        "celery_root_knot",
+        "celery_virus_mosaic",
+        "chickpea_virus_mosaic",
+        "citrus_root_knot",
+        "citrus_virus_mosaic",
+        "cucumber_root_knot",
+        "cucumber_virus_mosaic",
+        "date_palm_root_knot",
+        "date_palm_virus_mosaic",
+        "faba_bean_virus_mosaic",
+        "fig_root_knot",
+        "fig_virus_mosaic",
+        "garlic_root_knot",
+        "garlic_virus_mosaic",
+        "grapevine_root_knot",
+        "grapevine_virus_mosaic",
+        "lentil_virus_mosaic",
+        "lettuce_virus_mosaic",
+        "maize_root_knot",
+        "maize_virus_mosaic",
+        "melon_root_knot",
+        "melon_virus_mosaic",
+        "olive_root_knot",
+        "onion_root_knot",
+        "onion_virus_mosaic",
+        "parsley_root_knot",
+        "parsley_virus_mosaic",
+        "pea_virus_mosaic",
+        "peach_root_knot",
+        "pear_root_knot",
+        "pear_virus_mosaic",
+        "pepper_root_knot",
+        "pepper_virus_mosaic",
+        "pistachio_root_knot",
+        "plum_root_knot",
+        "pomegranate_root_knot",
+        "pomegranate_virus_mosaic",
+        "potato_root_knot",
+        "potato_virus_mosaic",
+        "pumpkin_root_knot",
+        "pumpkin_virus_mosaic",
+        "quince_root_knot",
+        "quince_virus_mosaic",
+        "spinach_virus_mosaic",
+        "strawberry_root_knot",
+        "strawberry_virus_mosaic",
+        "tomato_root_knot",
+        "tomato_virus_mosaic",
+        "watermelon_root_knot",
+        "watermelon_virus_mosaic",
+        "wheat_root_knot",
+        "wheat_virus_mosaic",
+        "zucchini_root_knot",
+        "zucchini_virus_mosaic"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "barley",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "stunting_yellowing",
+      "descriptor": "yellowing",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "parsley_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "parsley"
+      ]
+    },
+    {
+      "token": "sudden_wilting",
+      "descriptor": "wilting",
+      "diseaseCount": 5,
+      "cropCount": 5,
+      "diseaseIds": [
+        "cucumber_cucurbit_bacterial_wilt",
+        "melon_cucurbit_bacterial_wilt",
+        "pumpkin_cucurbit_bacterial_wilt",
+        "watermelon_cucurbit_bacterial_wilt",
+        "zucchini_cucurbit_bacterial_wilt"
+      ],
+      "cropIds": [
+        "cucumber",
+        "melon",
+        "pumpkin",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "sunken_fruit_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "tomato_early_blight"
+      ],
+      "cropIds": [
+        "tomato"
+      ]
+    },
+    {
+      "token": "tan_elliptical_petioles",
+      "descriptor": "petioles",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "carrot_cercospora_leaf_blight"
+      ],
+      "cropIds": [
+        "carrot"
+      ]
+    },
+    {
+      "token": "tiny_dark_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "grapevine_phomopsis_cane_leaf_spot"
+      ],
+      "cropIds": [
+        "grapevine"
+      ]
+    },
+    {
+      "token": "tuber_rot",
+      "descriptor": "rot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "potato_late_blight"
+      ],
+      "cropIds": [
+        "potato"
+      ]
+    },
+    {
+      "token": "twig_canker",
+      "descriptor": "canker",
+      "diseaseCount": 19,
+      "cropCount": 14,
+      "diseaseIds": [
+        "almond_bacterial_canker",
+        "almond_brown_rot",
+        "almond_brown_rot_blossom_blight",
+        "apple_bacterial_canker",
+        "apricot_bacterial_canker",
+        "apricot_brown_rot",
+        "carob_bacterial_canker",
+        "grapevine_bacterial_canker",
+        "olive_bacterial_canker",
+        "peach_bacterial_canker",
+        "peach_brown_rot",
+        "pear_bacterial_canker",
+        "pepper_bacterial_canker",
+        "pistachio_bacterial_canker",
+        "plum_bacterial_canker",
+        "plum_brown_rot",
+        "potato_bacterial_canker",
+        "quince_bacterial_canker",
+        "tomato_bacterial_canker"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "carob",
+        "grapevine",
+        "olive",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "quince",
+        "tomato"
+      ]
+    },
+    {
+      "token": "twig_swelling",
+      "descriptor": "swelling",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "olive_olive_knot"
+      ],
+      "cropIds": [
+        "olive"
+      ]
+    },
+    {
+      "token": "underside_gray_growth",
+      "descriptor": "growth",
+      "diseaseCount": 16,
+      "cropCount": 16,
+      "diseaseIds": [
+        "artichoke_downy_mildew",
+        "bean_downy_mildew",
+        "chickpea_downy_mildew",
+        "cucumber_downy_mildew",
+        "faba_bean_downy_mildew",
+        "garlic_downy_mildew",
+        "grapevine_downy_mildew",
+        "lentil_downy_mildew",
+        "lettuce_downy_mildew",
+        "melon_downy_mildew",
+        "onion_downy_mildew",
+        "pea_downy_mildew",
+        "pumpkin_downy_mildew",
+        "spinach_downy_mildew",
+        "watermelon_downy_mildew",
+        "zucchini_downy_mildew"
+      ],
+      "cropIds": [
+        "artichoke",
+        "bean",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "melon",
+        "onion",
+        "pea",
+        "pumpkin",
+        "spinach",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "upper_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "olive_peacock_spot"
+      ],
+      "cropIds": [
+        "olive"
+      ]
+    },
+    {
+      "token": "vascular_browning",
+      "descriptor": "browning",
+      "diseaseCount": 35,
+      "cropCount": 27,
+      "diseaseIds": [
+        "almond_verticillium_wilt",
+        "apricot_verticillium_wilt",
+        "artichoke_fusarium_wilt",
+        "bean_fusarium_wilt",
+        "chickpea_fusarium_wilt",
+        "cucumber_cucurbit_bacterial_wilt",
+        "cucumber_fusarium_wilt",
+        "date_palm_fusarium_wilt",
+        "faba_bean_fusarium_wilt",
+        "garlic_fusarium_wilt",
+        "lentil_fusarium_wilt",
+        "lettuce_fusarium_wilt",
+        "maize_fusarium_wilt",
+        "melon_cucurbit_bacterial_wilt",
+        "melon_fusarium_wilt",
+        "olive_verticillium_wilt",
+        "onion_fusarium_wilt",
+        "pea_fusarium_wilt",
+        "peach_verticillium_wilt",
+        "pepper_fusarium_wilt",
+        "pepper_verticillium_wilt",
+        "pistachio_verticillium_wilt",
+        "plum_verticillium_wilt",
+        "potato_fusarium_wilt",
+        "potato_verticillium_wilt",
+        "pumpkin_cucurbit_bacterial_wilt",
+        "pumpkin_fusarium_wilt",
+        "spinach_fusarium_wilt",
+        "strawberry_verticillium_wilt",
+        "tomato_fusarium_wilt",
+        "tomato_verticillium_wilt",
+        "watermelon_cucurbit_bacterial_wilt",
+        "watermelon_fusarium_wilt",
+        "zucchini_cucurbit_bacterial_wilt",
+        "zucchini_fusarium_wilt"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "bean",
+        "chickpea",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "pea",
+        "peach",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "water_soaked_leaf_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "garlic_botrytis_leaf_blight"
+      ],
+      "cropIds": [
+        "garlic"
+      ]
+    },
+    {
+      "token": "water_soaked_necrotic_lesion",
+      "descriptor": "lesion",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "parsley_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "parsley"
+      ]
+    },
+    {
+      "token": "water_soaked_spot",
+      "descriptor": "spot",
+      "diseaseCount": 35,
+      "cropCount": 32,
+      "diseaseIds": [
+        "almond_bacterial_leaf_spot",
+        "apricot_bacterial_leaf_spot",
+        "artichoke_bacterial_leaf_spot",
+        "barley_bacterial_blight",
+        "bean_bacterial_blight",
+        "carrot_bacterial_leaf_spot",
+        "carrot_cercospora_leaf_blight",
+        "celery_bacterial_leaf_spot",
+        "chickpea_bacterial_blight",
+        "citrus_bacterial_blight",
+        "cucumber_bacterial_leaf_spot",
+        "date_palm_bacterial_leaf_spot",
+        "faba_bean_bacterial_blight",
+        "fig_bacterial_leaf_spot",
+        "garlic_bacterial_leaf_spot",
+        "lentil_bacterial_blight",
+        "lettuce_bacterial_leaf_spot",
+        "maize_bacterial_leaf_spot",
+        "melon_bacterial_leaf_spot",
+        "onion_bacterial_leaf_spot",
+        "onion_botrytis_leaf_blight",
+        "pea_bacterial_blight",
+        "peach_bacterial_leaf_spot",
+        "pepper_bacterial_leaf_spot",
+        "plum_bacterial_leaf_spot",
+        "pomegranate_bacterial_leaf_spot",
+        "potato_bacterial_leaf_spot",
+        "potato_late_blight",
+        "pumpkin_bacterial_leaf_spot",
+        "spinach_bacterial_leaf_spot",
+        "strawberry_bacterial_leaf_spot",
+        "tomato_bacterial_leaf_spot",
+        "watermelon_bacterial_leaf_spot",
+        "wheat_bacterial_blight",
+        "zucchini_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "barley",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "onion",
+        "pea",
+        "peach",
+        "pepper",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "white_cottony_growth",
+      "descriptor": "growth",
+      "diseaseCount": 21,
+      "cropCount": 21,
+      "diseaseIds": [
+        "almond_sclerotinia",
+        "apricot_sclerotinia",
+        "artichoke_sclerotinia",
+        "bean_sclerotinia",
+        "carrot_sclerotinia",
+        "celery_sclerotinia",
+        "chickpea_sclerotinia",
+        "faba_bean_sclerotinia",
+        "fig_sclerotinia",
+        "garlic_white_rot",
+        "lentil_sclerotinia",
+        "lettuce_sclerotinia",
+        "onion_white_rot",
+        "parsley_sclerotinia",
+        "pea_sclerotinia",
+        "peach_sclerotinia",
+        "pistachio_sclerotinia",
+        "plum_sclerotinia",
+        "pomegranate_sclerotinia",
+        "spinach_sclerotinia",
+        "strawberry_sclerotinia"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "bean",
+        "carrot",
+        "celery",
+        "chickpea",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "lentil",
+        "lettuce",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "spinach",
+        "strawberry"
+      ]
+    },
+    {
+      "token": "white_mycelium",
+      "descriptor": "mycelium",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "celery_pink_rot"
+      ],
+      "cropIds": [
+        "celery"
+      ]
+    },
+    {
+      "token": "white_powdery_growth",
+      "descriptor": "growth",
+      "diseaseCount": 34,
+      "cropCount": 33,
+      "diseaseIds": [
+        "almond_powdery_mildew",
+        "apple_powdery_mildew",
+        "apricot_powdery_mildew",
+        "artichoke_powdery_mildew",
+        "barley_powdery_mildew",
+        "bean_powdery_mildew",
+        "carob_powdery_mildew",
+        "carrot_powdery_mildew",
+        "celery_powdery_mildew",
+        "chickpea_powdery_mildew",
+        "cucumber_powdery_mildew",
+        "faba_bean_powdery_mildew",
+        "grape_powdery_mildew",
+        "grapevine_powdery_mildew",
+        "lentil_powdery_mildew",
+        "lettuce_powdery_mildew",
+        "maize_powdery_mildew",
+        "melon_powdery_mildew",
+        "parsley_powdery_mildew",
+        "pea_powdery_mildew",
+        "peach_powdery_mildew",
+        "pear_powdery_mildew",
+        "pepper_powdery_mildew",
+        "pistachio_powdery_mildew",
+        "plum_powdery_mildew",
+        "potato_powdery_mildew",
+        "pumpkin_powdery_mildew",
+        "quince_powdery_mildew",
+        "spinach_powdery_mildew",
+        "strawberry_powdery_mildew",
+        "tomato_powdery_mildew",
+        "watermelon_powdery_mildew",
+        "wheat_powdery_mildew",
+        "zucchini_powdery_mildew"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "barley",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "white_underside_growth",
+      "descriptor": "growth",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "potato_late_blight",
+        "tomato_late_blight"
+      ],
+      "cropIds": [
+        "potato",
+        "tomato"
+      ]
+    },
+    {
+      "token": "wilting",
+      "descriptor": "wilting",
+      "diseaseCount": 102,
+      "cropCount": 40,
+      "diseaseIds": [
+        "almond_bacterial_canker",
+        "almond_phytophthora_root_rot",
+        "almond_root_knot",
+        "almond_sclerotinia",
+        "apple_bacterial_canker",
+        "apple_phytophthora_root_rot",
+        "apple_root_knot",
+        "apricot_bacterial_canker",
+        "apricot_phytophthora_root_rot",
+        "apricot_root_knot",
+        "apricot_sclerotinia",
+        "artichoke_phytophthora_root_rot",
+        "artichoke_sclerotinia",
+        "barley_root_knot",
+        "bean_phytophthora_root_rot",
+        "bean_sclerotinia",
+        "carob_bacterial_canker",
+        "carob_phytophthora_root_rot",
+        "carob_root_knot",
+        "carrot_phytophthora_root_rot",
+        "carrot_root_knot",
+        "carrot_sclerotinia",
+        "celery_phytophthora_root_rot",
+        "celery_root_knot",
+        "celery_sclerotinia",
+        "chickpea_phytophthora_root_rot",
+        "chickpea_sclerotinia",
+        "citrus_phytophthora_root_rot",
+        "citrus_root_knot",
+        "cucumber_phytophthora_root_rot",
+        "cucumber_root_knot",
+        "date_palm_phytophthora_root_rot",
+        "date_palm_root_knot",
+        "faba_bean_phytophthora_root_rot",
+        "faba_bean_sclerotinia",
+        "fig_phytophthora_root_rot",
+        "fig_root_knot",
+        "fig_sclerotinia",
+        "garlic_root_knot",
+        "garlic_white_rot",
+        "grapevine_bacterial_canker",
+        "grapevine_phytophthora_root_rot",
+        "grapevine_root_knot",
+        "lentil_phytophthora_root_rot",
+        "lentil_sclerotinia",
+        "lettuce_phytophthora_root_rot",
+        "lettuce_sclerotinia",
+        "maize_root_knot",
+        "melon_phytophthora_root_rot",
+        "melon_root_knot",
+        "olive_bacterial_canker",
+        "olive_phytophthora_root_rot",
+        "olive_root_knot",
+        "onion_root_knot",
+        "onion_white_rot",
+        "parsley_phytophthora_root_rot",
+        "parsley_root_knot",
+        "parsley_sclerotinia",
+        "pea_phytophthora_root_rot",
+        "pea_sclerotinia",
+        "peach_bacterial_canker",
+        "peach_phytophthora_root_rot",
+        "peach_root_knot",
+        "peach_sclerotinia",
+        "pear_bacterial_canker",
+        "pear_phytophthora_root_rot",
+        "pear_root_knot",
+        "pepper_bacterial_canker",
+        "pepper_phytophthora_root_rot",
+        "pepper_root_knot",
+        "pistachio_bacterial_canker",
+        "pistachio_phytophthora_root_rot",
+        "pistachio_root_knot",
+        "pistachio_sclerotinia",
+        "plum_bacterial_canker",
+        "plum_phytophthora_root_rot",
+        "plum_root_knot",
+        "plum_sclerotinia",
+        "pomegranate_phytophthora_root_rot",
+        "pomegranate_root_knot",
+        "pomegranate_sclerotinia",
+        "potato_bacterial_canker",
+        "potato_phytophthora_root_rot",
+        "potato_root_knot",
+        "pumpkin_phytophthora_root_rot",
+        "pumpkin_root_knot",
+        "quince_bacterial_canker",
+        "quince_phytophthora_root_rot",
+        "quince_root_knot",
+        "spinach_phytophthora_root_rot",
+        "spinach_sclerotinia",
+        "strawberry_phytophthora_root_rot",
+        "strawberry_root_knot",
+        "strawberry_sclerotinia",
+        "tomato_bacterial_canker",
+        "tomato_phytophthora_root_rot",
+        "tomato_root_knot",
+        "watermelon_phytophthora_root_rot",
+        "watermelon_root_knot",
+        "wheat_root_knot",
+        "zucchini_phytophthora_root_rot",
+        "zucchini_root_knot"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "barley",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "yellow_angular_spot",
+      "descriptor": "spot",
+      "diseaseCount": 16,
+      "cropCount": 16,
+      "diseaseIds": [
+        "artichoke_downy_mildew",
+        "bean_downy_mildew",
+        "chickpea_downy_mildew",
+        "cucumber_downy_mildew",
+        "faba_bean_downy_mildew",
+        "garlic_downy_mildew",
+        "grapevine_downy_mildew",
+        "lentil_downy_mildew",
+        "lettuce_downy_mildew",
+        "melon_downy_mildew",
+        "onion_downy_mildew",
+        "pea_downy_mildew",
+        "pumpkin_downy_mildew",
+        "spinach_downy_mildew",
+        "watermelon_downy_mildew",
+        "zucchini_downy_mildew"
+      ],
+      "cropIds": [
+        "artichoke",
+        "bean",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "melon",
+        "onion",
+        "pea",
+        "pumpkin",
+        "spinach",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "yellow_halo",
+      "descriptor": "halo",
+      "diseaseCount": 58,
+      "cropCount": 31,
+      "diseaseIds": [
+        "almond_bacterial_leaf_spot",
+        "almond_shot_hole",
+        "apricot_bacterial_leaf_spot",
+        "artichoke_bacterial_leaf_spot",
+        "artichoke_septoria",
+        "barley_net_blotch",
+        "barley_septoria",
+        "carob_alternaria_leaf_spot",
+        "carrot_alternaria_leaf_spot",
+        "carrot_bacterial_leaf_spot",
+        "carrot_cercospora_leaf_blight",
+        "carrot_septoria",
+        "celery_alternaria_leaf_spot",
+        "celery_bacterial_leaf_spot",
+        "celery_septoria",
+        "citrus_alternaria_leaf_spot",
+        "citrus_citrus_canker",
+        "cucumber_bacterial_leaf_spot",
+        "date_palm_alternaria_leaf_spot",
+        "date_palm_bacterial_leaf_spot",
+        "fig_bacterial_leaf_spot",
+        "garlic_bacterial_leaf_spot",
+        "garlic_botrytis_leaf_blight",
+        "garlic_onion_purple_blotch",
+        "garlic_stemphylium_leaf_blight",
+        "lettuce_bacterial_leaf_spot",
+        "lettuce_septoria",
+        "maize_bacterial_leaf_spot",
+        "melon_bacterial_leaf_spot",
+        "olive_alternaria_leaf_spot",
+        "olive_peacock_spot",
+        "onion_bacterial_leaf_spot",
+        "onion_botrytis_leaf_blight",
+        "onion_onion_purple_blotch",
+        "onion_stemphylium_leaf_blight",
+        "parsley_alternaria_leaf_spot",
+        "parsley_septoria",
+        "peach_bacterial_leaf_spot",
+        "pepper_alternaria_leaf_spot",
+        "pepper_bacterial_leaf_spot",
+        "pistachio_alternaria_leaf_spot",
+        "plum_bacterial_leaf_spot",
+        "pomegranate_alternaria_leaf_spot",
+        "pomegranate_bacterial_leaf_spot",
+        "potato_alternaria_leaf_spot",
+        "potato_bacterial_leaf_spot",
+        "pumpkin_bacterial_leaf_spot",
+        "spinach_bacterial_leaf_spot",
+        "spinach_septoria",
+        "strawberry_bacterial_leaf_spot",
+        "tomato_alternaria_leaf_spot",
+        "tomato_bacterial_leaf_spot",
+        "tomato_early_blight",
+        "tomato_septoria",
+        "watermelon_bacterial_leaf_spot",
+        "wheat_net_blotch",
+        "wheat_septoria",
+        "zucchini_bacterial_leaf_spot"
+      ],
+      "cropIds": [
+        "almond",
+        "apricot",
+        "artichoke",
+        "barley",
+        "carob",
+        "carrot",
+        "celery",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "fig",
+        "garlic",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "peach",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "wheat",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "yellow_rust_stripe",
+      "descriptor": "stripe",
+      "diseaseCount": 2,
+      "cropCount": 2,
+      "diseaseIds": [
+        "barley_stripe_rust",
+        "wheat_stripe_rust"
+      ],
+      "cropIds": [
+        "barley",
+        "wheat"
+      ]
+    },
+    {
+      "token": "yellow_shoot",
+      "descriptor": "shoot",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "citrus_citrus_greening"
+      ],
+      "cropIds": [
+        "citrus"
+      ]
+    },
+    {
+      "token": "yellow_upper_leaf_spot",
+      "descriptor": "spot",
+      "diseaseCount": 24,
+      "cropCount": 24,
+      "diseaseIds": [
+        "almond_rust",
+        "apple_rust",
+        "apricot_rust",
+        "bean_rust",
+        "carob_rust",
+        "carrot_rust",
+        "celery_rust",
+        "chickpea_rust",
+        "faba_bean_rust",
+        "fig_rust",
+        "garlic_rust",
+        "grapevine_rust",
+        "lentil_rust",
+        "maize_rust",
+        "olive_rust",
+        "onion_rust",
+        "parsley_rust",
+        "pea_rust",
+        "peach_rust",
+        "pear_rust",
+        "pistachio_rust",
+        "plum_rust",
+        "pomegranate_rust",
+        "quince_rust"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "maize",
+        "olive",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "quince"
+      ]
+    },
+    {
+      "token": "yellowing",
+      "descriptor": "yellowing",
+      "diseaseCount": 58,
+      "cropCount": 38,
+      "diseaseIds": [
+        "almond_phytophthora_root_rot",
+        "apple_phytophthora_root_rot",
+        "apricot_phytophthora_root_rot",
+        "artichoke_fusarium_wilt",
+        "artichoke_phytophthora_root_rot",
+        "bean_fusarium_wilt",
+        "bean_phytophthora_root_rot",
+        "carob_phytophthora_root_rot",
+        "carrot_phytophthora_root_rot",
+        "celery_phytophthora_root_rot",
+        "chickpea_fusarium_wilt",
+        "chickpea_phytophthora_root_rot",
+        "citrus_phytophthora_root_rot",
+        "citrus_tristeza",
+        "cucumber_fusarium_wilt",
+        "cucumber_phytophthora_root_rot",
+        "date_palm_fusarium_wilt",
+        "date_palm_phytophthora_root_rot",
+        "faba_bean_fusarium_wilt",
+        "faba_bean_phytophthora_root_rot",
+        "fig_phytophthora_root_rot",
+        "garlic_fusarium_wilt",
+        "garlic_white_rot",
+        "grapevine_phytophthora_root_rot",
+        "lentil_fusarium_wilt",
+        "lentil_phytophthora_root_rot",
+        "lettuce_fusarium_wilt",
+        "lettuce_phytophthora_root_rot",
+        "maize_fusarium_wilt",
+        "melon_fusarium_wilt",
+        "melon_phytophthora_root_rot",
+        "olive_phytophthora_root_rot",
+        "onion_fusarium_wilt",
+        "onion_white_rot",
+        "parsley_phytophthora_root_rot",
+        "pea_fusarium_wilt",
+        "pea_phytophthora_root_rot",
+        "peach_phytophthora_root_rot",
+        "pear_phytophthora_root_rot",
+        "pepper_fusarium_wilt",
+        "pepper_phytophthora_root_rot",
+        "pistachio_phytophthora_root_rot",
+        "plum_phytophthora_root_rot",
+        "pomegranate_phytophthora_root_rot",
+        "potato_fusarium_wilt",
+        "potato_phytophthora_root_rot",
+        "pumpkin_fusarium_wilt",
+        "pumpkin_phytophthora_root_rot",
+        "quince_phytophthora_root_rot",
+        "spinach_fusarium_wilt",
+        "spinach_phytophthora_root_rot",
+        "strawberry_phytophthora_root_rot",
+        "tomato_fusarium_wilt",
+        "tomato_phytophthora_root_rot",
+        "watermelon_fusarium_wilt",
+        "watermelon_phytophthora_root_rot",
+        "zucchini_fusarium_wilt",
+        "zucchini_phytophthora_root_rot"
+      ],
+      "cropIds": [
+        "almond",
+        "apple",
+        "apricot",
+        "artichoke",
+        "bean",
+        "carob",
+        "carrot",
+        "celery",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "fig",
+        "garlic",
+        "grapevine",
+        "lentil",
+        "lettuce",
+        "maize",
+        "melon",
+        "olive",
+        "onion",
+        "parsley",
+        "pea",
+        "peach",
+        "pear",
+        "pepper",
+        "pistachio",
+        "plum",
+        "pomegranate",
+        "potato",
+        "pumpkin",
+        "quince",
+        "spinach",
+        "strawberry",
+        "tomato",
+        "watermelon",
+        "zucchini"
+      ]
+    },
+    {
+      "token": "yellowish_leaf_margin",
+      "descriptor": "margin",
+      "diseaseCount": 1,
+      "cropCount": 1,
+      "diseaseIds": [
+        "grapevine_phomopsis_cane_leaf_spot"
+      ],
+      "cropIds": [
+        "grapevine"
+      ]
+    }
+  ],
+  "normalizationReviewPairs": [
+    {
+      "left": "berry_surface_scarring",
+      "right": "fruit_scarring",
+      "reason": "shared terminal descriptor: scarring"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "brown_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "brown_tan_papery_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "circular_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "dark_brown_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_centered_shoot_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "brown_black_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "brown_petiolar_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "cigar_shaped_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "corky_tuber_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "dark_sunken_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "black_charcoal_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "brown_petiolar_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "cigar_shaped_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "corky_tuber_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "dark_sunken_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_black_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "brown_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "brown_tan_papery_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "circular_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "dark_brown_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "brown_petiolar_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "cigar_shaped_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "corky_tuber_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "dark_sunken_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "brown_petiolar_spot",
+      "reason": "shared lexical parts: brown, petiolar"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "cigar_shaped_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "corky_tuber_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "dark_sunken_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "brown_tan_papery_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "circular_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "dark_brown_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_petiolar_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "circular_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "dark_brown_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "brown_tan_papery_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "bud_rot",
+      "right": "fruit_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "bud_rot",
+      "right": "no_secondary_soft_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "bud_rot",
+      "right": "soft_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "bud_rot",
+      "right": "stem_base_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "bud_rot",
+      "right": "stem_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "bud_rot",
+      "right": "tuber_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "corky_tuber_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "dark_sunken_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "cigar_shaped_leaf_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "dark_brown_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "circular_dark_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "coalescing_leaf_blight",
+      "right": "leaf_blight",
+      "reason": "shared terminal descriptor: blight"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "dark_sunken_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "corky_tuber_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "crown_browning",
+      "right": "leaf_browning",
+      "reason": "shared terminal descriptor: browning"
+    },
+    {
+      "left": "crown_browning",
+      "right": "vascular_browning",
+      "reason": "shared terminal descriptor: browning"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_brown_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_canker",
+      "right": "stem_canker",
+      "reason": "shared terminal descriptor: canker"
+    },
+    {
+      "left": "dark_canker",
+      "right": "twig_canker",
+      "reason": "shared terminal descriptor: canker"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "dark_shoot_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "gray_brown_target_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_shoot_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "darkened_root_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "dark_sunken_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "darkened_root_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "distorted_new_growth",
+      "right": "gray_fuzzy_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "distorted_new_growth",
+      "right": "pale_gray_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "distorted_new_growth",
+      "right": "underside_gray_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "distorted_new_growth",
+      "right": "white_cottony_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "distorted_new_growth",
+      "right": "white_powdery_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "distorted_new_growth",
+      "right": "white_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "gray_circular_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "fruit_rot",
+      "right": "no_secondary_soft_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "fruit_rot",
+      "right": "soft_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "fruit_rot",
+      "right": "stem_base_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "fruit_rot",
+      "right": "stem_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "fruit_rot",
+      "right": "tuber_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "grayish_brown_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_brown_target_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "gray_green_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_circular_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_fuzzy_growth",
+      "right": "pale_gray_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "gray_fuzzy_growth",
+      "right": "underside_gray_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "gray_fuzzy_growth",
+      "right": "white_cottony_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "gray_fuzzy_growth",
+      "right": "white_powdery_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "gray_fuzzy_growth",
+      "right": "white_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "gray_green_margin",
+      "reason": "shared lexical parts: gray, green"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "irregular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_leaf_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "gray_green_margin",
+      "right": "yellowish_leaf_margin",
+      "reason": "shared terminal descriptor: margin"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "grayish_brown_angular_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "internal_fruit_decay",
+      "right": "soft_watery_decay",
+      "reason": "shared terminal descriptor: decay"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "net_like_brown_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "irregular_water_soaked_lesion",
+      "right": "water_soaked_spot",
+      "reason": "shared lexical parts: water, soaked"
+    },
+    {
+      "left": "leaf_browning",
+      "right": "vascular_browning",
+      "reason": "shared terminal descriptor: browning"
+    },
+    {
+      "left": "leaf_collapse",
+      "right": "plant_base_collapse",
+      "reason": "shared terminal descriptor: collapse"
+    },
+    {
+      "left": "leaf_collapse",
+      "right": "seedling_collapse",
+      "reason": "shared terminal descriptor: collapse"
+    },
+    {
+      "left": "leaf_drop",
+      "right": "premature_fruit_drop",
+      "reason": "shared terminal descriptor: drop"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "light_yellow_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "leaf_tip_dieback",
+      "right": "shoot_dieback",
+      "reason": "shared terminal descriptor: dieback"
+    },
+    {
+      "left": "leaf_yellowing",
+      "right": "older_leaf_yellowing",
+      "reason": "shared terminal descriptor: yellowing"
+    },
+    {
+      "left": "leaf_yellowing",
+      "right": "stunting_yellowing",
+      "reason": "shared terminal descriptor: yellowing"
+    },
+    {
+      "left": "leaf_yellowing",
+      "right": "yellowing",
+      "reason": "shared terminal descriptor: yellowing"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "lower_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "light_yellow_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "older_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "lower_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "papery_cracked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "net_like_brown_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "no_secondary_soft_rot",
+      "right": "soft_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "no_secondary_soft_rot",
+      "right": "stem_base_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "no_secondary_soft_rot",
+      "right": "stem_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "no_secondary_soft_rot",
+      "right": "tuber_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "olive_black_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "older_leaf_yellowing",
+      "right": "stunting_yellowing",
+      "reason": "shared terminal descriptor: yellowing"
+    },
+    {
+      "left": "older_leaf_yellowing",
+      "right": "yellowing",
+      "reason": "shared terminal descriptor: yellowing"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "oval_petiolar_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "olive_black_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "one_sided_frond_wilting",
+      "right": "one_sided_wilting",
+      "reason": "shared terminal descriptor: wilting"
+    },
+    {
+      "left": "one_sided_frond_wilting",
+      "right": "sudden_wilting",
+      "reason": "shared terminal descriptor: wilting"
+    },
+    {
+      "left": "one_sided_frond_wilting",
+      "right": "wilting",
+      "reason": "shared terminal descriptor: wilting"
+    },
+    {
+      "left": "one_sided_wilting",
+      "right": "sudden_wilting",
+      "reason": "shared terminal descriptor: wilting"
+    },
+    {
+      "left": "one_sided_wilting",
+      "right": "wilting",
+      "reason": "shared terminal descriptor: wilting"
+    },
+    {
+      "left": "orange_pustules",
+      "right": "orange_underside_pustules",
+      "reason": "shared terminal descriptor: pustules"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "pod_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "oval_petiolar_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pale_gray_underside_growth",
+      "right": "underside_gray_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "pale_gray_underside_growth",
+      "right": "white_cottony_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "pale_gray_underside_growth",
+      "right": "white_powdery_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "pale_gray_underside_growth",
+      "right": "white_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "papery_cracked_lesion",
+      "right": "shoot_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "papery_cracked_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "papery_cracked_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "papery_cracked_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "papery_cracked_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "papery_cracked_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "plant_base_collapse",
+      "right": "seedling_collapse",
+      "reason": "shared terminal descriptor: collapse"
+    },
+    {
+      "left": "pod_spot",
+      "right": "purple_elliptical_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "pod_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "purple_red_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_elliptical_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "raised_corky_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "purple_red_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "reddish_brown_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "raised_corky_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "small_dark_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "reddish_brown_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "shoot_lesion",
+      "right": "small_circular_water_soaked_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "shoot_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "shoot_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "shoot_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "shoot_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "small_circular_water_soaked_lesion",
+      "right": "stem_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "small_circular_water_soaked_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "small_circular_water_soaked_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "small_circular_water_soaked_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "small_circular_water_soaked_lesion",
+      "right": "water_soaked_spot",
+      "reason": "shared lexical parts: water, soaked"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "small_white_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_dark_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_white_leaf_spot",
+      "right": "small_yellow_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_white_leaf_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_white_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_white_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_white_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_white_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_yellow_spot",
+      "right": "tiny_dark_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_yellow_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_yellow_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_yellow_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "small_yellow_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "soft_rot",
+      "right": "stem_base_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "soft_rot",
+      "right": "stem_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "soft_rot",
+      "right": "tuber_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "stem_base_rot",
+      "right": "stem_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "stem_base_rot",
+      "right": "tuber_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "stem_canker",
+      "right": "twig_canker",
+      "reason": "shared terminal descriptor: canker"
+    },
+    {
+      "left": "stem_lesion",
+      "right": "sunken_fruit_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "stem_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "stem_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "stem_rot",
+      "right": "tuber_rot",
+      "reason": "shared terminal descriptor: rot"
+    },
+    {
+      "left": "stunting_yellowing",
+      "right": "yellowing",
+      "reason": "shared terminal descriptor: yellowing"
+    },
+    {
+      "left": "sudden_wilting",
+      "right": "wilting",
+      "reason": "shared terminal descriptor: wilting"
+    },
+    {
+      "left": "sunken_fruit_lesion",
+      "right": "water_soaked_leaf_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "sunken_fruit_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "tiny_dark_leaf_spot",
+      "right": "upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "tiny_dark_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "tiny_dark_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "tiny_dark_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "underside_gray_growth",
+      "right": "white_cottony_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "underside_gray_growth",
+      "right": "white_powdery_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "underside_gray_growth",
+      "right": "white_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "upper_leaf_spot",
+      "right": "water_soaked_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "upper_leaf_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "upper_leaf_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "water_soaked_leaf_lesion",
+      "right": "water_soaked_necrotic_lesion",
+      "reason": "shared terminal descriptor: lesion"
+    },
+    {
+      "left": "water_soaked_leaf_lesion",
+      "right": "water_soaked_spot",
+      "reason": "shared lexical parts: water, soaked"
+    },
+    {
+      "left": "water_soaked_necrotic_lesion",
+      "right": "water_soaked_spot",
+      "reason": "shared lexical parts: water, soaked"
+    },
+    {
+      "left": "water_soaked_spot",
+      "right": "yellow_angular_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "water_soaked_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    },
+    {
+      "left": "white_cottony_growth",
+      "right": "white_powdery_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "white_cottony_growth",
+      "right": "white_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "white_powdery_growth",
+      "right": "white_underside_growth",
+      "reason": "shared terminal descriptor: growth"
+    },
+    {
+      "left": "yellow_angular_spot",
+      "right": "yellow_upper_leaf_spot",
+      "reason": "shared terminal descriptor: spot"
+    }
+  ]
+}

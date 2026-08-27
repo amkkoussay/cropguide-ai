@@ -1,0 +1,168 @@
+# Project TODO
+
+- [x] Define the observation data model for species, GPS coordinates, stored image references, API payloads, compact results, and status.
+- [x] Create and apply the database migration for field observations.
+- [x] Add authenticated server procedures for photo analysis, paginated history, observation detail, and map markers.
+- [x] Upload original leaf photos to S3 and persist only storage key and URL metadata in the database.
+- [x] Integrate Plant.id v3 server-side through a protected environment variable and record raw API responses.
+- [x] Build the mobile-first scan flow with camera/file-picker input and exact species options: olive, pomegranate, fig, almond, unknown.
+- [x] Capture and bind GPS coordinates to each scan before submission when the device grants permission.
+- [x] Build results UI with plant and health probability bars, raw JSON link, and an experimental only disclaimer.
+- [x] Build paginated observation history with species filtering and thumbnail previews.
+- [x] Build an observation map with GPS pins and scan-zone overview.
+- [x] Add an IndexedDB-backed offline queue that automatically retries queued scans when connectivity returns.
+- [x] Add responsive organic visual styling with warm cream, terracotta, ochre, sage, translucent forms, and accessible contrast.
+- [x] Add Vitest coverage for core observation parsing and validation.
+- [x] Run type checking, tests, browser-based flow checks, and mobile visual verification.
+- [x] Save a final project checkpoint after all completed work is accurately marked.
+- [x] Investigate and fix the reported issue preventing the published CropGuide app from opening.
+- [x] Verify the published URL and core scan page after the access fix.
+- [x] Remove the mandatory login wall and provide a public scan experience with privacy-preserving anonymous ownership.
+- [x] Add a clear gallery/file upload path that does not prompt for direct camera capture.
+- [x] Compress and resize selected photos in the browser before upload to improve mobile performance.
+- [x] Refine scan feedback, loading states, and offline notices for a faster, calmer field workflow.
+- [x] Establish a distinctive CropGuide concept identity across copy, navigation, and visual elements.
+- [x] Verify the public mobile flow, save an updated checkpoint, and confirm the published URL.
+- [x] Confirm that the live service worker replaces the prior login-gated cached shell.
+- [x] Run a live mobile end-to-end scan using a gallery image and confirm the result, history, and GPS map behavior on the published domain.
+- [x] Record final production QA evidence for the public mobile flow.
+- [x] Diagnose and fix the production scan request that is incorrectly falling back to the offline queue.
+- [x] Prevent the scan flow from hanging while GPS permission or location resolution is delayed or unavailable.
+- [x] Show an accurate completed health state in the archive when Plant.id returns no health candidates.
+- [x] Ensure the PWA service worker refreshes deployed application assets instead of serving an outdated interface from cache.
+- [x] Add complete Arabic and French interface translations with a persistent language selector and RTL support for Arabic.
+- [x] Expand CropGuide species support beyond olive, pomegranate, fig, and almond using a documented field-appropriate species list.
+- [x] Improve mobile image preparation with quality checks and safe enhancement before Plant.id analysis.
+- [x] Optimize scan-page performance, loading feedback, and image-upload resource use on phones.
+- [x] Test multilingual scanning, extended species records, and image preparation with automated and live browser checks.
+- [x] Correct the Arabic RTL archive layout so the complete field-history page remains within the mobile viewport.
+- [x] Run a complete Arabic or French gallery scan through the result and archive screens after release.
+- [x] Verify a saved observation for one newly supported species appears with the correct label in the history filter and map.
+- [x] Redact provider access tokens from stored raw analysis responses and verification output.
+- [x] Confirm the new citrus label renders in the browser archive and map for its visitor-scoped record.
+- [x] Repeat provider-response verification after redaction without printing raw provider response data.
+- [x] Fix direct French language selection so `?lang=fr` renders localized field-log content on first page load.
+- [x] Verify that the history species filter exposes all newly added species with their localized labels.
+- [x] Ensure existing PWA sessions adopt the multilingual release instead of retaining the prior cached interface.
+- [x] Run a published-domain Arabic or French browser E2E scan using the file picker, then confirm the result and archive in the same session.
+- [x] Confirm during the published browser E2E scan that the client-side image-preparation path runs before submission.
+- [x] Capture non-sensitive published-browser evidence of prepared image dimensions or byte size before submission, then repeat the Arabic file-picker scan.
+- [x] Show non-sensitive prepared-image dimensions and compressed size in the scan UI before analysis.
+- [x] Read the final scan-page implementation and capture explicit current-build evidence that prepared dimensions and compressed size render before analysis.
+- [x] Fix the prepared-image indicator so it renders both dimensions and compressed byte size on the published scan card.
+- [x] Repeat the published Arabic file-picker scan after the prepared-image metadata is visible, then confirm the result page and archive entry in the same session.
+- [x] Record concise QA evidence linking the same run: prepared dimensions and size before submit, analysis action, result page, and archive entry.
+- [x] Audit the current client-side preparation and Plant.id health-response paths using a real olive leaf-spot photo.
+- [x] Add conservative automatic photo normalization for ordinary field images without asking users to manually crop or edit them.
+- [x] Preserve diagnostic evidence while improving lighting, contrast, orientation, and compression for Plant.id analysis.
+- [x] Improve the no-health-result message so users understand that plant identification succeeded but disease assessment was inconclusive.
+- [x] Add regression tests and a published-browser QA run for the strengthened ordinary-photo analysis path.
+- [x] Ensure existing published PWA sessions adopt the ordinary-photo release instead of retaining a prior service-worker shell.
+- [x] Diagnose and recover the published-domain 500 error that appeared after the ordinary-photo PWA release.
+- [x] Prevent stale PWA shells from requesting removed lazy-loaded JavaScript chunks after a deployment.
+- [x] Serve the published service-worker script with a revalidation policy so an existing PWA can receive the v6 worker.
+- [x] Prove automatic upgrade from a genuinely stale published PWA session to the ordinary-photo release without manual worker registration.
+- [x] Serve the legacy published `/sw.js` path with verified revalidation headers, or replace it with a verified dynamic same-origin worker endpoint for future releases.
+- [x] Register the dynamic worker explicitly with root scope and verify it replaces the prior root-scoped controller without manual registration.
+- [x] Research practical second-opinion disease-assessment options for ordinary olive-leaf photos when Plant.id returns no health candidate.
+- [x] Select an evidence-based, privacy-conscious fallback that does not fabricate a plant disease diagnosis.
+- [x] Implement the selected olive-disease assistant path with explicit uncertainty and safe field next steps.
+- [x] Test the user-provided leaf-spot photo on the published app and record what the second opinion actually returns.
+- [x] Diagnose why the olive visual-triage result did not render for local scan #480001 despite Plant.id returning no health candidate.
+- [x] Harden the olive visual-triage response contract so a valid returned signal and confidence are not discarded when optional explanatory text is truncated.
+- [x] Diagnose why the olive visual-triage card is absent from published scan #540001 although it renders in local scan #510001.
+- [x] Normalize non-string or empty structured model content and record safe triage availability metadata for production diagnosis.
+- [x] Verify on the published app with the same olive photo that the second-opinion card now appears, and document the result plus the original root cause for published scan #540001.
+- [x] Inspect and document the persisted summary or logs to prove safe triage-availability metadata is stored without sensitive model or image content, then confirm regression coverage for that metadata.
+- [x] Add a regression assertion that constrained olive-triage parsing drops opaque model and image fields instead of passing them into the persisted summary.
+- [x] Superseded by the narrowed seven-crop release scope; carob remains distinct from tomato in the deferred expanded catalog.
+- [x] Replace the current TypeScript-oriented implementation with a JavaScript-only React, Vite, Node.js, HTML, CSS, Python, and SQLite architecture.
+- [x] Build a symptom-extraction contract that records observable image evidence separately from disease names.
+- [x] Create a crop-scoped SQLite disease knowledge base with symptoms, field-confirmation checks, and alternative diagnoses.
+- [x] Implement probability-ranked disease matching from Plant.id crop identification plus visual symptom evidence.
+- [x] Present management guidance in three layers: immediate non-chemical management, conditional general active-ingredient options, and Tunisian safety/legal checks.
+- [x] Preserve Arabic, French, and English output while clearly distinguishing a probable disease from a confirmed diagnosis.
+- [x] Validate the redesigned flow with the original olive photo, automated tests, SQLite verification, production build, and successful browser QA before publishing.
+- [x] Curate the first-release disease knowledge base for olive, almond, pomegranate, fig, grapevine, tomato, and potato before adding further crops.
+- [x] Restrict first-release result matching to plant diseases only, while keeping the UI explicit that non-disease causes are outside the current classifier scope.
+- [x] Deliver the primary scan result directly from the image without mandatory follow-up questions, limited to the crop identity and at most three ranked disease candidates with simple treatments.
+- [x] Add regression coverage proving the server-side disease matcher returns no more than three candidates.
+- [x] Run and document a successful browser-based olive-photo analysis on the rebuilt JavaScript app before publishing.
+- [x] Remove the field archive and GPS map from the rebuilt product so the public flow contains only image analysis and direct disease guidance.
+- [x] Make visual symptom extraction tolerate multipart or truncated structured-model output without exposing raw content or failing the scan.
+- [x] Allow the managed preview host in Vite so browser-based analysis QA can run after the JavaScript rebuild.
+- [x] Restore the production build output expected by the deployment pipeline so the public site can be republished successfully.
+- [x] Retry publication after the `dist/public` fix and document that the public CropGuide domain serves the rebuilt app.
+- [x] Create and integrate an ownable CropGuide visual mark that combines a leaf, diagnostic scan, and field-guidance motif.
+- [x] Apply the new brand mark and supporting visual system across the responsive Arabic, French, and English scan interface.
+- [x] Verify the branded mobile interface and published domain after the deployment recovery.
+- [x] Fix the broken CropGuide logo asset observed in the mobile preview and verify the visual mark renders in development and production.
+- [x] Publish the branded CropGuide build and document live mobile and desktop evidence that the logo or visual fallback renders correctly on the public domain.
+- [x] Resolve the production bundle discrepancy where the public header renders only the CSS fallback despite the generated logo asset being available, then republish and confirm a loaded `<img>` element.
+- [x] Capture and document a live mobile-viewport check on the public CropGuide domain showing the header logo renders correctly after deployment.
+- [x] Audit the repository and identify generated, duplicate, or project-unnecessary files that can be removed safely.
+- [x] Simplify internal folder and file names where this improves clarity, updating all code and script references.
+- [x] Replace the template README with a practical CropGuide README that explains the idea, architecture, setup, and project capture points in clear language.
+- [x] Run validation after cleanup and document the simplified project structure.
+- [x] Add a representative CropGuide interface screenshot to the README using a repository-friendly asset.
+- [x] Create and inspect a clean ZIP archive that contains the project source and required local data, without build, dependency, platform, or cache files.
+- [x] Define a verified expansion scope for disease records across the seven supported crops and document source-quality rules.
+- [x] Research and add evidence-backed disease records, visible symptom sets, field checks, and safe three-layer guidance for the supported crops.
+- [x] Extend SQLite validation and matching tests to cover the enlarged knowledge base without exceeding three ranked candidates.
+- [x] Add a scheduled source-link and data-integrity verification process, recording each run without altering clinical or agricultural advice automatically.
+- [x] Validate the expanded data set in the app and publish a concise coverage and source-verification summary.
+- [x] Define and document a 35–40 crop catalog with regionally relevant fruit, vegetable, field, and herb crops.
+- [x] Build an evidence-backed disease catalog for each crop, prioritizing common and high-impact diseases before less frequent records.
+- [x] Add detailed visible symptoms, field confirmation checks, safe three-layer management guidance, and sources to every disease record.
+- [x] Add coverage, source, duplicate, treatment-safety, and multilingual completeness validation for the expanded catalog.
+- [x] Add a monthly expanded review that separately records data checks, source-link status, and content-review findings without changing disease advice automatically.
+- [x] Add a review queue and status document so any proposed evidence change requires human approval before entering SQLite.
+- [x] Defer the 20–30 individually reviewed records per crop expansion target at the user's request; retain the verified 68-source baseline and resume only on explicit instruction.
+- [x] Define the acceptance criteria and sequence for individual, source-specific disease-record batches.
+- [x] Add a first source-specific orchard crop batch with traceable records and no duplicate candidate diagnoses.
+- [x] Add source-specific vegetable batches after orchard quality checks pass.
+- [x] Add source-specific cereal and legume batches after vegetable quality checks pass.
+- [x] Add automated SQLite completeness checks that fail when any disease record lacks visible symptoms or field-confirmation guidance, then publish the measured result.
+- [x] Prove and document the active monthly review schedule through a successful schedule-status result.
+- [x] Publish a coverage artifact summarizing symptoms and field-check completeness across all source-mapped records.
+- [x] Replace generic cereal and bean links in the field-crop batch with disease-level university sources, or return unsupported records to crop-group provenance.
+- [x] Regenerate coverage and source-review evidence after correcting field-crop source provenance.
+- [x] Add a disease-specific faba bean source batch using direct official pages for ascochyta, rust, and chocolate spot.
+- [x] Add a direct University of Delaware source-backed northern corn leaf blight profile for maize after full source validation.
+- [x] Add direct, available Field Crop Diseases Victoria sources for the existing wheat and barley powdery mildew records.
+- [x] Add direct, disease-level university sources for the matching powdery mildew, gray mold, anthracnose, and Phytophthora root/crown rot records in strawberry.
+- [x] Replace the transiently unavailable NC State lettuce-drop link with a direct, available university disease page.
+- [x] Add direct University of Wisconsin and Maryland sources for matching tomato early blight, late blight, Septoria leaf spot, and Fusarium wilt records.
+- [x] Add direct disease-level sources for matching potato early blight, late blight, black scurf, common scab, and Verticillium wilt records.
+- [x] Add direct cucumber downy-mildew and gummy-stem-blight sources after full validation; the matching gummy-stem-blight profile already existed, so no duplicate was created.
+- [x] Add direct university disease sources for matching pepper bacterial spot, Phytophthora blight, and anthracnose records.
+- [x] Add direct university disease sources for matching onion downy mildew, purple blotch, Stemphylium leaf blight, and Botrytis leaf blight records after full validation.
+- [x] Add direct university disease sources for matching carrot Alternaria leaf blight, Cercospora leaf blight, cavity spot, and Sclerotinia rot records after full validation.
+- [x] Add direct university disease sources for matching grape powdery mildew, downy mildew, Botrytis bunch rot, and Phomopsis cane and leaf spot records after full validation.
+- [x] Add direct university disease sources for matching celery early blight, late blight (Septoria leaf blight), and pink rot records after full validation.
+- [x] Add direct university disease sources for matching parsley Septoria leaf spot and bacterial leaf spot records after full validation.
+- [x] Add direct university disease sources for matching spinach downy mildew, Fusarium wilt, white rust, and anthracnose records after full validation.
+- [x] Add direct university disease sources for matching garlic white rot, rust, and Botrytis leaf blight records after full validation.
+- [x] Audit the current symptom tokens, multilingual labels, aliases, and disease-to-feature coverage before normalization.
+- [x] Define a versioned visual-symptom ontology with canonical EN/AR/FR labels, aliases, observability metadata, and machine-readable feature families.
+- [x] Normalize disease symptom references and encode traceable differential-diagnosis rules without promoting image-only results to confirmed diagnoses.
+- [x] Assess North-African relevance as transparent contextual metadata, separating regional plausibility from disease confirmation.
+- [x] Revalidate all source URLs and export a documented AI-ready dataset and knowledge graph with provenance.
+- [x] Add automated integrity tests for ontology consistency, differential rules, geography metadata, and dataset/graph exports.
+- [x] Expose and verify explicit symptom aliases and machine-readable feature families, including complete legacy-token coverage tests.
+- [x] Verify the final dataset, graph, and manifest artifacts and prove the current server runtime is free of the historical missing-module error.
+- [x] Audit and remove generated, duplicate, cache, log, and temporary files from the deliverable without removing required source or knowledge data.
+- [x] Reorganize project documentation and rewrite README in clear, simple language with architecture, setup, commands, and project limits.
+- [x] Produce a documented screenshot that shows a safe real analysis result from a diseased-leaf image, not only the landing scan screen.
+- [x] Build, inspect, and deliver a clean ZIP package that excludes dependencies, builds, logs, caches, secrets, and transient test artifacts.
+- [x] Audit the supplied project evaluation, implement each verified corrective action, and add regression coverage where applicable.
+- [x] Replace first-suggestion crop selection with normalized supported-crop ranking, probability thresholds, ambiguity margins, and safe abstention.
+- [x] Replace probability-like disease confidence with a bounded evidence-match score using visual-confidence, feature-specificity, support, contradiction, crop certainty, and evidence-count safeguards.
+- [x] Apply differential rules to ranking through evidence gates, score penalties, and safe ceilings when distinguishing evidence is absent or laboratory confirmation is needed.
+- [x] Preserve compositional visual evidence such as lesion shape, pattern, color, halo, tissue, surface, and progression in the ontology and AI export.
+- [x] Make UI and documentation precise about candidate versus record-specific profiles, source availability versus scientific verification, external image processors, and triage rather than diagnosis.
+- [x] Add regression tests for crop ambiguity, evidence ranking, low-evidence ceilings, conflicting features, and differential-rule behavior.
+- [x] Re-audit the project after the latest evaluation fixes and remove only transient, generated, duplicate, or delivery-unnecessary files.
+- [x] Refresh the README in simple language so it explains the current architecture, evidence-match limits, setup, and practical use.
+- [x] Capture and document a current result-screen screenshot from a safe real diseased-leaf analysis after the evaluation fixes.
+- [x] Create and inspect a refreshed clean ZIP that includes the required source, data, documentation, and current screenshot but excludes dependencies, caches, logs, builds, and secrets.
