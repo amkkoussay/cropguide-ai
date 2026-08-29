@@ -1,6 +1,6 @@
 # CropGuide AI
 
-## Current release: 0.4
+## Current release: 0.5
 
 CropGuide AI is a web app for a first check of plant health from a photo.
 
@@ -14,13 +14,14 @@ The app checks the crop, reads visible signs, and shows possible diseases. It is
 | 0.2 | Repository root | Added seven crops, crop checks, visible sign checks, and three languages. |
 | 0.3 | `0.3/` | Added more crop data, symptom groups, source checks, and AI data files. |
 | 0.4 | `0.4/` | Improved symptom details, result limits, source checks, and privacy notes. |
+| 0.5 | `0.5/` | Improved result ranking, evidence ranges, and added validation notes. |
 
 ## Run the current release
 
 Open the release folder first:
 
 ```bash
-cd 0.4
+cd 0.5
 pnpm install
 pnpm dev
 ```

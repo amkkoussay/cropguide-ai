@@ -1,0 +1,42 @@
+import { describe, expect, it } from "vitest";
+import { cropFromPlantCandidate, selectSupportedCrop } from "./plant.js";
+
+describe("Plant.id crop aliases", () => {
+  it.each([
+    ["Phoenix dactylifera", "date_palm"],
+    ["Citrus limon", "citrus"],
+    ["Cucumis sativus", "cucumber"],
+    ["Cicer arietinum", "chickpea"],
+    ["Zea mays", "maize"],
+    ["Fragaria × ananassa", "strawberry"],
+  ])("maps %s to the expanded crop catalog", (name, cropId) => {
+    expect(cropFromPlantCandidate({ name, commonNames: [] })).toBe(cropId);
+  });
+
+  it("does not treat an unrelated plant as a supported crop", () => {
+    expect(cropFromPlantCandidate({ name: "Lavandula angustifolia", commonNames: ["lavender"] })).toBeNull();
+  });
+
+  it("resolves the highest supported crop rather than trusting suggestion order", () => {
+    const selection = selectSupportedCrop([
+      { name: "Citrus limon", probability: 0.66, details: { common_names: ["lemon"] } },
+      { name: "Olea europaea", probability: 0.88, details: { common_names: ["olive"] } },
+    ]);
+    expect(selection).toMatchObject({ status: "resolved", cropId: "olive", cropConfidence: 0.88 });
+  });
+
+  it("abstains when supported crop suggestions are too close", () => {
+    const selection = selectSupportedCrop([
+      { name: "Citrus limon", probability: 0.78, details: { common_names: ["lemon"] } },
+      { name: "Olea europaea", probability: 0.72, details: { common_names: ["olive"] } },
+    ]);
+    expect(selection).toMatchObject({ status: "ambiguous", cropId: null, cropConfidence: 0.78 });
+  });
+
+  it("abstains when the best supported crop is below the evidence threshold", () => {
+    const selection = selectSupportedCrop([
+      { name: "Olea europaea", probability: 0.41, details: { common_names: ["olive"] } },
+    ]);
+    expect(selection).toMatchObject({ status: "low_confidence", cropId: null, cropConfidence: 0.41 });
+  });
+});
