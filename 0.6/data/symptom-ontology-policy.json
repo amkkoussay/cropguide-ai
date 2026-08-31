@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "Visual observations in plant images; not a disease-confirmation ontology.",
+  "aliasPolicy": "Only exact or near-exact expressions that preserve the same visible meaning may share a canonical feature. Differences in organ, surface, colour, size, distribution, or progression remain distinct attributes.",
+  "features": [
+    {"id":"vf.foliage.spot","labels":{"en":"Foliar spot or lesion","ar":"بقعة أو آفة ورقية","fr":"Tache ou lésion foliaire"},"extractability":"primary"},
+    {"id":"vf.foliage.water-soaked","labels":{"en":"Water-soaked foliar lesion","ar":"آفة ورقية مائية المظهر","fr":"Lésion foliaire d'aspect aqueux"},"extractability":"primary"},
+    {"id":"vf.foliage.growth.powdery","labels":{"en":"White powdery foliar growth","ar":"نمو أبيض دقيقي على الورقة","fr":"Feutrage blanc poudreux sur feuille"},"extractability":"primary"},
+    {"id":"vf.foliage.growth.underside","labels":{"en":"Growth on the lower leaf surface","ar":"نمو على السطح السفلي للورقة","fr":"Croissance sur la face inférieure de la feuille"},"extractability":"conditional"},
+    {"id":"vf.foliage.growth.fuzzy","labels":{"en":"Fuzzy foliar growth","ar":"نمو زغبي على الورقة","fr":"Croissance duveteuse sur feuille"},"extractability":"primary"},
+    {"id":"vf.foliage.necrosis","labels":{"en":"Foliar blight or necrosis","ar":"لفحة أو نخر ورقي","fr":"Brûlure ou nécrose foliaire"},"extractability":"primary"},
+    {"id":"vf.foliage.yellowing","labels":{"en":"Foliar yellowing","ar":"اصفرار ورقي","fr":"Jaunissement foliaire"},"extractability":"primary"},
+    {"id":"vf.foliage.deformation","labels":{"en":"Leaf curl or distortion","ar":"تجعد أو تشوه ورقي","fr":"Enroulement ou déformation foliaire"},"extractability":"primary"},
+    {"id":"vf.foliage.loss","labels":{"en":"Leaf drop or collapse","ar":"تساقط أو انهيار ورقي","fr":"Chute ou affaissement foliaire"},"extractability":"primary"},
+    {"id":"vf.fruit.lesion","labels":{"en":"Fruit lesion","ar":"آفة على الثمرة","fr":"Lésion sur fruit"},"extractability":"primary"},
+    {"id":"vf.fruit.rot","labels":{"en":"Fruit rot or decay","ar":"تعفن أو تلف الثمرة","fr":"Pourriture ou altération du fruit"},"extractability":"primary"},
+    {"id":"vf.fruit.scarring","labels":{"en":"Fruit scarring or mummification","ar":"تندب أو تحنط الثمرة","fr":"Cicatrisation ou momification du fruit"},"extractability":"primary"},
+    {"id":"vf.stem.canker","labels":{"en":"Stem, petiole, or twig lesion/canker","ar":"آفة أو تقرح على الساق أو العنق أو الغصن","fr":"Lésion ou chancre de tige, pétiole ou rameau"},"extractability":"primary"},
+    {"id":"vf.stem.rot","labels":{"en":"Stem-base or stem rot","ar":"تعفن قاعدة الساق أو الساق","fr":"Pourriture de la base ou de la tige"},"extractability":"conditional"},
+    {"id":"vf.shoot.decline","labels":{"en":"Shoot decline or dieback","ar":"تدهور أو موت الأفرع","fr":"Dépérissement des pousses"},"extractability":"primary"},
+    {"id":"vf.wilt.general","labels":{"en":"General wilting","ar":"ذبول عام","fr":"Flétrissement général"},"extractability":"conditional"},
+    {"id":"vf.wilt.unilateral","labels":{"en":"One-sided wilting","ar":"ذبول أحادي الجانب","fr":"Flétrissement unilatéral"},"extractability":"conditional"},
+    {"id":"vf.vascular.discoloration","labels":{"en":"Vascular discoloration","ar":"تلون وعائي داخلي","fr":"Coloration vasculaire interne"},"extractability":"field_only"},
+    {"id":"vf.root.crown","labels":{"en":"Root or crown disorder","ar":"اضطراب الجذر أو التاج","fr":"Atteinte des racines ou du collet"},"extractability":"field_only"},
+    {"id":"vf.root.gall","labels":{"en":"Root gall or cavity","ar":"عقدة أو تجويف جذري","fr":"Galle ou cavité racinaire"},"extractability":"field_only"},
+    {"id":"vf.seedling.condition","labels":{"en":"Seedling establishment disorder","ar":"اضطراب إنبات أو بادرات","fr":"Trouble d'installation des plantules"},"extractability":"conditional"},
+    {"id":"vf.pustule","labels":{"en":"Rust pustule or stripe","ar":"بثرة أو شريط صدئي","fr":"Pustule ou strie de rouille"},"extractability":"primary"},
+    {"id":"vf.exudate","labels":{"en":"Plant exudate or ooze","ar":"إفراز أو رشح نباتي","fr":"Exsudat végétal"},"extractability":"conditional"},
+    {"id":"vf.mosaic","labels":{"en":"Mosaic or mottling","ar":"موزاييك أو تبرقش","fr":"Mosaïque ou marbrure"},"extractability":"primary"},
+    {"id":"vf.stunting","labels":{"en":"Stunting or general decline","ar":"تقزم أو تراجع عام","fr":"Rabougrissement ou dépérissement général"},"extractability":"conditional"},
+    {"id":"vf.cereal.reproductive","labels":{"en":"Cereal head or grain symptom","ar":"عرض على السنبلة أو الحبة","fr":"Symptôme de l'épi ou du grain"},"extractability":"conditional"},
+    {"id":"vf.palm.frond","labels":{"en":"Palm frond symptom","ar":"عرض على سعفة النخيل","fr":"Symptôme de palme"},"extractability":"primary"},
+    {"id":"vf.tuber.surface","labels":{"en":"Tuber surface lesion","ar":"آفة سطح الدرنة","fr":"Lésion de surface du tubercule"},"extractability":"primary"},
+    {"id":"vf.fungal.structure","labels":{"en":"Visible fungal structure","ar":"بنية فطرية مرئية","fr":"Structure fongique visible"},"extractability":"conditional"},
+    {"id":"vf.general.observable","labels":{"en":"Other visible plant symptom","ar":"عرض نباتي مرئي آخر","fr":"Autre symptôme végétal visible"},"extractability":"conditional"}
+  ],
+  "exactAliases": {
+    "gumming": "gummy_exudate",
+    "white_mycelium": "white_cottony_growth",
+    "brown_petiolar_spot": "brown_petiolar_lesion"
+  }
+}
