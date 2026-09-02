@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "frequency": "monthly",
+  "timezone": "Africa/Tunis",
+  "autoApplyDiseaseChanges": false,
+  "humanApprovalRequired": true,
+  "sourceRegistry": "data/source-registry.md",
+  "reviewQueue": "data/review-queue.md",
+  "outputDirectory": "data/review-runs",
+  "checks": [
+    "database completeness and multilingual fields",
+    "duplicate crop-and-disease records",
+    "source link availability",
+    "source scope and review status",
+    "new or changed evidence held for approval"
+  ]
+}
