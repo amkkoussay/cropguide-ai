@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "regionId": "north-africa",
+  "regionName": {"en":"North Africa","ar":"شمال أفريقيا","fr":"Afrique du Nord"},
+  "countries": [
+    {"code":"DZ","name":{"en":"Algeria","ar":"الجزائر","fr":"Algérie"},"reportingUrl":"https://gd.eppo.int/country/DZ/reporting"},
+    {"code":"EG","name":{"en":"Egypt","ar":"مصر","fr":"Égypte"},"reportingUrl":"https://gd.eppo.int/country/EG/reporting"},
+    {"code":"LY","name":{"en":"Libya","ar":"ليبيا","fr":"Libye"},"reportingUrl":"https://gd.eppo.int/"},
+    {"code":"MA","name":{"en":"Morocco","ar":"المغرب","fr":"Maroc"},"reportingUrl":"https://gd.eppo.int/country/MA/reporting"},
+    {"code":"TN","name":{"en":"Tunisia","ar":"تونس","fr":"Tunisie"},"reportingUrl":"https://gd.eppo.int/country/TN/reporting"}
+  ],
+  "relevanceModel": {
+    "defaultStatus": "contextual_only",
+    "meaning": "The region is an operational context for scouting, language, and later verification. It is not evidence that a listed disease is present in a country, nor a disease-ranking multiplier.",
+    "diseasePresenceStatus": "not_assessed_per_record",
+    "rankingEffect": "none",
+    "confirmationRequirement": "Any country-level presence assertion requires a separately traced organism-and-country source, reviewed by a human before release.",
+    "negativeEvidencePolicy": "Absence must only be recorded from an explicit, dated official absence statement; a missing reporting article is not evidence of absence."
+  },
+  "governanceSources": [
+    {"id":"eppo-global-database","title":"EPPO Global Database","url":"https://gd.eppo.int/","role":"Species information, geographical distribution, host plants, categorization, and reporting-service discovery."},
+    {"id":"neppo-ipcc","title":"Near East and North Africa Plant Protection Organization","url":"https://www.ippc.int/en/ippc-community/regional-plant-protection-organizations/neppo/","role":"Regional cooperation, pest information exchange, surveillance, and phytosanitary coordination."},
+    {"id":"fao-nena-strategy","title":"FAO Near East and North Africa Plant Health Strategy","url":"https://www.fao.org/neareast/multimedia/videos/details/fao-near-east-and-north-africa-plant-health-strategy/en","role":"Regional early-warning and plant-health strategy context."}
+  ]
+}

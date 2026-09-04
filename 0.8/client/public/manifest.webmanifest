@@ -1,0 +1,9 @@
+{
+  "name": "CropGuide AI Field Assistant",
+  "short_name": "CropGuide",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f2e7",
+  "theme_color": "#4e694f",
+  "description": "Mobile-first orchard leaf scanning and field observation log."
+}

@@ -1,0 +1,35 @@
+{
+  "name": "cropguide",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node --watch server/index.js",
+    "build": "vite build && esbuild server/index.js --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "start": "NODE_ENV=production node dist/index.js",
+    "check": "node --check server/index.js && node --check server/database.js && node --check server/matcher.js && node --check server/symptomOntology.js && node --check server/plant.js && node --check server/vision.js && node scripts/check-data.mjs && node scripts/check-ai-exports.mjs && node scripts/check-tomato-retrieval.mjs",
+    "format": "prettier --write client server scripts",
+    "test": "vitest run",
+    "data:build": "python3 scripts/build-data.py && node scripts/build-symptom-ontology.mjs && node scripts/export-ai-knowledge.mjs && node scripts/check-ai-exports.mjs",
+    "data:build-ontology": "node scripts/build-symptom-ontology.mjs",
+    "data:check": "node scripts/check-data.mjs",
+    "data:audit-ontology": "node scripts/audit-symptom-ontology.mjs",
+    "data:export-ai": "node scripts/export-ai-knowledge.mjs && node scripts/check-ai-exports.mjs",
+    "data:check-ai": "node scripts/check-ai-exports.mjs",
+    "data:report": "node scripts/report-coverage.mjs",
+    "review:sources": "node scripts/review-sources.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.7",
+    "vitest": "^2.1.4"
+  }
+}
