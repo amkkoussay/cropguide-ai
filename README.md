@@ -1,16 +1,17 @@
 # CropGuide AI
 
-## Version 0.7
+## Version 0.8
 
-This release adds benchmarking tools and better image checks.
+This release clarifies result limits and improves how general signs are grouped.
 
 ## What is new
 
-- Added a benchmark protocol for performance testing.
-- Added a CSV template for recording benchmark results.
-- Added server-side image size and structure checks.
-- Added short retry logic for vision service issues.
-- Improved how similar general signs are grouped.
+- Added clearer limits for internal software scores.
+- Improved grouping for common signs like brown spots and yellow halos.
+- Added logic to stop ranking if only general signs are found without distinct features.
+- Improved Plant.id crop selection by checking the top 10 suggestions.
+- Added notes about request limits and data exports.
+- Clarified that benchmark templates are for future use.
 
 ## Run it
 
@@ -30,7 +31,7 @@ pnpm start
 
 ## Important limit
 
-The app shows a range for visual evidence. This is not a diagnosis or a disease chance. Do not use it as treatment advice. Ask an agriculture expert before making treatment decisions.
+The app shows a range for visual evidence. Numerical scores are internal software limits, not a diagnosis. Do not use it as treatment advice. Ask an agriculture expert before making treatment decisions.
 
 ## License
 

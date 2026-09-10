@@ -25,6 +25,7 @@ export function describeObservation(token) {
     canonicalFeatureId: observation.canonicalFeatureId,
     canonicalToken: observation.canonicalToken,
     attributes: observation.attributes,
+    evidenceVector: observation.evidenceVector,
     extractability: featureById.get(observation.canonicalFeatureId)?.extractability || "field_only",
   };
 }

@@ -51,4 +51,14 @@ describe("Plant.id crop aliases", () => {
   it("does not map a short alias inside an unrelated word", () => {
     expect(cropFromPlantCandidate({ name: "Prunus persica", commonNames: ["peach"] })).not.toBe("pea");
   });
+
+  it("considers a supported crop that appears after the first five Plant.id suggestions", () => {
+    const suggestions = Array.from({ length: 6 }, (_, index) => ({
+      name: `Unsupported plant ${index + 1}`,
+      probability: 0.5 - (index * 0.02),
+      details: { common_names: [] },
+    }));
+    suggestions[5] = { name: "Olea europaea", probability: 0.7, details: { common_names: ["olive"] } };
+    expect(selectSupportedCrop(suggestions)).toMatchObject({ status: "resolved", cropId: "olive" });
+  });
 });

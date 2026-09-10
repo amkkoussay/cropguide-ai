@@ -87,13 +87,19 @@ app.post("/api/analyze", async (req, res) => {
       symptomConfidence: observation.symptomConfidence,
       cropConfidence: plant.cropConfidence,
     });
+    const leadingCandidate = diseases[0];
+    const canReturnCandidates = Boolean(leadingCandidate?.evidence?.retrievalSufficient);
     return res.json({
-      status: diseases[0]?.evidenceScore >= 60 ? "matched" : "inconclusive",
+      status: !canReturnCandidates ? "inconclusive"
+        : leadingCandidate.decision === "field_confirmation_required" ? "field_confirmation_required" : "matched",
       crop,
       detectedPlant: plant.candidate,
       cropSelection: { support: plant.cropConfidence, margin: plant.margin },
       observation,
-      diseases: diseases[0]?.evidenceScore >= 60 ? diseases : [],
+      diseases: canReturnCandidates ? diseases : [],
+      message: !canReturnCandidates
+        ? "The visible observations are not sufficiently distinct to return disease candidates safely."
+        : undefined,
       privacy: "The image is sent to Plant.id and the configured visual-analysis provider for this request. CropGuide does not store the image; external providers process it under their own policies.",
     });
   } catch (error) {

@@ -148,4 +148,43 @@ describe("disease matcher", () => {
 
     expect(candidate.evidence.diagnosticDiscrimination).toBe(0);
   });
+
+  it("caps a candidate supported only by two generic observations", () => {
+    const earlyBlight = {
+      ...oliveDisease,
+      id: "tomato_early_blight",
+      symptoms_json: JSON.stringify(["dark_brown_spot", "concentric_ring", "yellow_halo", "older_leaf_spot", "sunken_fruit_lesion"]),
+    };
+    const alternatives = [
+      { ...oliveDisease, id: "tomato_bacterial_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "water_soaked_lesion"]) },
+      { ...oliveDisease, id: "tomato_septoria_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "small_leaf_spot"]) },
+      { ...oliveDisease, id: "tomato_target_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "target_spot"]) },
+    ];
+    const candidates = rankDiseaseRecords([earlyBlight, ...alternatives], {
+      symptoms: ["dark_brown_spot", "yellow_halo"], symptomConfidence: 0.98, cropConfidence: 0.98,
+    });
+    const candidate = candidates.find(result => result.id === "tomato_early_blight");
+
+    expect(candidate).toEqual(expect.objectContaining({ id: "tomato_early_blight" }));
+    expect(candidate.evidence).toMatchObject({ genericOnlyEvidence: true, retrievalSufficient: false });
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(55);
+  });
+
+  it("retains a concentric-ring observation as a bounded detailed evidence unit", () => {
+    const earlyBlight = {
+      ...oliveDisease,
+      id: "tomato_early_blight",
+      symptoms_json: JSON.stringify(["dark_brown_spot", "concentric_ring", "yellow_halo"]),
+    };
+    const alternatives = [
+      { ...oliveDisease, id: "tomato_bacterial_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "water_soaked_lesion"]) },
+      { ...oliveDisease, id: "tomato_septoria_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "small_leaf_spot"]) },
+    ];
+    const [candidate] = rankDiseaseRecords([earlyBlight, ...alternatives], {
+      symptoms: ["dark_brown_spot", "concentric_ring"], symptomConfidence: 0.9, cropConfidence: 0.9,
+    });
+
+    expect(candidate.matchedSymptoms).toEqual(expect.arrayContaining(["dark_brown_spot", "concentric_ring"]));
+    expect(candidate.evidence).toMatchObject({ matchCount: 2, detailedEvidenceUnitCount: 1 });
+  });
 });

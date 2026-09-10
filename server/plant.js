@@ -32,7 +32,7 @@ const cropAliases = {
 export const CROP_SELECTION_POLICY = Object.freeze({
   minimumSupportedProbability: 0.55,
   minimumMargin: 0.12,
-  maxSuggestionsConsidered: 5,
+  maxSuggestionsConsidered: 10,
 });
 
 function clampProbability(value) {
