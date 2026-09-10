@@ -5,13 +5,13 @@ const copy = {
     dir: "rtl", language: "العربية", eyebrow: "دليل أمراض النبات", title: "اسم المرض المحتمل، لا مجرد وصف البقعة.",
     subtitle: "ارفع صورة عادية للورقة أو الثمرة. نحدد المحصول، نقرأ العلامات المرئية، ثم نطابقها مع قاعدة أمراض موثقة.",
     supported: "تشمل القاعدة الآن 40 محصولاً، مع توسيع منظم للأمراض الشائعة.",
-    privacy: "لا نحفظ صورتك أو ننشئ سجلاً ميدانياً.", upload: "اختر صورة نبات", replace: "استبدل الصورة",
+    privacy: "لا تُحفظ صورتك في CropGuide، لكنها تُرسل مؤقتاً إلى Plant.id وخدمة التحليل البصري لإتمام الفحص وفق سياساتهما.", upload: "اختر صورة نبات", replace: "استبدل الصورة",
     analyze: "حلّل الصورة", preparing: "نجهّز الصورة…", analyzing: "نحلل الصورة…", accepted: "JPEG أو PNG أو WebP — حتى 7 MB",
     direct: "نتيجة مباشرة من الصورة", result: "نتيجة التحليل", detectedCrop: "المحصول المحدد", candidates: "الأمراض المحتملة",
-    likely: "احتمال مطابقة", immediate: "إدارة فورية", conditional: "علاج عام مشروط", safety: "سلامة قبل أي مبيد",
-    source: "المصدر العلمي", sourceSpecific: "مرجع خاص بهذا السجل", sourceGroup: "مرجع لمجموعة المحصول — قيد تدقيق خاص بالسجل", disclaimer: "هذه نتيجة احتمالية من صورة واحدة وليست تشخيصاً مخبرياً. يطابق التطبيق أمراض النبات فقط ولا يقيّم الآفات أو نقص العناصر. لا تستخدم دواءً أو مبيداً أو جرعة من التطبيق وحده.",
+    likely: "درجة توافق الأدلة", immediate: "إدارة فورية", conditional: "علاج عام مشروط", safety: "سلامة قبل أي مبيد",
+    source: "المصدر", sourceSpecific: "مرجع خاص بهذا السجل", sourceGroup: "مرجع لمجموعة المحصول، وليس مرجعاً خاصاً بهذا السجل", disclaimer: "هذه نتيجة فرز أولي من صورة واحدة وليست احتمالاً إحصائياً أو تشخيصاً مخبرياً. التوفر الفني للرابط لا يساوي تحققاً علمياً مستقلاً للمحتوى. يطابق التطبيق أمراض النبات فقط، لا الآفات أو نقص العناصر. لا تستخدم دواءً أو مبيداً أو جرعة من التطبيق وحده.",
     none: "لم نجد تطابقاً كافياً مع الأمراض المدعومة لهذه الصورة.", noneLead: "الصورة قد لا تُظهر علامة مميزة كفاية. جرّب ورقة أو ثمرة مصابة بوضوح أكبر.",
-    unsupported: "المحصول غير مدعوم حالياً", unsupportedLead: "يدعم CropGuide حالياً 40 محصولاً. حاول صورة أوضح للمحصول نفسه.",
+    unsupported: "المحصول غير مدعوم حالياً", unsupportedLead: "يدعم CropGuide حالياً 40 محصولاً. حاول صورة أوضح للمحصول نفسه.", cropUncertain: "تعذر تحديد المحصول بأمان", cropUncertainLead: "اقتراحات المحصول متقاربة أو ضعيفة، لذلك لم نرتب الأمراض. التقط صورة أوضح للنبات أو للورقة مع جزء من الساق.",
     retry: "جرّب صورة أخرى", error: "تعذر إكمال التحليل", cropConfidence: "ثقة تحديد المحصول", stepCrop: "تحديد المحصول", stepSymptoms: "قراءة العلامات", stepMatch: "مطابقة المرض",
     quality: "جودة الصورة", adequate: "مناسبة", limited: "محدودة", evidence: "الدليل المرئي",
   },
@@ -19,13 +19,13 @@ const copy = {
     dir: "ltr", language: "Français", eyebrow: "Guide des maladies végétales", title: "Un nom de maladie probable, pas seulement une description de tache.",
     subtitle: "Importez une photo ordinaire d’une feuille ou d’un fruit. Nous identifions la culture, lisons les signes visibles et les rapprochons d’une base documentée.",
     supported: "La base couvre désormais 40 cultures et s’élargit progressivement pour les maladies fréquentes.",
-    privacy: "Votre image n’est ni enregistrée ni ajoutée à un historique.", upload: "Choisir une photo", replace: "Remplacer la photo",
+    privacy: "Votre image n’est pas stockée par CropGuide, mais elle est envoyée temporairement à Plant.id et au service d’analyse visuelle selon leurs politiques.", upload: "Choisir une photo", replace: "Remplacer la photo",
     analyze: "Analyser la photo", preparing: "Préparation de l’image…", analyzing: "Analyse en cours…", accepted: "JPEG, PNG ou WebP — jusqu’à 7 Mo",
     direct: "Résultat direct depuis l’image", result: "Résultat de l’analyse", detectedCrop: "Culture identifiée", candidates: "Maladies possibles",
-    likely: "Correspondance probable", immediate: "Gestion immédiate", conditional: "Traitement général conditionnel", safety: "Sécurité avant tout pesticide",
-    source: "Source scientifique", sourceSpecific: "Référence propre à cette fiche", sourceGroup: "Référence du groupe de cultures — revue spécifique en attente", disclaimer: "Ceci est une hypothèse issue d’une seule image, et non un diagnostic de laboratoire. L’application rapproche uniquement des maladies végétales, pas des ravageurs ni des carences. Ne choisissez ni pesticide ni dose à partir de cette application seule.",
+    likely: "Score de concordance des éléments", immediate: "Gestion immédiate", conditional: "Traitement général conditionnel", safety: "Sécurité avant tout pesticide",
+    source: "Source", sourceSpecific: "Référence propre à cette fiche", sourceGroup: "Référence du groupe de cultures, non propre à cette fiche", disclaimer: "Ceci est un tri initial depuis une image, et non une probabilité statistique ou un diagnostic de laboratoire. La disponibilité technique d’un lien ne prouve pas son examen scientifique indépendant. L’application rapproche les maladies végétales, pas les ravageurs ni les carences. Ne choisissez ni pesticide ni dose à partir de cette application seule.",
     none: "Aucune correspondance suffisante avec les maladies prises en charge.", noneLead: "La photo ne montre peut-être pas un signe suffisamment distinctif. Essayez une feuille ou un fruit plus clairement atteint.",
-    unsupported: "Culture non prise en charge", unsupportedLead: "CropGuide prend actuellement en charge 40 cultures. Essayez une image plus nette de la même culture.",
+    unsupported: "Culture non prise en charge", unsupportedLead: "CropGuide prend actuellement en charge 40 cultures. Essayez une image plus nette de la même culture.", cropUncertain: "Culture non identifiée avec assez de certitude", cropUncertainLead: "Les propositions de culture sont trop proches ou faibles; les maladies ne sont donc pas classées. Prenez une photo plus nette de la plante ou de la feuille avec une partie de la tige.",
     retry: "Essayer une autre photo", error: "Impossible de terminer l’analyse", cropConfidence: "Confiance d’identification", stepCrop: "Culture", stepSymptoms: "Signes visibles", stepMatch: "Correspondance",
     quality: "Qualité de l’image", adequate: "Adéquate", limited: "Limitée", evidence: "Élément visible",
   },
@@ -33,13 +33,13 @@ const copy = {
     dir: "ltr", language: "English", eyebrow: "Plant disease guide", title: "A probable disease name—not only a spot description.",
     subtitle: "Upload an ordinary leaf or fruit photo. We identify the crop, read visible signs, and compare them with a documented disease base.",
     supported: "The base now covers 40 crops and is expanding carefully around common diseases.",
-    privacy: "Your image is not saved or added to a field history.", upload: "Choose a plant photo", replace: "Replace photo",
+    privacy: "CropGuide does not store your image, but it is sent temporarily to Plant.id and the visual-analysis service under their policies.", upload: "Choose a plant photo", replace: "Replace photo",
     analyze: "Analyse photo", preparing: "Preparing image…", analyzing: "Analysing image…", accepted: "JPEG, PNG, or WebP — up to 7 MB",
     direct: "Direct result from the image", result: "Analysis result", detectedCrop: "Identified crop", candidates: "Possible diseases",
-    likely: "Match likelihood", immediate: "Immediate management", conditional: "Conditional general treatment", safety: "Safety before any pesticide",
-    source: "Scientific source", sourceSpecific: "Record-specific reference", sourceGroup: "Crop-group reference — record-specific review pending", disclaimer: "This is a probability from one image, not a laboratory diagnosis. The app matches plant diseases only, not pests or nutrient disorders. Do not select a pesticide or dose from this app alone.",
+    likely: "Evidence-match score", immediate: "Immediate management", conditional: "Conditional general treatment", safety: "Safety before any pesticide",
+    source: "Source", sourceSpecific: "Record-specific reference", sourceGroup: "Crop-group reference, not record-specific", disclaimer: "This is candidate triage from one image, not a statistical probability or laboratory diagnosis. Technical link availability is not independent scientific verification of its content. The app matches plant diseases only, not pests or nutrient disorders. Do not select a pesticide or dose from this app alone.",
     none: "No sufficient match was found among the supported diseases.", noneLead: "The image may not show a distinctive enough sign. Try a more clearly affected leaf or fruit.",
-    unsupported: "Crop not supported yet", unsupportedLead: "CropGuide currently supports 40 crops. Try a clearer image of the same crop.",
+    unsupported: "Crop not supported yet", unsupportedLead: "CropGuide currently supports 40 crops. Try a clearer image of the same crop.", cropUncertain: "Crop could not be identified safely", cropUncertainLead: "Crop suggestions are too close or too weak, so diseases were not ranked. Take a clearer photo of the plant or leaf with part of the stem.",
     retry: "Try another photo", error: "Analysis could not be completed", cropConfidence: "Identification confidence", stepCrop: "Crop", stepSymptoms: "Visible signs", stepMatch: "Disease match",
     quality: "Image quality", adequate: "Adequate", limited: "Limited", evidence: "Visible evidence",
   },
@@ -78,7 +78,8 @@ function confidenceTone(value) {
 }
 
 function CandidateCard({ disease, text, language }) {
-  const confidence = confidenceTone(disease.confidence);
+  const score = disease.evidenceScore ?? disease.confidence;
+  const confidence = confidenceTone(score);
   return <article className="disease-card">
     <div className="disease-heading">
       <div>
@@ -86,7 +87,7 @@ function CandidateCard({ disease, text, language }) {
         <h3>{disease.name[language]}</h3>
         <p className="latin">{disease.scientificName}</p>
       </div>
-      <span className={`score ${confidence}`}>{disease.confidence}%</span>
+      <span className={`score ${confidence}`}>{score}%</span>
     </div>
     <div className="care-stack">
       <section><h4>{text.immediate}</h4><p>{disease.immediateCare[language]}</p></section>
@@ -176,8 +177,8 @@ export default function App() {
       </>}
 
       {result && <div className="result-panel">
-        <div className="result-top"><div><p className="eyebrow">{text.result}</p><h2>{result.status === "unsupported_crop" ? text.unsupported : result.status === "inconclusive" ? text.none : text.candidates}</h2></div><button className="text-button" onClick={reset}>{text.retry}</button></div>
-        {result.status === "unsupported_crop" ? <p className="empty-copy">{text.unsupportedLead}</p> : <>
+        <div className="result-top"><div><p className="eyebrow">{text.result}</p><h2>{result.status === "unsupported_crop" ? text.unsupported : result.status === "crop_uncertain" ? text.cropUncertain : result.status === "inconclusive" ? text.none : text.candidates}</h2></div><button className="text-button" onClick={reset}>{text.retry}</button></div>
+        {result.status === "unsupported_crop" ? <p className="empty-copy">{text.unsupportedLead}</p> : result.status === "crop_uncertain" ? <p className="empty-copy">{text.cropUncertainLead}</p> : <>
           <div className="crop-card"><div className="crop-icon">⌁</div><div><span>{text.detectedCrop}</span><strong>{result.crop.name[language]}</strong><em>{result.crop.scientificName}</em></div><div className="crop-score"><span>{text.cropConfidence}</span><strong>{Math.round((result.detectedPlant?.probability || 0) * 100)}%</strong></div></div>
           {result.status === "inconclusive" ? <div className="empty-state"><h3>{text.none}</h3><p>{text.noneLead}</p></div> : <div className="disease-list">{result.diseases.map(disease => <CandidateCard key={disease.id} disease={disease} text={text} language={language} />)}</div>}
           <p className="result-disclaimer">{text.disclaimer}</p>

@@ -1,17 +1,16 @@
 # CropGuide AI
 
-## Version 0.3
+## Version 0.4
 
-This release adds a larger plant data set and better symptom matching.
+This release improves symptom details, result limits, and source checks.
 
 ## What is new
 
-- Added data for 40 crops.
-- Added disease records and source links.
-- Added common symptom groups and match rules.
-- Added AI data files and a knowledge graph.
-- Added source review tools.
-- Added an olive photo result example.
+- Added more details about visible plant signs.
+- Improved matching for similar diseases.
+- Lowered or limited results when key signs are missing.
+- Improved source checks and source details.
+- Added clearer notes about limits and privacy.
 
 ## Run it
 
@@ -31,7 +30,7 @@ pnpm start
 
 ## Important limit
 
-The app shows possible results from visible signs. It cannot confirm a disease from a photo alone. Do not use it as treatment advice. Ask an agriculture expert before making treatment decisions.
+The app shows possible results from visible signs. A score is not a diagnosis or a disease chance. Do not use it as treatment advice. Ask an agriculture expert before making treatment decisions.
 
 ## License
 

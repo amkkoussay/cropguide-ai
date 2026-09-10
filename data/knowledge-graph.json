@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-18T10:24:23.459Z",
+  "generatedAt": "2026-08-18T10:59:28.261Z",
   "semantics": {
     "hasVisualFeature": "A feature may be requested from a suitable image, but does not by itself confirm a disease.",
     "hasFieldOnlyObservation": "A feature must not be requested from the image model; it is preserved for field verification.",
@@ -5244,6 +5244,7 @@
         "ar": "بقعة أو آفة ورقية",
         "fr": "Tache ou lésion foliaire"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5254,6 +5255,7 @@
         "ar": "آفة ورقية مائية المظهر",
         "fr": "Lésion foliaire d'aspect aqueux"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5264,6 +5266,7 @@
         "ar": "نمو أبيض دقيقي على الورقة",
         "fr": "Feutrage blanc poudreux sur feuille"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5274,6 +5277,7 @@
         "ar": "نمو على السطح السفلي للورقة",
         "fr": "Croissance sur la face inférieure de la feuille"
       },
+      "familyId": "ff.foliage",
       "extractability": "conditional"
     },
     {
@@ -5284,6 +5288,7 @@
         "ar": "نمو زغبي على الورقة",
         "fr": "Croissance duveteuse sur feuille"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5294,6 +5299,7 @@
         "ar": "لفحة أو نخر ورقي",
         "fr": "Brûlure ou nécrose foliaire"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5304,6 +5310,7 @@
         "ar": "اصفرار ورقي",
         "fr": "Jaunissement foliaire"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5314,6 +5321,7 @@
         "ar": "تجعد أو تشوه ورقي",
         "fr": "Enroulement ou déformation foliaire"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5324,6 +5332,7 @@
         "ar": "تساقط أو انهيار ورقي",
         "fr": "Chute ou affaissement foliaire"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5334,6 +5343,7 @@
         "ar": "آفة على الثمرة",
         "fr": "Lésion sur fruit"
       },
+      "familyId": "ff.fruit",
       "extractability": "primary"
     },
     {
@@ -5344,6 +5354,7 @@
         "ar": "تعفن أو تلف الثمرة",
         "fr": "Pourriture ou altération du fruit"
       },
+      "familyId": "ff.fruit",
       "extractability": "primary"
     },
     {
@@ -5354,6 +5365,7 @@
         "ar": "تندب أو تحنط الثمرة",
         "fr": "Cicatrisation ou momification du fruit"
       },
+      "familyId": "ff.fruit",
       "extractability": "primary"
     },
     {
@@ -5364,6 +5376,7 @@
         "ar": "آفة أو تقرح على الساق أو العنق أو الغصن",
         "fr": "Lésion ou chancre de tige, pétiole ou rameau"
       },
+      "familyId": "ff.aerial-structure",
       "extractability": "primary"
     },
     {
@@ -5374,6 +5387,7 @@
         "ar": "تعفن قاعدة الساق أو الساق",
         "fr": "Pourriture de la base ou de la tige"
       },
+      "familyId": "ff.aerial-structure",
       "extractability": "conditional"
     },
     {
@@ -5384,6 +5398,7 @@
         "ar": "تدهور أو موت الأفرع",
         "fr": "Dépérissement des pousses"
       },
+      "familyId": "ff.aerial-structure",
       "extractability": "primary"
     },
     {
@@ -5394,6 +5409,7 @@
         "ar": "ذبول عام",
         "fr": "Flétrissement général"
       },
+      "familyId": "ff.whole-plant",
       "extractability": "conditional"
     },
     {
@@ -5404,6 +5420,7 @@
         "ar": "ذبول أحادي الجانب",
         "fr": "Flétrissement unilatéral"
       },
+      "familyId": "ff.whole-plant",
       "extractability": "conditional"
     },
     {
@@ -5414,6 +5431,7 @@
         "ar": "تلون وعائي داخلي",
         "fr": "Coloration vasculaire interne"
       },
+      "familyId": "ff.root-crown-internal",
       "extractability": "field_only"
     },
     {
@@ -5424,6 +5442,7 @@
         "ar": "اضطراب الجذر أو التاج",
         "fr": "Atteinte des racines ou du collet"
       },
+      "familyId": "ff.root-crown-internal",
       "extractability": "field_only"
     },
     {
@@ -5434,6 +5453,7 @@
         "ar": "عقدة أو تجويف جذري",
         "fr": "Galle ou cavité racinaire"
       },
+      "familyId": "ff.root-crown-internal",
       "extractability": "field_only"
     },
     {
@@ -5444,6 +5464,7 @@
         "ar": "اضطراب إنبات أو بادرات",
         "fr": "Trouble d'installation des plantules"
       },
+      "familyId": "ff.whole-plant",
       "extractability": "conditional"
     },
     {
@@ -5454,6 +5475,7 @@
         "ar": "بثرة أو شريط صدئي",
         "fr": "Pustule ou strie de rouille"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5464,6 +5486,7 @@
         "ar": "إفراز أو رشح نباتي",
         "fr": "Exsudat végétal"
       },
+      "familyId": "ff.aerial-structure",
       "extractability": "conditional"
     },
     {
@@ -5474,6 +5497,7 @@
         "ar": "موزاييك أو تبرقش",
         "fr": "Mosaïque ou marbrure"
       },
+      "familyId": "ff.foliage",
       "extractability": "primary"
     },
     {
@@ -5484,6 +5508,7 @@
         "ar": "تقزم أو تراجع عام",
         "fr": "Rabougrissement ou dépérissement général"
       },
+      "familyId": "ff.whole-plant",
       "extractability": "conditional"
     },
     {
@@ -5494,6 +5519,7 @@
         "ar": "عرض على السنبلة أو الحبة",
         "fr": "Symptôme de l'épi ou du grain"
       },
+      "familyId": "ff.reproductive",
       "extractability": "conditional"
     },
     {
@@ -5504,6 +5530,7 @@
         "ar": "عرض على سعفة النخيل",
         "fr": "Symptôme de palme"
       },
+      "familyId": "ff.palm",
       "extractability": "primary"
     },
     {
@@ -5514,6 +5541,7 @@
         "ar": "آفة سطح الدرنة",
         "fr": "Lésion de surface du tubercule"
       },
+      "familyId": "ff.tuber",
       "extractability": "primary"
     },
     {
@@ -5524,6 +5552,7 @@
         "ar": "بنية فطرية مرئية",
         "fr": "Structure fongique visible"
       },
+      "familyId": "ff.fungal-structure",
       "extractability": "conditional"
     },
     {
@@ -5534,7 +5563,98 @@
         "ar": "عرض نباتي مرئي آخر",
         "fr": "Autre symptôme végétal visible"
       },
+      "familyId": "ff.general",
       "extractability": "conditional"
+    },
+    {
+      "id": "feature-family:ff.foliage",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Foliage",
+        "ar": "المجموع الورقي",
+        "fr": "Feuillage"
+      }
+    },
+    {
+      "id": "feature-family:ff.fruit",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Fruit",
+        "ar": "الثمرة",
+        "fr": "Fruit"
+      }
+    },
+    {
+      "id": "feature-family:ff.aerial-structure",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Stem, shoot, or aerial structure",
+        "ar": "الساق أو الأفرع أو البنية الهوائية",
+        "fr": "Tige, pousse ou structure aérienne"
+      }
+    },
+    {
+      "id": "feature-family:ff.root-crown-internal",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Root, crown, or internal tissue",
+        "ar": "الجذر أو التاج أو النسيج الداخلي",
+        "fr": "Racine, collet ou tissu interne"
+      }
+    },
+    {
+      "id": "feature-family:ff.whole-plant",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Whole-plant condition",
+        "ar": "حالة النبات الكلية",
+        "fr": "État général de la plante"
+      }
+    },
+    {
+      "id": "feature-family:ff.reproductive",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Reproductive structure",
+        "ar": "البنية التكاثرية",
+        "fr": "Structure reproductive"
+      }
+    },
+    {
+      "id": "feature-family:ff.palm",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Palm canopy",
+        "ar": "مجموع النخيل",
+        "fr": "Houppier de palmier"
+      }
+    },
+    {
+      "id": "feature-family:ff.tuber",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Tuber",
+        "ar": "الدرنة",
+        "fr": "Tubercule"
+      }
+    },
+    {
+      "id": "feature-family:ff.fungal-structure",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "Visible fungal structure",
+        "ar": "بنية فطرية مرئية",
+        "fr": "Structure fongique visible"
+      }
+    },
+    {
+      "id": "feature-family:ff.general",
+      "type": "VisualFeatureFamily",
+      "labels": {
+        "en": "General observable symptom",
+        "ar": "عرض مرئي عام",
+        "fr": "Symptôme visible général"
+      }
     },
     {
       "id": "differential:wilt-fusarium-vs-verticillium",
@@ -5548,6 +5668,14 @@
         "vf.wilt.unilateral",
         "vf.vascular.discoloration"
       ],
+      "visualCueFeatures": {
+        "fusarium_wilt": [
+          "vf.vascular.discoloration"
+        ],
+        "verticillium_wilt": [
+          "vf.vascular.discoloration"
+        ]
+      },
       "distinguishingCues": {
         "en": "Both can show unilateral wilt and vascular browning; image and field cutting alone are insufficient for species-level separation.",
         "ar": "قد يظهر الذبول الأحادي والتلون الوعائي في كليهما؛ الصورة والقطع الحقلي وحدهما غير كافيين للفصل على مستوى العامل المسبب.",
@@ -5568,6 +5696,14 @@
         "vf.foliage.spot",
         "vf.foliage.necrosis"
       ],
+      "visualCueFeatures": {
+        "powdery_mildew": [
+          "vf.foliage.growth.powdery"
+        ],
+        "downy_mildew": [
+          "vf.foliage.growth.underside"
+        ]
+      },
       "distinguishingCues": {
         "en": "Prioritise a white powdery surface growth for powdery mildew versus angular chlorosis and lower-surface growth for downy mildew; inspect both leaf surfaces under suitable humidity.",
         "ar": "رجّح نموًا أبيض دقيقيًا سطحيًا للبياض الدقيقي مقابل اصفرار زاوي ونمو على السطح السفلي للبياض الزغبي؛ افحص وجهي الورقة في رطوبة مناسبة.",
@@ -5589,6 +5725,14 @@
         "vf.stem.rot",
         "vf.wilt.general"
       ],
+      "visualCueFeatures": {
+        "botrytis": [
+          "vf.foliage.growth.fuzzy"
+        ],
+        "sclerotinia": [
+          "vf.fungal.structure"
+        ]
+      },
       "distinguishingCues": {
         "en": "Gray fuzzy growth supports Botrytis; white cottony growth and later dark sclerotia support Sclerotinia. Confirm when structures are absent.",
         "ar": "النمو الرمادي الزغبي يدعم البوتريتس؛ النمو الأبيض القطني ثم الأجسام الحجرية الداكنة يدعمان السكليروتينيا. اطلب التأكيد عند غياب البنيات الفارقة.",
@@ -5610,6 +5754,15 @@
         "vf.foliage.yellowing",
         "vf.root.crown"
       ],
+      "visualCueFeatures": {
+        "phytophthora_root_rot": [
+          "vf.root.crown"
+        ],
+        "fusarium_wilt": [
+          "vf.wilt.unilateral",
+          "vf.vascular.discoloration"
+        ]
+      },
       "distinguishingCues": {
         "en": "Root/crown browning and poorly drained wet zones support Phytophthora; unilateral wilt with vascular discoloration supports Fusarium. A leaf image alone is insufficient.",
         "ar": "اسمرار الجذر أو التاج مع بقع رطبة ضعيفة الصرف يدعم الفيتوفثورا؛ الذبول الأحادي مع تلون وعائي يدعم الفيوزاريوم. صورة ورقة وحدها غير كافية.",
@@ -5630,6 +5783,14 @@
         "vf.foliage.spot",
         "vf.foliage.yellowing"
       ],
+      "visualCueFeatures": {
+        "bacterial_leaf_spot": [
+          "vf.foliage.water-soaked"
+        ],
+        "alternaria_leaf_spot": [
+          "vf.foliage.spot"
+        ]
+      },
       "distinguishingCues": {
         "en": "Water-soaked lesions support bacterial leaf spot; dry brown lesions with concentric rings support Alternaria. Confirm before treatment selection.",
         "ar": "الآفات المائية المظهر تدعم التبقع البكتيري؛ البقع البنية الجافة ذات الحلقات المتراكزة تدعم الألترناريا. اطلب التأكيد قبل اختيار معالجة.",
@@ -22986,6 +23147,156 @@
       "to": "source:6b7e4dfc7d2c64af",
       "scope": "crop_group",
       "reviewStatus": "source_mapped"
+    },
+    {
+      "from": "feature:vf.foliage.spot",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.water-soaked",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.growth.powdery",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.growth.underside",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.growth.fuzzy",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.necrosis",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.yellowing",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.deformation",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.foliage.loss",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.fruit.lesion",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.fruit"
+    },
+    {
+      "from": "feature:vf.fruit.rot",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.fruit"
+    },
+    {
+      "from": "feature:vf.fruit.scarring",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.fruit"
+    },
+    {
+      "from": "feature:vf.stem.canker",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.aerial-structure"
+    },
+    {
+      "from": "feature:vf.stem.rot",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.aerial-structure"
+    },
+    {
+      "from": "feature:vf.shoot.decline",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.aerial-structure"
+    },
+    {
+      "from": "feature:vf.wilt.general",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.whole-plant"
+    },
+    {
+      "from": "feature:vf.wilt.unilateral",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.whole-plant"
+    },
+    {
+      "from": "feature:vf.vascular.discoloration",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.root-crown-internal"
+    },
+    {
+      "from": "feature:vf.root.crown",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.root-crown-internal"
+    },
+    {
+      "from": "feature:vf.root.gall",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.root-crown-internal"
+    },
+    {
+      "from": "feature:vf.seedling.condition",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.whole-plant"
+    },
+    {
+      "from": "feature:vf.pustule",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.exudate",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.aerial-structure"
+    },
+    {
+      "from": "feature:vf.mosaic",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.foliage"
+    },
+    {
+      "from": "feature:vf.stunting",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.whole-plant"
+    },
+    {
+      "from": "feature:vf.cereal.reproductive",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.reproductive"
+    },
+    {
+      "from": "feature:vf.palm.frond",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.palm"
+    },
+    {
+      "from": "feature:vf.tuber.surface",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.tuber"
+    },
+    {
+      "from": "feature:vf.fungal.structure",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.fungal-structure"
+    },
+    {
+      "from": "feature:vf.general.observable",
+      "type": "BELONGS_TO_FAMILY",
+      "to": "feature-family:ff.general"
     }
   ]
 }

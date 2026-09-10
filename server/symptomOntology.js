@@ -36,6 +36,7 @@ export function differentialsForDisease(diseaseId) {
       id: rule.id,
       profiles: rule.profiles,
       sharedFeatures: rule.sharedFeatures,
+      visualCueFeatures: rule.visualCueFeatures || {},
       distinguishingCues: rule.distinguishingCues,
       requiresFieldConfirmation: rule.requiresFieldConfirmation,
       requiresLaboratoryConfirmation: rule.requiresLaboratoryConfirmation,

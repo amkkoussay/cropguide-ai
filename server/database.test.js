@@ -56,4 +56,41 @@ describe("disease matcher", () => {
 
     expect(candidates).toHaveLength(3);
   });
+
+  it("keeps a one-feature visual match below the low-evidence ceiling", () => {
+    const [candidate] = rankDiseaseRecords([oliveDisease], {
+      symptoms: ["circular_dark_spot"],
+      symptomConfidence: 0.98,
+      cropConfidence: 0.98,
+    });
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(55);
+    expect(candidate.evidence.scoreCeiling).toBeLessThanOrEqual(55);
+  });
+
+  it("keeps low-confidence visual evidence below the visual-confidence ceiling", () => {
+    const [candidate] = rankDiseaseRecords([oliveDisease], {
+      symptoms: ["circular_dark_spot", "yellow_halo", "upper_leaf_spot"],
+      symptomConfidence: 0.2,
+      cropConfidence: 0.98,
+    });
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(45);
+    expect(candidate.evidence.scoreCeiling).toBeLessThanOrEqual(45);
+  });
+
+  it("returns rule-specific visual cues and an evidence gap for a shared mildew sign", () => {
+    const mildewRecord = {
+      ...oliveDisease,
+      id: "cucumber_powdery_mildew",
+      symptoms_json: JSON.stringify(["circular_dark_spot", "white_powdery_growth", "yellow_halo"]),
+    };
+    const [candidate] = rankDiseaseRecords([mildewRecord], {
+      symptoms: ["circular_dark_spot", "yellow_halo"],
+      symptomConfidence: 0.9,
+      cropConfidence: 0.9,
+    });
+    const mildewRule = candidate.differentials.find(rule => rule.id === "mildew-powdery-vs-downy");
+    expect(mildewRule).toEqual(expect.objectContaining({ evidenceGap: true, distinguishingCueObserved: false }));
+    expect(mildewRule.supportingCues).toContain("vf.foliage.growth.powdery");
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(60);
+  });
 });

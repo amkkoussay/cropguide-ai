@@ -54,6 +54,29 @@ function attributesFor(token) {
   return Object.fromEntries(Object.entries(attributeValues).filter(([, values]) => values.length));
 }
 
+function evidenceVectorFor(token, featureId, attributes) {
+  const value = token.replaceAll("_", " ");
+  const pattern = [];
+  const progression = [];
+  if (/(spot|lesion|ring|halo|blight|canker)/.test(value)) pattern.push("lesion_or_spot");
+  if (/(concentric|ring)/.test(value)) pattern.push("concentric_pattern");
+  if (/(angular)/.test(value)) pattern.push("angular_pattern");
+  if (/(mosaic|mottle)/.test(value)) pattern.push("mosaic_pattern");
+  if (/(powdery|fuzzy|cottony|mycelium|pustule|acervuli|pycnidia|sclerotia)/.test(value)) pattern.push("surface_growth_or_structure");
+  if (/(yellowing|browning|necrotic|blackened|withered|wilting|decline|dieback|collapse)/.test(value)) progression.push("tissue_decline");
+  if (/(early|young|new)/.test(value)) progression.push("younger_tissue");
+  if (/(older|lower)/.test(value)) progression.push("older_tissue");
+  return {
+    familyId: familyFor(featureId),
+    tissue: attributes.tissue || [],
+    colour: attributes.colour || [],
+    geometry: attributes.geometry || [],
+    surface: attributes.surface || [],
+    pattern,
+    progression,
+  };
+}
+
 function featureFor(token) {
   const value = token.replaceAll("_", " ");
   if (/(gumming|gummy|ooze|exudate)/.test(value)) return "vf.exudate";
@@ -114,6 +137,7 @@ const observations = [...occurrences.values()].map(entry => {
     canonicalToken: entry.canonicalToken,
     canonicalFeatureId: featureId,
     attributes: attributesFor(entry.canonicalToken),
+    evidenceVector: evidenceVectorFor(entry.canonicalToken, featureId, attributesFor(entry.canonicalToken)),
     diseaseIds: entry.diseaseIds.sort(),
     cropIds: entry.cropIds.sort(),
   };

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-18T10:24:23.382Z",
+  "generatedAt": "2026-08-18T10:59:28.186Z",
   "scope": "Visual observations in plant images; not a disease-confirmation ontology.",
   "aliasPolicy": "Only exact or near-exact expressions that preserve the same visible meaning may share a canonical feature. Differences in organ, surface, colour, size, distribution, or progression remain distinct attributes.",
   "featureFamilies": [
@@ -394,6 +394,15 @@
       "canonicalToken": "bacterial_ooze",
       "canonicalFeatureId": "vf.exudate",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_fire_blight",
         "pear_fire_blight",
@@ -418,6 +427,22 @@
           "surface"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "berry"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "surface"
+        ],
+        "pattern": [
+          "lesion_or_spot",
+          "concentric_pattern"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "grape_powdery_mildew"
       ],
@@ -434,6 +459,19 @@
         "colour": [
           "black"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.fungal-structure",
+        "tissue": [],
+        "colour": [
+          "black"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "spinach_anthracnose"
@@ -458,6 +496,23 @@
           "centered"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "shoot"
+        ],
+        "colour": [
+          "black"
+        ],
+        "geometry": [],
+        "surface": [
+          "centered"
+        ],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "grapevine_phomopsis_cane_leaf_spot"
       ],
@@ -475,6 +530,19 @@
           "black"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "black"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "date_palm_black_scorch"
       ],
@@ -491,6 +559,19 @@
         "colour": [
           "black"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.fungal-structure",
+        "tissue": [],
+        "colour": [
+          "black"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "celery_late_blight",
@@ -511,6 +592,19 @@
           "black"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fungal-structure",
+        "tissue": [],
+        "colour": [
+          "black"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_pink_rot"
       ],
@@ -527,6 +621,20 @@
         "tissue": [
           "leaf",
           "stem"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf",
+          "stem"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -547,6 +655,21 @@
         ],
         "surface": [
           "tip"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "shoot"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "tip"
+        ],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -570,6 +693,17 @@
           "spikelet"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.reproductive",
+        "tissue": [
+          "spikelet"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "barley_fusarium_head_blight",
         "maize_fusarium_head_blight",
@@ -587,6 +721,17 @@
       "canonicalToken": "blotchy_mottle",
       "canonicalFeatureId": "vf.mosaic",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "mosaic_pattern"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "citrus_citrus_greening"
       ],
@@ -604,6 +749,20 @@
           "brown",
           "black"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "brown",
+          "black"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "potato_late_blight"
@@ -625,6 +784,21 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "parsley_bacterial_leaf_spot"
       ],
@@ -641,6 +815,19 @@
         "colour": [
           "brown"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "bean_ascochyta",
@@ -670,6 +857,21 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "petiolar"
+        ],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_pink_rot",
         "parsley_bacterial_leaf_spot"
@@ -692,6 +894,21 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "petiolar"
+        ],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_late_blight"
       ],
@@ -710,6 +927,20 @@
           "tan"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "brown",
+          "tan"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "spinach_anthracnose"
       ],
@@ -725,6 +956,19 @@
       "attributes": {
         "colour": [
           "brown"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -797,6 +1041,15 @@
       "canonicalToken": "bud_rot",
       "canonicalFeatureId": "vf.stem.rot",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "date_palm_black_scorch"
       ],
@@ -810,6 +1063,15 @@
       "canonicalToken": "calyx_end_darkening",
       "canonicalFeatureId": "vf.fruit.lesion",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "pomegranate_black_heart"
       ],
@@ -829,6 +1091,21 @@
         "geometry": [
           "cigar"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [
+          "cigar"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "maize_northern_corn_leaf_blight"
@@ -850,6 +1127,21 @@
           "circular"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [
+          "circular"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "olive_peacock_spot"
       ],
@@ -867,6 +1159,19 @@
           "leaf"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_early_blight",
         "celery_late_blight",
@@ -883,6 +1188,17 @@
       "canonicalToken": "collapsed_spur",
       "canonicalFeatureId": "vf.stunting",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "almond_brown_rot_blossom_blight"
       ],
@@ -899,6 +1215,20 @@
         "geometry": [
           "concentric"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [
+          "concentric"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot",
+          "concentric_pattern"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "carob_alternaria_leaf_spot",
@@ -943,6 +1273,21 @@
           "corky"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.tuber",
+        "tissue": [
+          "tuber"
+        ],
+        "colour": [],
+        "geometry": [
+          "corky"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "potato_potato_common_scab"
       ],
@@ -958,6 +1303,19 @@
       "attributes": {
         "tissue": [
           "crown"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.root-crown-internal",
+        "tissue": [
+          "crown"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -1046,6 +1404,20 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "dark",
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_bacterial_leaf_spot",
         "apricot_bacterial_leaf_spot",
@@ -1129,6 +1501,19 @@
           "dark"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "barley_rhizoctonia",
         "maize_rhizoctonia",
@@ -1155,6 +1540,21 @@
           "dark"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "grapevine_black_rot",
         "potato_black_rot"
@@ -1176,6 +1576,21 @@
         "colour": [
           "dark"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "shoot"
+        ],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "grape_powdery_mildew",
@@ -1199,6 +1614,21 @@
         "geometry": [
           "sunken"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [
+          "sunken"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_anthracnose",
@@ -1269,6 +1699,19 @@
           "root"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.root-crown-internal",
+        "tissue": [
+          "root"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "carrot_cavity_spot"
       ],
@@ -1282,6 +1725,17 @@
       "canonicalToken": "decline",
       "canonicalFeatureId": "vf.stunting",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "citrus_tristeza"
       ],
@@ -1302,6 +1756,19 @@
           "deep"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.tuber",
+        "tissue": [
+          "tuber"
+        ],
+        "colour": [],
+        "geometry": [
+          "deep"
+        ],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "potato_potato_common_scab"
       ],
@@ -1317,6 +1784,19 @@
       "attributes": {
         "surface": [
           "new"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "new"
+        ],
+        "pattern": [],
+        "progression": [
+          "younger_tissue"
         ]
       },
       "diseaseIds": [
@@ -1400,6 +1880,17 @@
           "frond"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.palm",
+        "tissue": [
+          "frond"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "date_palm_black_scorch"
       ],
@@ -1416,6 +1907,17 @@
         "tissue": [
           "frond"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.palm",
+        "tissue": [
+          "frond"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "date_palm_bayoud"
@@ -1434,6 +1936,19 @@
           "fruit"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "citrus_citrus_canker"
       ],
@@ -1450,6 +1965,17 @@
         "tissue": [
           "fruit"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "grapevine_black_rot",
@@ -1469,6 +1995,17 @@
         "tissue": [
           "fruit"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "almond_anthracnose",
@@ -1543,6 +2080,20 @@
           "fruit"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot",
+          "concentric_pattern"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_scab",
         "citrus_scab",
@@ -1567,6 +2118,20 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "gray",
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "faba_bean_chocolate_spot"
       ],
@@ -1587,6 +2152,21 @@
           "circular"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "gray"
+        ],
+        "geometry": [
+          "circular"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_early_blight"
       ],
@@ -1603,6 +2183,19 @@
         "colour": [
           "gray"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "gray"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "apple_botrytis",
@@ -1673,6 +2266,22 @@
           "green"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "gray",
+          "green"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "maize_northern_corn_leaf_blight"
       ],
@@ -1693,6 +2302,20 @@
         "surface": [
           "margin"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [
+          "gray",
+          "green"
+        ],
+        "geometry": [],
+        "surface": [
+          "margin"
+        ],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "tomato_late_blight"
@@ -1715,6 +2338,23 @@
           "angular"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "grayish",
+          "brown"
+        ],
+        "geometry": [
+          "angular"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot",
+          "angular_pattern"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "parsley_septoria_leaf_spot"
       ],
@@ -1728,6 +2368,15 @@
       "canonicalToken": "gummy_exudate",
       "canonicalFeatureId": "vf.exudate",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_bacterial_canker",
         "apple_bacterial_canker",
@@ -1771,6 +2420,19 @@
           "base"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "base"
+        ],
+        "pattern": [],
+        "progression": [
+          "older_tissue"
+        ]
+      },
       "diseaseIds": [
         "almond_brown_rot_blossom_blight"
       ],
@@ -1784,6 +2446,15 @@
       "canonicalToken": "gummy_exudate",
       "canonicalFeatureId": "vf.exudate",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "cucumber_gummy_stem_blight",
         "melon_gummy_stem_blight",
@@ -1809,6 +2480,17 @@
           "fruit"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "pomegranate_black_heart"
       ],
@@ -1825,6 +2507,19 @@
         "geometry": [
           "irregular"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [
+          "irregular"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "tomato_late_blight"
@@ -1843,6 +2538,19 @@
           "leaf"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "maize_northern_corn_leaf_blight"
       ],
@@ -1858,6 +2566,19 @@
       "attributes": {
         "tissue": [
           "leaf"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -1893,6 +2614,19 @@
           "leaf"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "cucumber_cucurbit_bacterial_wilt",
         "melon_cucurbit_bacterial_wilt",
@@ -1917,6 +2651,17 @@
         "tissue": [
           "leaf"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "almond_powdery_mildew",
@@ -2000,6 +2745,17 @@
           "leaf"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_virus_mosaic",
         "artichoke_virus_mosaic",
@@ -2080,6 +2836,17 @@
         "tissue": [
           "leaf"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "almond_rust",
@@ -2170,6 +2937,17 @@
           "leaf"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_shot_hole"
       ],
@@ -2186,6 +2964,19 @@
         "tissue": [
           "leaf"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_anthracnose",
@@ -2268,6 +3059,21 @@
           "tip"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "tip"
+        ],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "garlic_botrytis_leaf_blight",
         "garlic_onion_purple_blotch",
@@ -2289,6 +3095,19 @@
       "attributes": {
         "tissue": [
           "leaf"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -2316,6 +3135,22 @@
           "yellow"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "light",
+          "yellow"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_late_blight"
       ],
@@ -2334,6 +3169,23 @@
         ],
         "surface": [
           "lower"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "lower"
+        ],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": [
+          "older_tissue"
         ]
       },
       "diseaseIds": [
@@ -2365,6 +3217,17 @@
       "canonicalToken": "mosaic_pattern",
       "canonicalFeatureId": "vf.mosaic",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "mosaic_pattern"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_virus_mosaic",
         "artichoke_virus_mosaic",
@@ -2446,6 +3309,17 @@
           "berry"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "berry"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "grapevine_phomopsis_cane_leaf_spot"
       ],
@@ -2466,6 +3340,21 @@
           "net"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [
+          "net"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "barley_net_blotch",
         "wheat_net_blotch"
@@ -2481,6 +3370,15 @@
       "canonicalToken": "no_secondary_soft_rot",
       "canonicalFeatureId": "vf.general.observable",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "carrot_cavity_spot"
       ],
@@ -2501,6 +3399,23 @@
           "older"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "older"
+        ],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": [
+          "older_tissue"
+        ]
+      },
       "diseaseIds": [
         "tomato_early_blight"
       ],
@@ -2519,6 +3434,22 @@
         ],
         "surface": [
           "older"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "older"
+        ],
+        "pattern": [],
+        "progression": [
+          "tissue_decline",
+          "older_tissue"
         ]
       },
       "diseaseIds": [
@@ -2556,6 +3487,19 @@
           "black"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "black"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_scab",
         "citrus_scab",
@@ -2579,6 +3523,19 @@
           "frond"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [
+          "frond"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "date_palm_bayoud"
       ],
@@ -2592,6 +3549,17 @@
       "canonicalToken": "one_sided_wilting",
       "canonicalFeatureId": "vf.wilt.unilateral",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "almond_verticillium_wilt",
         "apricot_verticillium_wilt",
@@ -2664,6 +3632,19 @@
           "orange"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "orange"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "barley_stripe_rust",
         "wheat_stripe_rust"
@@ -2685,6 +3666,21 @@
         "surface": [
           "underside"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "orange"
+        ],
+        "geometry": [],
+        "surface": [
+          "underside"
+        ],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_rust",
@@ -2752,6 +3748,21 @@
           "oval"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "petiolar"
+        ],
+        "colour": [],
+        "geometry": [
+          "oval"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "parsley_septoria_leaf_spot"
       ],
@@ -2773,6 +3784,20 @@
           "underside"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "pale",
+          "gray"
+        ],
+        "geometry": [],
+        "surface": [
+          "underside"
+        ],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "carrot_cercospora_leaf_blight"
       ],
@@ -2786,6 +3811,17 @@
       "canonicalToken": "papery_cracked_lesion",
       "canonicalFeatureId": "vf.foliage.necrosis",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_early_blight"
       ],
@@ -2802,6 +3838,17 @@
         "colour": [
           "pink"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [
+          "pink"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "barley_fusarium_head_blight",
@@ -2824,6 +3871,17 @@
           "pink"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [
+          "pink"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_pink_rot"
       ],
@@ -2841,6 +3899,19 @@
           "base"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "base"
+        ],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "celery_pink_rot"
       ],
@@ -2854,6 +3925,17 @@
       "canonicalToken": "pod_spot",
       "canonicalFeatureId": "vf.foliage.spot",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "bean_ascochyta",
         "chickpea_ascochyta",
@@ -2875,6 +3957,15 @@
       "canonicalToken": "poor_emergence",
       "canonicalFeatureId": "vf.seedling.condition",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "artichoke_damping_off",
         "barley_damping_off",
@@ -2940,6 +4031,17 @@
           "fruit"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "pomegranate_black_heart"
       ],
@@ -2959,6 +4061,21 @@
         "geometry": [
           "elliptical"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "purple"
+        ],
+        "geometry": [
+          "elliptical"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "garlic_onion_purple_blotch",
@@ -2980,6 +4097,20 @@
           "red"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "purple",
+          "red"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_shot_hole"
       ],
@@ -3000,6 +4131,19 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.palm",
+        "tissue": [
+          "rachis"
+        ],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "date_palm_bayoud"
       ],
@@ -3017,6 +4161,20 @@
           "raised",
           "corky"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [
+          "raised",
+          "corky"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "citrus_citrus_canker"
@@ -3038,6 +4196,21 @@
           "brown"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "brown"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "faba_bean_chocolate_spot"
       ],
@@ -3054,6 +4227,17 @@
         "tissue": [
           "root"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.root-crown-internal",
+        "tissue": [
+          "root"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "almond_root_knot",
@@ -3134,6 +4318,17 @@
           "rough"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [],
+        "geometry": [
+          "rough"
+        ],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "olive_olive_knot"
       ],
@@ -3157,6 +4352,21 @@
           "surface"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.tuber",
+        "tissue": [
+          "tuber"
+        ],
+        "colour": [],
+        "geometry": [
+          "rough"
+        ],
+        "surface": [
+          "surface"
+        ],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "potato_potato_common_scab"
       ],
@@ -3170,6 +4380,15 @@
       "canonicalToken": "scabby_cane",
       "canonicalFeatureId": "vf.stem.canker",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "grapevine_phomopsis_cane_leaf_spot"
       ],
@@ -3183,6 +4402,17 @@
       "canonicalToken": "seedling_collapse",
       "canonicalFeatureId": "vf.seedling.condition",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "artichoke_damping_off",
         "barley_damping_off",
@@ -3248,6 +4478,15 @@
       "canonicalToken": "shepherd_crook",
       "canonicalFeatureId": "vf.general.observable",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_fire_blight",
         "pear_fire_blight",
@@ -3267,6 +4506,19 @@
       "attributes": {
         "tissue": [
           "shoot"
+        ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "shoot"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
         ]
       },
       "diseaseIds": [
@@ -3302,6 +4554,19 @@
           "shoot"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "shoot"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "parsley_bacterial_leaf_spot"
       ],
@@ -3318,6 +4583,17 @@
         "tissue": [
           "grain"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.reproductive",
+        "tissue": [
+          "grain"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "barley_fusarium_head_blight",
@@ -3341,6 +4617,20 @@
           "circular"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [
+          "small",
+          "circular"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "spinach_anthracnose"
       ],
@@ -3360,6 +4650,21 @@
         "geometry": [
           "small"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [
+          "small"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "artichoke_septoria",
@@ -3398,6 +4703,20 @@
           "horizontal"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.root-crown-internal",
+        "tissue": [
+          "root"
+        ],
+        "colour": [],
+        "geometry": [
+          "small",
+          "horizontal"
+        ],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "carrot_cavity_spot"
       ],
@@ -3417,6 +4736,19 @@
         "geometry": [
           "small"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [
+          "small"
+        ],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "citrus_citrus_greening"
@@ -3441,6 +4773,23 @@
           "small"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "white"
+        ],
+        "geometry": [
+          "small"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "garlic_botrytis_leaf_blight"
       ],
@@ -3461,6 +4810,21 @@
           "small"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "yellow"
+        ],
+        "geometry": [
+          "small"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_early_blight"
       ],
@@ -3474,6 +4838,15 @@
       "canonicalToken": "soft_rot",
       "canonicalFeatureId": "vf.general.observable",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "apple_botrytis",
         "artichoke_botrytis",
@@ -3535,6 +4908,15 @@
       "canonicalToken": "soft_watery_decay",
       "canonicalFeatureId": "vf.general.observable",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_pink_rot"
       ],
@@ -3554,6 +4936,19 @@
         "surface": [
           "base"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "stem"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "base"
+        ],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "artichoke_damping_off",
@@ -3624,6 +5019,19 @@
           "stem"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "stem"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "cucumber_gummy_stem_blight",
         "melon_gummy_stem_blight",
@@ -3648,6 +5056,19 @@
         "tissue": [
           "stem"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "stem"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "bean_ascochyta",
@@ -3676,6 +5097,17 @@
           "stem"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [
+          "stem"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "citrus_tristeza"
       ],
@@ -3692,6 +5124,17 @@
         "tissue": [
           "stem"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "stem"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "almond_sclerotinia",
@@ -3742,6 +5185,15 @@
       "canonicalToken": "stunting",
       "canonicalFeatureId": "vf.stunting",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_root_knot",
         "apple_root_knot",
@@ -3858,6 +5310,17 @@
       "canonicalToken": "stunting_yellowing",
       "canonicalFeatureId": "vf.stunting",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "parsley_bacterial_leaf_spot"
       ],
@@ -3871,6 +5334,17 @@
       "canonicalToken": "sudden_wilting",
       "canonicalFeatureId": "vf.wilt.general",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "cucumber_cucurbit_bacterial_wilt",
         "melon_cucurbit_bacterial_wilt",
@@ -3899,6 +5373,21 @@
           "sunken"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.fruit",
+        "tissue": [
+          "fruit"
+        ],
+        "colour": [],
+        "geometry": [
+          "sunken"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "tomato_early_blight"
       ],
@@ -3918,6 +5407,19 @@
         "geometry": [
           "elliptical"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.general",
+        "tissue": [],
+        "colour": [
+          "tan"
+        ],
+        "geometry": [
+          "elliptical"
+        ],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "carrot_cercospora_leaf_blight"
@@ -3942,6 +5444,23 @@
           "tiny"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "dark"
+        ],
+        "geometry": [
+          "tiny"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "grapevine_phomopsis_cane_leaf_spot"
       ],
@@ -3959,6 +5478,17 @@
           "tuber"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.tuber",
+        "tissue": [
+          "tuber"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "potato_late_blight"
       ],
@@ -3975,6 +5505,19 @@
         "tissue": [
           "twig"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "twig"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_bacterial_canker",
@@ -4024,6 +5567,17 @@
           "twig"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.aerial-structure",
+        "tissue": [
+          "twig"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "olive_olive_knot"
       ],
@@ -4043,6 +5597,19 @@
         "surface": [
           "underside"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "gray"
+        ],
+        "geometry": [],
+        "surface": [
+          "underside"
+        ],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "artichoke_downy_mildew",
@@ -4094,6 +5661,21 @@
           "upper"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [
+          "upper"
+        ],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "olive_peacock_spot"
       ],
@@ -4107,6 +5689,17 @@
       "canonicalToken": "vascular_browning",
       "canonicalFeatureId": "vf.vascular.discoloration",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.root-crown-internal",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "almond_verticillium_wilt",
         "apricot_verticillium_wilt",
@@ -4184,6 +5777,19 @@
           "leaf"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "garlic_botrytis_leaf_blight"
       ],
@@ -4197,6 +5803,19 @@
       "canonicalToken": "water_soaked_necrotic_lesion",
       "canonicalFeatureId": "vf.foliage.necrosis",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "parsley_bacterial_leaf_spot"
       ],
@@ -4210,6 +5829,17 @@
       "canonicalToken": "water_soaked_spot",
       "canonicalFeatureId": "vf.foliage.water-soaked",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_bacterial_leaf_spot",
         "apricot_bacterial_leaf_spot",
@@ -4292,6 +5922,19 @@
           "white"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "white"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "almond_sclerotinia",
         "apricot_sclerotinia",
@@ -4349,6 +5992,19 @@
           "white"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "white"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "celery_pink_rot"
       ],
@@ -4365,6 +6021,19 @@
         "colour": [
           "white"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "white"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "surface_growth_or_structure"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_powdery_mildew",
@@ -4451,6 +6120,19 @@
           "underside"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "white"
+        ],
+        "geometry": [],
+        "surface": [
+          "underside"
+        ],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "potato_late_blight",
         "tomato_late_blight"
@@ -4466,6 +6148,17 @@
       "canonicalToken": "wilting",
       "canonicalFeatureId": "vf.wilt.general",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.whole-plant",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "almond_bacterial_canker",
         "almond_phytophthora_root_rot",
@@ -4626,6 +6319,22 @@
           "angular"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "yellow"
+        ],
+        "geometry": [
+          "angular"
+        ],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot",
+          "angular_pattern"
+        ],
+        "progression": []
+      },
       "diseaseIds": [
         "artichoke_downy_mildew",
         "bean_downy_mildew",
@@ -4672,6 +6381,19 @@
         "colour": [
           "yellow"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [
+          "yellow"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_bacterial_leaf_spot",
@@ -4777,6 +6499,17 @@
           "yellow"
         ]
       },
+      "evidenceVector": {
+        "familyId": "ff.reproductive",
+        "tissue": [],
+        "colour": [
+          "yellow"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
+      },
       "diseaseIds": [
         "barley_stripe_rust",
         "wheat_stripe_rust"
@@ -4798,6 +6531,19 @@
         "colour": [
           "yellow"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "shoot"
+        ],
+        "colour": [
+          "yellow"
+        ],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "citrus_citrus_greening"
@@ -4821,6 +6567,23 @@
         "surface": [
           "upper"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "yellow"
+        ],
+        "geometry": [],
+        "surface": [
+          "upper"
+        ],
+        "pattern": [
+          "lesion_or_spot"
+        ],
+        "progression": []
       },
       "diseaseIds": [
         "almond_rust",
@@ -4881,6 +6644,17 @@
       "canonicalToken": "yellowing",
       "canonicalFeatureId": "vf.foliage.yellowing",
       "attributes": {},
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [],
+        "colour": [],
+        "geometry": [],
+        "surface": [],
+        "pattern": [],
+        "progression": [
+          "tissue_decline"
+        ]
+      },
       "diseaseIds": [
         "almond_phytophthora_root_rot",
         "apple_phytophthora_root_rot",
@@ -4997,6 +6771,21 @@
         "surface": [
           "margin"
         ]
+      },
+      "evidenceVector": {
+        "familyId": "ff.foliage",
+        "tissue": [
+          "leaf"
+        ],
+        "colour": [
+          "yellowish"
+        ],
+        "geometry": [],
+        "surface": [
+          "margin"
+        ],
+        "pattern": [],
+        "progression": []
       },
       "diseaseIds": [
         "grapevine_phomopsis_cane_leaf_spot"

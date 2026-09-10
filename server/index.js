@@ -29,11 +29,14 @@ app.post("/api/analyze", async (req, res) => {
 
   try {
     const plant = await identifyPlant(imageDataUrl);
-    if (!plant.candidate || !plant.cropId) {
+    if (plant.status !== "resolved" || !plant.candidate || !plant.cropId) {
       return res.json({
-        status: "unsupported_crop",
+        status: plant.status === "unsupported" ? "unsupported_crop" : "crop_uncertain",
         detectedPlant: plant.candidate,
-        message: "This image could not be matched to one of the 40 supported crops.",
+        cropCandidates: plant.cropCandidates,
+        message: plant.status === "unsupported"
+          ? "This image could not be matched to one of the 40 supported crops."
+          : "Crop identification is not clear enough to safely rank diseases.",
       });
     }
     const crop = getCrop(plant.cropId);
@@ -47,14 +50,16 @@ app.post("/api/analyze", async (req, res) => {
       cropId: plant.cropId,
       symptoms: observation.symptoms,
       symptomConfidence: observation.symptomConfidence,
+      cropConfidence: plant.cropConfidence,
     });
     return res.json({
       status: diseases.length ? "matched" : "inconclusive",
       crop,
       detectedPlant: plant.candidate,
+      cropSelection: { support: plant.cropConfidence, margin: plant.margin },
       observation,
       diseases,
-      privacy: "The uploaded image is analysed for this request and is not saved in CropGuide.",
+      privacy: "The image is sent to Plant.id and the configured visual-analysis provider for this request. CropGuide does not store the image; external providers process it under their own policies.",
     });
   } catch (error) {
     console.error("[CropGuide] analysis failed", error);

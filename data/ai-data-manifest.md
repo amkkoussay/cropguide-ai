@@ -1,13 +1,13 @@
 # CropGuide AI Dataset and Knowledge Graph
 
-Generated: 2026-08-18T10:24:23.459Z
+Generated: 2026-08-18T10:59:28.261Z
 
 - **Crop nodes:** 40
 - **Disease records:** 439
 - **Canonical visual features:** 30
 - **Differential rules:** 5
 - **Source nodes:** 64
-- **Graph edges:** 2871
+- **Graph edges:** 2901
 
 ## Safety Contract
 

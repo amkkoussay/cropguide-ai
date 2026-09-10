@@ -22,12 +22,12 @@ export function listCropVocabulary(cropId) {
   return filterImageExtractableTokens(collectSymptomVocabulary(rows));
 }
 
-export function matchDiseases({ cropId, symptoms, symptomConfidence }) {
+export function matchDiseases({ cropId, symptoms, symptomConfidence, cropConfidence }) {
   const rows = getDatabase()
     .prepare("SELECT * FROM diseases WHERE crop_id = ?")
     .all(cropId);
 
-  return rankDiseaseRecords(rows, { cropId, symptoms, symptomConfidence });
+  return rankDiseaseRecords(rows, { cropId, symptoms, symptomConfidence, cropConfidence });
 }
 
 export function getCrop(cropId) {

@@ -151,7 +151,18 @@
 - [x] Add automated integrity tests for ontology consistency, differential rules, geography metadata, and dataset/graph exports.
 - [x] Expose and verify explicit symptom aliases and machine-readable feature families, including complete legacy-token coverage tests.
 - [x] Verify the final dataset, graph, and manifest artifacts and prove the current server runtime is free of the historical missing-module error.
-- [ ] Audit and remove generated, duplicate, cache, log, and temporary files from the deliverable without removing required source or knowledge data.
-- [ ] Reorganize project documentation and rewrite README in clear, simple language with architecture, setup, commands, and project limits.
-- [ ] Produce a documented screenshot that shows a safe real analysis result from a diseased-leaf image, not only the landing scan screen.
-- [ ] Build, inspect, and deliver a clean ZIP package that excludes dependencies, builds, logs, caches, secrets, and transient test artifacts.
+- [x] Audit and remove generated, duplicate, cache, log, and temporary files from the deliverable without removing required source or knowledge data.
+- [x] Reorganize project documentation and rewrite README in clear, simple language with architecture, setup, commands, and project limits.
+- [x] Produce a documented screenshot that shows a safe real analysis result from a diseased-leaf image, not only the landing scan screen.
+- [x] Build, inspect, and deliver a clean ZIP package that excludes dependencies, builds, logs, caches, secrets, and transient test artifacts.
+- [x] Audit the supplied project evaluation, implement each verified corrective action, and add regression coverage where applicable.
+- [x] Replace first-suggestion crop selection with normalized supported-crop ranking, probability thresholds, ambiguity margins, and safe abstention.
+- [x] Replace probability-like disease confidence with a bounded evidence-match score using visual-confidence, feature-specificity, support, contradiction, crop certainty, and evidence-count safeguards.
+- [x] Apply differential rules to ranking through evidence gates, score penalties, and safe ceilings when distinguishing evidence is absent or laboratory confirmation is needed.
+- [x] Preserve compositional visual evidence such as lesion shape, pattern, color, halo, tissue, surface, and progression in the ontology and AI export.
+- [x] Make UI and documentation precise about candidate versus record-specific profiles, source availability versus scientific verification, external image processors, and triage rather than diagnosis.
+- [x] Add regression tests for crop ambiguity, evidence ranking, low-evidence ceilings, conflicting features, and differential-rule behavior.
+- [x] Re-audit the project after the latest evaluation fixes and remove only transient, generated, duplicate, or delivery-unnecessary files.
+- [x] Refresh the README in simple language so it explains the current architecture, evidence-match limits, setup, and practical use.
+- [x] Capture and document a current result-screen screenshot from a safe real diseased-leaf analysis after the evaluation fixes.
+- [x] Create and inspect a refreshed clean ZIP that includes the required source, data, documentation, and current screenshot but excludes dependencies, caches, logs, builds, and secrets.

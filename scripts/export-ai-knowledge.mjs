@@ -51,9 +51,11 @@ const diseaseRecords = diseases.map(row => {
       observationId: observation.id,
       featureId: feature.id,
       featureLabels: feature.labels,
+      familyId: feature.familyId,
       extractability: feature.extractability,
       imageEligible: feature.extractability !== "field_only",
       attributes: observation.attributes,
+      evidenceVector: observation.evidenceVector,
     };
   });
   const url = row.source_url;
@@ -102,7 +104,13 @@ const featureNodes = ontology.features.map(feature => ({
   id: `feature:${feature.id}`,
   type: "VisualFeature",
   labels: feature.labels,
+  familyId: feature.familyId,
   extractability: feature.extractability,
+}));
+const featureFamilyNodes = ontology.featureFamilies.map(family => ({
+  id: `feature-family:${family.id}`,
+  type: "VisualFeatureFamily",
+  labels: family.labels,
 }));
 const diseaseNodes = diseaseRecords.map(record => ({
   id: `disease:${record.id}`,
@@ -136,6 +144,9 @@ for (const record of diseaseRecords) {
     graphEdges.push({ from: diseaseNodeId, type: "GOVERNED_BY_DIFFERENTIAL", to: `differential:${ruleId}` });
   }
 }
+for (const feature of ontology.features) {
+  graphEdges.push({ from: `feature:${feature.id}`, type: "BELONGS_TO_FAMILY", to: `feature-family:${feature.familyId}` });
+}
 
 const differentialNodes = differentialRules.rules.map(({ id, ...rule }) => ({
   id: `differential:${id}`,
@@ -164,7 +175,7 @@ const graph = {
     hasFieldOnlyObservation: "A feature must not be requested from the image model; it is preserved for field verification.",
     contextualTo: "The region context does not change candidate ranking or assert disease presence.",
   },
-  nodes: [...cropNodes, ...diseaseNodes, ...featureNodes, ...differentialNodes, ...sourceNodes.values(), regionNode],
+  nodes: [...cropNodes, ...diseaseNodes, ...featureNodes, ...featureFamilyNodes, ...differentialNodes, ...sourceNodes.values(), regionNode],
   edges: graphEdges,
 };
 
