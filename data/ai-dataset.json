@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-18T10:59:28.261Z",
+  "generatedAt": "2026-08-18T11:37:58.369Z",
   "intendedUse": "Candidate retrieval and evidence presentation for crop-image workflows; not a confirmation, prescription, or country-presence dataset.",
   "governance": {
     "symptomOntology": "symptom-ontology.json",

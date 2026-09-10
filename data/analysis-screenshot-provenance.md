@@ -1,11 +1,11 @@
-# Example analysis screenshot
+# لقطة نتيجة التحليل
 
-This note documents the current screenshot used in the README and delivery package.
+يوثق هذا الملف لقطة النتيجة الموجودة في README وحزمة التسليم.
 
-- **Reference image:** `olive-peacock-spot-branch-reference_d9800f54.jpg`, uploaded to the project storage only for this documented interface test.
-- **How it was used:** The image was loaded into the normal CropGuide upload screen and the normal **Analyse image** button was used.
-- **Actual crop result:** Olive (`Olea europaea`) at 96% crop-identification confidence.
-- **Actual visual evidence:** circular dark spot, yellow halo, upper-leaf spot, leaf spot, dark brown spot, and yellowing.
-- **Actual matching result:** `olive_peacock_spot` was the first returned candidate, with a 32% **evidence-match score**. This is not a disease probability or a confirmed diagnosis.
+- **الصورة المرجعية:** `olive-peacock-spot-branch-reference.jpg`، وهي صورة عامة استخدمت فقط لاختبار واجهة التطبيق.
+- **طريقة الاستخدام:** رُفعت الصورة من شاشة CropGuide العادية، ثم استُخدم زر **حلّل الصورة** العادي.
+- **نتيجة المحصول:** زيتون (`Olea europaea`) بثقة تحديد محصول 96%.
+- **نتيجة المطابقة:** ظهر `olive_anthracnose` أولاً، ثم `olive_peacock_spot`. صنف التطبيق المرشحين في نطاق **أدلة محدودة**.
+- **مهم:** نطاق الدليل ليس احتمال مرض ولا تشخيصاً مؤكداً. هذه النتيجة تبيّن أن الصورة لم تعطِ علامة فارقة كافية بين المرشحين.
 
-The image is a public visual reference found through image search. It is used only to show the application flow in the README. The screenshot keeps the app's warning that an image result is not a confirmed diagnosis and that source availability is not an independent scientific verification.
+الصورة تستعمل فقط لشرح مسار التطبيق في README. تبقى رسالة الواجهة واضحة: نتيجة الصورة ليست تشخيصاً نهائياً، وتوفر رابط المصدر لا يساوي تحققاً علمياً مستقلاً للمعلومة.

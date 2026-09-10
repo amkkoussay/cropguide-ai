@@ -34,4 +34,19 @@ describe("AI knowledge exports", () => {
     expect(graph.edges.some(edge => edge.type === "HAS_VISUAL_FEATURE")).toBe(true);
     expect(graph.edges.some(edge => edge.type === "HAS_FIELD_ONLY_OBSERVATION")).toBe(true);
   });
+
+  it("exports differential cue sets without the retired ambiguous visual-cue field", () => {
+    const differentialNodes = graph.nodes.filter(node => node.type === "DifferentialRule");
+    expect(differentialNodes.length).toBeGreaterThan(0);
+
+    for (const node of differentialNodes) {
+      expect(node).toHaveProperty("cueSets");
+      expect(node).not.toHaveProperty("visualCueFeatures");
+      for (const cueSet of Object.values(node.cueSets)) {
+        const shared = new Set(node.sharedFeatures || []);
+        expect(cueSet.supportingFeatures.every(feature => !shared.has(feature))).toBe(true);
+        expect(cueSet.opposingFeatures.every(feature => !shared.has(feature))).toBe(true);
+      }
+    }
+  });
 });

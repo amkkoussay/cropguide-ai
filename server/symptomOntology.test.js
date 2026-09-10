@@ -31,6 +31,19 @@ describe("symptom ontology safety bridge", () => {
     ]));
   });
 
+  it("keeps shared, supporting, and opposing differential cues mutually distinct", () => {
+    const [wiltRule] = differentialsForDisease("tomato_fusarium_wilt");
+    const shared = new Set(wiltRule.sharedFeatures);
+
+    for (const cueSet of Object.values(wiltRule.cueSets)) {
+      for (const feature of [...cueSet.supportingFeatures, ...cueSet.opposingFeatures]) {
+        expect(shared.has(feature)).toBe(false);
+      }
+      expect(cueSet.supportingFeatures.some(feature => cueSet.opposingFeatures.includes(feature))).toBe(false);
+      expect(cueSet.supportingTokens.some(token => cueSet.opposingTokens.includes(token))).toBe(false);
+    }
+  });
+
   it("assigns every canonical feature to an explicit machine-readable family", () => {
     const familyIds = new Set(ontology.featureFamilies.map(family => family.id));
     expect(ontology.featureFamilies.length).toBeGreaterThan(1);

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-18T10:59:28.186Z",
+  "generatedAt": "2026-08-18T11:37:58.289Z",
   "scope": "Visual observations in plant images; not a disease-confirmation ontology.",
   "aliasPolicy": "Only exact or near-exact expressions that preserve the same visible meaning may share a canonical feature. Differences in organ, surface, colour, size, distribution, or progression remain distinct attributes.",
   "featureFamilies": [

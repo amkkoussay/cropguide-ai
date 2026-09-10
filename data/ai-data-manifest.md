@@ -1,6 +1,6 @@
 # CropGuide AI Dataset and Knowledge Graph
 
-Generated: 2026-08-18T10:59:28.261Z
+Generated: 2026-08-18T11:37:58.369Z
 
 - **Crop nodes:** 40
 - **Disease records:** 439

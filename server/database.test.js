@@ -90,7 +90,62 @@ describe("disease matcher", () => {
     });
     const mildewRule = candidate.differentials.find(rule => rule.id === "mildew-powdery-vs-downy");
     expect(mildewRule).toEqual(expect.objectContaining({ evidenceGap: true, distinguishingCueObserved: false }));
-    expect(mildewRule.supportingCues).toContain("vf.foliage.growth.powdery");
+    expect(mildewRule.supportingFeatures).toContain("vf.foliage.growth.powdery");
     expect(candidate.evidenceScore).toBeLessThanOrEqual(60);
+  });
+
+  it("does not treat a shared wilt feature as opposition to the same candidate", () => {
+    const wiltRecord = {
+      ...oliveDisease,
+      id: "tomato_fusarium_wilt",
+      symptoms_json: JSON.stringify(["one_sided_wilting", "vascular_browning", "yellow_halo"]),
+    };
+    const [candidate] = rankDiseaseRecords([wiltRecord], {
+      symptoms: ["one_sided_wilting", "vascular_browning"],
+      symptomConfidence: 0.9,
+      cropConfidence: 0.9,
+    });
+    const wiltRule = candidate.differentials.find(rule => rule.id === "wilt-fusarium-vs-verticillium");
+
+    expect(wiltRule).toEqual(expect.objectContaining({
+      sharedFeatureObserved: true,
+      supportingCueObserved: false,
+      opposingCueObserved: false,
+      conflictingEvidence: false,
+    }));
+    expect(wiltRule.supportingFeatures).toEqual([]);
+    expect(wiltRule.opposingFeatures).toEqual([]);
+  });
+
+  it("calculates coverage only against symptoms that image analysis is permitted to observe", () => {
+    const mixedRecord = {
+      ...oliveDisease,
+      symptoms_json: JSON.stringify(["circular_dark_spot", "yellow_halo", "vascular_browning", "root_galls"]),
+    };
+    const [candidate] = rankDiseaseRecords([mixedRecord], {
+      symptoms: ["circular_dark_spot", "yellow_halo"],
+      symptomConfidence: 0.9,
+      cropConfidence: 0.9,
+    });
+
+    expect(candidate.evidence).toEqual(expect.objectContaining({
+      expectedVisualSymptomCount: 2,
+      coverage: 1,
+    }));
+  });
+
+  it("does not promote a feature merely because it appears in one incomplete record", () => {
+    const singletonFeatureRecord = {
+      ...oliveDisease,
+      id: "tomato_powdery_mildew",
+      symptoms_json: JSON.stringify(["white_powdery_growth"]),
+    };
+    const [candidate] = rankDiseaseRecords([singletonFeatureRecord], {
+      symptoms: ["white_powdery_growth"],
+      symptomConfidence: 0.98,
+      cropConfidence: 0.98,
+    });
+
+    expect(candidate.evidence.diagnosticDiscrimination).toBe(0);
   });
 });

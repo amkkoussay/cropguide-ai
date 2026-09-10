@@ -166,3 +166,12 @@
 - [x] Refresh the README in simple language so it explains the current architecture, evidence-match limits, setup, and practical use.
 - [x] Capture and document a current result-screen screenshot from a safe real diseased-leaf analysis after the evaluation fixes.
 - [x] Create and inspect a refreshed clean ZIP that includes the required source, data, documentation, and current screenshot but excludes dependencies, caches, logs, builds, and secrets.
+- [x] Separate shared visual cues from opposing cues in differential rules so a feature cannot create a conflict with itself.
+- [x] Compute symptom coverage only from visual features that the image-analysis contract is allowed to observe.
+- [x] Replace crop-wide rarity-only specificity with candidate-relative diagnostic discrimination and conservative support safeguards.
+- [x] Replace percentage-style evidence-score presentation with a non-probabilistic evidence-band UI.
+- [x] Expand tests and documentation to distinguish implementation regression tests from externally validated diagnostic-performance claims.
+- [ ] Re-audit the project after the latest matcher fixes and remove only transient, generated, duplicate, or delivery-unnecessary files.
+- [ ] Refresh the README in simple language with the current architecture, evidence-band limits, setup, and practical use.
+- [ ] Capture and document a current result-screen screenshot from a safe real diseased-leaf analysis after the latest matcher fixes.
+- [ ] Create and inspect a refreshed clean ZIP containing required source, data, documentation, and the current result screenshot while excluding dependencies, caches, logs, builds, and secrets.

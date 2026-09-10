@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-18T10:59:28.261Z",
+  "generatedAt": "2026-08-18T11:37:58.369Z",
   "semantics": {
     "hasVisualFeature": "A feature may be requested from a suitable image, but does not by itself confirm a disease.",
     "hasFieldOnlyObservation": "A feature must not be requested from the image model; it is preserved for field verification.",
@@ -5668,13 +5668,19 @@
         "vf.wilt.unilateral",
         "vf.vascular.discoloration"
       ],
-      "visualCueFeatures": {
-        "fusarium_wilt": [
-          "vf.vascular.discoloration"
-        ],
-        "verticillium_wilt": [
-          "vf.vascular.discoloration"
-        ]
+      "cueSets": {
+        "fusarium_wilt": {
+          "supportingFeatures": [],
+          "opposingFeatures": [],
+          "supportingTokens": [],
+          "opposingTokens": []
+        },
+        "verticillium_wilt": {
+          "supportingFeatures": [],
+          "opposingFeatures": [],
+          "supportingTokens": [],
+          "opposingTokens": []
+        }
       },
       "distinguishingCues": {
         "en": "Both can show unilateral wilt and vascular browning; image and field cutting alone are insufficient for species-level separation.",
@@ -5696,13 +5702,27 @@
         "vf.foliage.spot",
         "vf.foliage.necrosis"
       ],
-      "visualCueFeatures": {
-        "powdery_mildew": [
-          "vf.foliage.growth.powdery"
-        ],
-        "downy_mildew": [
-          "vf.foliage.growth.underside"
-        ]
+      "cueSets": {
+        "powdery_mildew": {
+          "supportingFeatures": [
+            "vf.foliage.growth.powdery"
+          ],
+          "opposingFeatures": [
+            "vf.foliage.growth.underside"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": []
+        },
+        "downy_mildew": {
+          "supportingFeatures": [
+            "vf.foliage.growth.underside"
+          ],
+          "opposingFeatures": [
+            "vf.foliage.growth.powdery"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": []
+        }
       },
       "distinguishingCues": {
         "en": "Prioritise a white powdery surface growth for powdery mildew versus angular chlorosis and lower-surface growth for downy mildew; inspect both leaf surfaces under suitable humidity.",
@@ -5725,13 +5745,27 @@
         "vf.stem.rot",
         "vf.wilt.general"
       ],
-      "visualCueFeatures": {
-        "botrytis": [
-          "vf.foliage.growth.fuzzy"
-        ],
-        "sclerotinia": [
-          "vf.fungal.structure"
-        ]
+      "cueSets": {
+        "botrytis": {
+          "supportingFeatures": [
+            "vf.foliage.growth.fuzzy"
+          ],
+          "opposingFeatures": [
+            "vf.fungal.structure"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": []
+        },
+        "sclerotinia": {
+          "supportingFeatures": [
+            "vf.fungal.structure"
+          ],
+          "opposingFeatures": [
+            "vf.foliage.growth.fuzzy"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": []
+        }
       },
       "distinguishingCues": {
         "en": "Gray fuzzy growth supports Botrytis; white cottony growth and later dark sclerotia support Sclerotinia. Confirm when structures are absent.",
@@ -5751,17 +5785,31 @@
       ],
       "sharedFeatures": [
         "vf.wilt.general",
-        "vf.foliage.yellowing",
-        "vf.root.crown"
+        "vf.foliage.yellowing"
       ],
-      "visualCueFeatures": {
-        "phytophthora_root_rot": [
-          "vf.root.crown"
-        ],
-        "fusarium_wilt": [
-          "vf.wilt.unilateral",
-          "vf.vascular.discoloration"
-        ]
+      "cueSets": {
+        "phytophthora_root_rot": {
+          "supportingFeatures": [
+            "vf.root.crown"
+          ],
+          "opposingFeatures": [
+            "vf.wilt.unilateral",
+            "vf.vascular.discoloration"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": []
+        },
+        "fusarium_wilt": {
+          "supportingFeatures": [
+            "vf.wilt.unilateral",
+            "vf.vascular.discoloration"
+          ],
+          "opposingFeatures": [
+            "vf.root.crown"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": []
+        }
       },
       "distinguishingCues": {
         "en": "Root/crown browning and poorly drained wet zones support Phytophthora; unilateral wilt with vascular discoloration supports Fusarium. A leaf image alone is insufficient.",
@@ -5783,13 +5831,31 @@
         "vf.foliage.spot",
         "vf.foliage.yellowing"
       ],
-      "visualCueFeatures": {
-        "bacterial_leaf_spot": [
-          "vf.foliage.water-soaked"
-        ],
-        "alternaria_leaf_spot": [
-          "vf.foliage.spot"
-        ]
+      "cueSets": {
+        "bacterial_leaf_spot": {
+          "supportingFeatures": [
+            "vf.foliage.water-soaked"
+          ],
+          "opposingFeatures": [
+            "vf.foliage.necrosis"
+          ],
+          "supportingTokens": [],
+          "opposingTokens": [
+            "concentric_ring"
+          ]
+        },
+        "alternaria_leaf_spot": {
+          "supportingFeatures": [
+            "vf.foliage.necrosis"
+          ],
+          "opposingFeatures": [
+            "vf.foliage.water-soaked"
+          ],
+          "supportingTokens": [
+            "concentric_ring"
+          ],
+          "opposingTokens": []
+        }
       },
       "distinguishingCues": {
         "en": "Water-soaked lesions support bacterial leaf spot; dry brown lesions with concentric rings support Alternaria. Confirm before treatment selection.",
