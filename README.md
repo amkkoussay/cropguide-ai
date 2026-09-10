@@ -1,15 +1,16 @@
 # CropGuide AI
 
-## Version 0.6
+## Version 0.7
 
-This release improves how the app handles poor images and unknown signs.
+This release adds benchmarking tools and better image checks.
 
 ## What is new
 
-- Added checks to skip ranking for poor, healthy, or non-plant images.
-- Added support for recording unknown visual signs.
-- Added an audit remediation file to track assessment fixes.
-- Improved logic for missing or internal signs.
+- Added a benchmark protocol for performance testing.
+- Added a CSV template for recording benchmark results.
+- Added server-side image size and structure checks.
+- Added short retry logic for vision service issues.
+- Improved how similar general signs are grouped.
 
 ## Run it
 

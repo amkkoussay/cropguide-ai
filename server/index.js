@@ -16,12 +16,38 @@ function imageIsSupported(value) {
   return typeof value === "string" && /^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=\s]+$/.test(value);
 }
 
+function hasSupportedImageBytes(dataUrl) {
+  const encoded = dataUrl.slice(dataUrl.indexOf(",") + 1).replace(/\s/g, "");
+  const bytes = Buffer.from(encoded, "base64");
+  if (bytes.length < 12 || bytes.length > 7 * 1024 * 1024) return false;
+  const isJpeg = bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff;
+  const isPng = bytes.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+  const isWebp = bytes.subarray(0, 4).toString("ascii") === "RIFF" && bytes.subarray(8, 12).toString("ascii") === "WEBP";
+  return isJpeg || isPng || isWebp;
+}
+
+const requestWindows = new Map();
+function analysisRateAllowed(ip) {
+  const now = Date.now();
+  const entries = (requestWindows.get(ip) || []).filter(time => now - time < 60_000);
+  if (entries.length >= 8) return false;
+  entries.push(now);
+  requestWindows.set(ip, entries);
+  return true;
+}
+
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
 app.post("/api/analyze", async (req, res) => {
   const { imageDataUrl } = req.body || {};
+  if (!analysisRateAllowed(req.ip || "unknown")) {
+    return res.status(429).json({ error: "Too many analysis requests. Please wait one minute and try again." });
+  }
   if (!imageIsSupported(imageDataUrl)) {
     return res.status(400).json({ error: "Please upload a JPEG, PNG, or WebP image." });
+  }
+  if (!hasSupportedImageBytes(imageDataUrl)) {
+    return res.status(400).json({ error: "The image data could not be verified. Please upload a valid JPEG, PNG, or WebP file." });
   }
   if (Buffer.byteLength(imageDataUrl, "utf8") > 10 * 1024 * 1024) {
     return res.status(413).json({ error: "Please choose an image under 7 MB." });

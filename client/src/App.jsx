@@ -13,7 +13,7 @@ const copy = {
     none: "لم نجد تطابقاً كافياً مع الأمراض المدعومة لهذه الصورة.", noneLead: "الصورة قد لا تُظهر علامة مميزة كفاية. جرّب ورقة أو ثمرة مصابة بوضوح أكبر.",
     unsupported: "المحصول غير مدعوم حالياً", unsupportedLead: "يدعم CropGuide حالياً 40 محصولاً. حاول صورة أوضح للمحصول نفسه.", cropUncertain: "تعذر تحديد المحصول بأمان", cropUncertainLead: "اقتراحات المحصول متقاربة أو ضعيفة، لذلك لم نرتب الأمراض. التقط صورة أوضح للنبات أو للورقة مع جزء من الساق.", imageInvalid: "الصورة لا تصلح للفحص الآمن", imageInvalidLead: "لم تظهر ورقة أو ثمرة واحدة بأعراض واضحة. استخدم صورة لنبات واحد فقط، بلا عناصر غير مرتبطة.", noClearSymptoms: "لا تظهر أعراض واضحة", noClearSymptomsLead: "قد تبدو الورقة سليمة أو لا تحمل علامة مرئية كافية. لا نرتب الأمراض في هذه الحالة.", imageLimited: "الصورة لا تعطي دليلاً كافياً", imageLimitedLead: "التركيز أو الإضاءة أو زاوية الصورة لا تسمح بقراءة الأعراض بأمان. جرّب صورة أقرب وأوضح للجزء المصاب.",
     retry: "جرّب صورة أخرى", error: "تعذر إكمال التحليل", cropConfidence: "ثقة تحديد المحصول", stepCrop: "تحديد المحصول", stepSymptoms: "قراءة العلامات", stepMatch: "مطابقة المرض",
-    quality: "جودة الصورة", adequate: "مناسبة", limited: "محدودة", evidence: "الدليل المرئي",
+    quality: "جودة الصورة", adequate: "مناسبة", limited: "محدودة", evidence: "الدليل المرئي", fieldConfirmation: "تحتاج هذه النتيجة إلى فحص حقلي للتأكيد قبل أي علاج.", downloadSummary: "نزّل ملخص النتيجة",
   },
   fr: {
     dir: "ltr", language: "Français", eyebrow: "Guide des maladies végétales", title: "Un nom de maladie probable, pas seulement une description de tache.",
@@ -27,7 +27,7 @@ const copy = {
     none: "Aucune correspondance suffisante avec les maladies prises en charge.", noneLead: "La photo ne montre peut-être pas un signe suffisamment distinctif. Essayez une feuille ou un fruit plus clairement atteint.",
     unsupported: "Culture non prise en charge", unsupportedLead: "CropGuide prend actuellement en charge 40 cultures. Essayez une image plus nette de la même culture.", cropUncertain: "Culture non identifiée avec assez de certitude", cropUncertainLead: "Les propositions de culture sont trop proches ou faibles; les maladies ne sont donc pas classées. Prenez une photo plus nette de la plante ou de la feuille avec une partie de la tige.", imageInvalid: "Photo non adaptée à un tri sûr", imageInvalidLead: "La photo ne montre pas clairement une seule feuille ou un seul fruit avec des signes. Utilisez une image d’un seul végétal, sans éléments non liés.", noClearSymptoms: "Aucun symptôme clair visible", noClearSymptomsLead: "La feuille peut sembler saine ou ne pas montrer un signe assez visible. Les maladies ne sont pas classées dans ce cas.", imageLimited: "La photo ne donne pas assez d’éléments", imageLimitedLead: "La mise au point, la lumière ou l’angle ne permettent pas de lire les signes en sécurité. Essayez une photo plus proche et plus nette de la zone atteinte.",
     retry: "Essayer une autre photo", error: "Impossible de terminer l’analyse", cropConfidence: "Confiance d’identification", stepCrop: "Culture", stepSymptoms: "Signes visibles", stepMatch: "Correspondance",
-    quality: "Qualité de l’image", adequate: "Adéquate", limited: "Limitée", evidence: "Élément visible",
+    quality: "Qualité de l’image", adequate: "Adéquate", limited: "Limitée", evidence: "Élément visible", fieldConfirmation: "Ce résultat exige un contrôle au champ avant tout traitement.", downloadSummary: "Télécharger le résumé",
   },
   en: {
     dir: "ltr", language: "English", eyebrow: "Plant disease guide", title: "A probable disease name—not only a spot description.",
@@ -41,7 +41,7 @@ const copy = {
     none: "No sufficient match was found among the supported diseases.", noneLead: "The image may not show a distinctive enough sign. Try a more clearly affected leaf or fruit.",
     unsupported: "Crop not supported yet", unsupportedLead: "CropGuide currently supports 40 crops. Try a clearer image of the same crop.", cropUncertain: "Crop could not be identified safely", cropUncertainLead: "Crop suggestions are too close or too weak, so diseases were not ranked. Take a clearer photo of the plant or leaf with part of the stem.", imageInvalid: "Photo not suitable for safe triage", imageInvalidLead: "The image does not clearly show one leaf or fruit with symptoms. Use a photo of one plant part only, without unrelated objects.", noClearSymptoms: "No clear symptoms are visible", noClearSymptomsLead: "The leaf may look healthy or may not show a sufficiently visible sign. Diseases are not ranked in this case.", imageLimited: "The photo does not provide enough evidence", imageLimitedLead: "Focus, lighting, or the angle does not allow safe reading of symptoms. Try a closer, sharper photo of the affected area.",
     retry: "Try another photo", error: "Analysis could not be completed", cropConfidence: "Identification confidence", stepCrop: "Crop", stepSymptoms: "Visible signs", stepMatch: "Disease match",
-    quality: "Image quality", adequate: "Adequate", limited: "Limited", evidence: "Visible evidence",
+    quality: "Image quality", adequate: "Adequate", limited: "Limited", evidence: "Visible evidence", fieldConfirmation: "This result needs a field check before any treatment.", downloadSummary: "Download result summary",
   },
 };
 
@@ -90,6 +90,7 @@ function CandidateCard({ disease, text, language }) {
       <span className={`score ${evidenceBand}`} aria-label={`${text.likely}: ${text.evidenceBands[evidenceBand]}`}>{text.evidenceBands[evidenceBand]}</span>
     </div>
     <div className="care-stack">
+      {disease.decision === "field_confirmation_required" && <section className="safety"><h4>{text.fieldConfirmation}</h4><p>{disease.fieldCheck[language]}</p></section>}
       <section><h4>{text.immediate}</h4><p>{disease.immediateCare[language]}</p></section>
       <section><h4>{text.conditional}</h4><p>{disease.conditionalCare[language]}</p></section>
       <section className="safety"><h4>{text.safety}</h4><p>{disease.safety[language]}</p></section>
@@ -162,6 +163,35 @@ export default function App() {
     if (inputRef.current) inputRef.current.value = "";
   }
 
+  function downloadSummary() {
+    if (!result) return;
+    const statusTitle = resultState?.title || text.candidates;
+    const cropName = result.crop?.name?.[language] || "—";
+    const candidates = (result.diseases || []).map((disease, index) => {
+      const band = text.evidenceBands[evidenceBandKey(disease.evidenceScore)];
+      const decision = disease.decision === "field_confirmation_required" ? text.fieldConfirmation : "";
+      return `${index + 1}. ${disease.name?.[language] || disease.id}\n${text.likely}: ${band}${decision ? `\n${decision}` : ""}`;
+    });
+    const summary = [
+      "CropGuide AI — Analysis summary",
+      new Date().toLocaleString(),
+      "",
+      `${text.result}: ${statusTitle}`,
+      `${text.detectedCrop}: ${cropName}`,
+      result.message ? `${text.evidence}: ${result.message}` : "",
+      candidates.length ? `\n${text.candidates}\n${candidates.join("\n\n")}` : "",
+      "",
+      text.disclaimer,
+    ].filter(Boolean).join("\n");
+    const file = new Blob([summary], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(file);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "cropguide-analysis-summary.txt";
+    anchor.click();
+    URL.revokeObjectURL(url);
+  }
+
   return <main className="app-shell" lang={language} dir={text.dir}>
     <section className="intro-panel">
       <div className="top-row"><a className="brand" href="/" aria-label="CropGuide home"><span className="brand-mark"><img src="/manus-storage/cropguide-brand-mark-v2_c9b1a7b7.png" alt="" /></span><span className="brand-wordmark">CropGuide</span></a>
@@ -185,7 +215,7 @@ export default function App() {
       </>}
 
       {result && <div className="result-panel">
-        <div className="result-top"><div><p className="eyebrow">{text.result}</p><h2>{resultState?.title || text.candidates}</h2></div><button className="text-button" onClick={reset}>{text.retry}</button></div>
+        <div className="result-top"><div><p className="eyebrow">{text.result}</p><h2>{resultState?.title || text.candidates}</h2></div><div><button className="text-button" onClick={downloadSummary}>{text.downloadSummary}</button><button className="text-button" onClick={reset}>{text.retry}</button></div></div>
         {resultState && !resultState.showCrop ? <p className="empty-copy">{resultState.lead}</p> : <>
           <div className="crop-card"><div className="crop-icon">⌁</div><div><span>{text.detectedCrop}</span><strong>{result.crop.name[language]}</strong><em>{result.crop.scientificName}</em></div><div className="crop-score"><span>{text.cropConfidence}</span><strong>{Math.round((result.detectedPlant?.probability || 0) * 100)}%</strong></div></div>
           {resultState ? <div className="empty-state"><h3>{resultState.title}</h3><p>{resultState.lead}</p></div> : <div className="disease-list">{result.diseases.map(disease => <CandidateCard key={disease.id} disease={disease} text={text} language={language} />)}</div>}

@@ -68,6 +68,16 @@ function visualFeatureIdsForRecord(record) {
   return new Set(filterImageExtractableTokens(decodeSymptoms(record.symptoms_json)));
 }
 
+function uniqueCanonicalMatches(tokens) {
+  const grouped = new Map();
+  for (const token of tokens) {
+    const observation = describeObservation(token);
+    const key = observation?.canonicalFeatureId || token;
+    if (!grouped.has(key)) grouped.set(key, token);
+  }
+  return [...grouped.values()];
+}
+
 function calculateDiagnosticDiscrimination(matchedFeatureIds, visualFeatureSets) {
   const comparableFeatureSets = visualFeatureSets.filter(featureSet => featureSet.size > 0);
   if (matchedFeatureIds.length === 0 || comparableFeatureSets.length < 2) return 0;
@@ -97,16 +107,21 @@ export function rankDiseaseRecords(records, { symptoms = [], symptomConfidence =
 
   return records.map(row => {
     const expectedVisualSymptoms = filterImageExtractableTokens(decodeSymptoms(row.symptoms_json));
-    const matchedSymptoms = expectedVisualSymptoms.filter(symptom => observedTokens.has(symptom));
+    // Synonyms and several aliases of the same canonical observation are one
+    // visual fact, not several independent pieces of disease evidence.
+    const matchedSymptoms = uniqueCanonicalMatches(expectedVisualSymptoms.filter(symptom => observedTokens.has(symptom)));
+    const expectedIndependentSymptoms = uniqueCanonicalMatches(expectedVisualSymptoms);
     if (!matchedSymptoms.length) return null;
     const matchedFeatureIds = [...new Set(matchedSymptoms.map(token => describeObservation(token)?.canonicalFeatureId).filter(Boolean))];
-    const coverage = matchedSymptoms.length / Math.max(1, expectedVisualSymptoms.length);
+    const coverage = matchedSymptoms.length / Math.max(1, expectedIndependentSymptoms.length);
     const diagnosticDiscrimination = calculateDiagnosticDiscrimination(matchedSymptoms, visualFeatureSets);
     const evidenceSufficiency = Math.min(1, matchedSymptoms.length / MIN_MATCHES_FOR_UNCAPPED_SCORE);
     const differentials = scoreDifferentials(row.id, selectedFeatureIds, observedTokens);
     const differentialPenalty = differentials.reduce((total, rule) => total + rule.penalty, 0);
     const differentialSupportBonus = Math.min(6, differentials.reduce((total, rule) => total + (rule.supportingCueObserved && !rule.opposingCueObserved ? 3 : 0), 0));
     let scoreCeiling = differentials.reduce((ceiling, rule) => Math.min(ceiling, rule.ceiling), 100);
+    const requiresFieldConfirmation = differentials.some(rule => rule.requiresFieldConfirmation && rule.active);
+    if (requiresFieldConfirmation) scoreCeiling = Math.min(scoreCeiling, 60);
     if (matchedSymptoms.length < MIN_MATCHES_FOR_UNCAPPED_SCORE) scoreCeiling = Math.min(scoreCeiling, LOW_EVIDENCE_CEILING);
     if (visualConfidence < 0.45) scoreCeiling = Math.min(scoreCeiling, LOW_VISUAL_CONFIDENCE_CEILING);
     if (cropSupport < 0.65) scoreCeiling = Math.min(scoreCeiling, 60);
@@ -127,12 +142,14 @@ export function rankDiseaseRecords(records, { symptoms = [], symptomConfidence =
         matchedFeatureIds,
         matchCount: matchedSymptoms.length,
         expectedVisualSymptomCount: expectedVisualSymptoms.length,
+        expectedIndependentVisualSymptomCount: expectedIndependentSymptoms.length,
         visualConfidence,
         cropSupport,
         coverage: Number(coverage.toFixed(3)),
         diagnosticDiscrimination: Number(diagnosticDiscrimination.toFixed(3)),
         differentialSupportBonus,
         scoreCeiling,
+        requiresFieldConfirmation,
       },
       fieldCheck: { ar: row.field_check_ar, fr: row.field_check_fr, en: row.field_check_en },
       immediateCare: { ar: row.immediate_care_ar, fr: row.immediate_care_fr, en: row.immediate_care_en },
@@ -142,6 +159,7 @@ export function rankDiseaseRecords(records, { symptoms = [], symptomConfidence =
       sourceScope: row.source_scope || "crop_group",
       reviewStatus: row.review_status || "queued",
       differentials,
+      decision: requiresFieldConfirmation ? "field_confirmation_required" : "ranked_evidence",
     };
   }).filter(Boolean).sort((left, right) => right.evidenceScore - left.evidenceScore || right.evidence.matchCount - left.evidence.matchCount || left.id.localeCompare(right.id)).slice(0, 3);
 }

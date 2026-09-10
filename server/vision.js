@@ -20,6 +20,18 @@ function safeImageValidity(value) {
     ? value : "uncertain";
 }
 
+const providerState = { failures: 0, openUntil: 0 };
+const REQUEST_TIMEOUT_MS = 18_000;
+const MAX_ATTEMPTS = 2;
+
+function normalizeObservation(observation) {
+  const imageValidity = observation.imageValidity;
+  if (["healthy_or_no_clear_symptoms", "unrelated_or_multiple"].includes(imageValidity)) {
+    return { ...observation, symptoms: [], symptomConfidence: 0 };
+  }
+  return observation;
+}
+
 function recoverTruncatedPayload(text, allowedSymptoms) {
   const symptomSection = text.match(/"symptoms"\s*:\s*\[([\s\S]*?)(?:\]|$)/)?.[1] || "";
   const symptoms = [...symptomSection.matchAll(/"([^"\\]+)"/g)]
@@ -42,14 +54,14 @@ export function parseVisibleSymptoms(content, allowedSymptoms) {
   if (!text) return recoverTruncatedPayload("", allowedSymptoms);
   try {
     const parsed = JSON.parse(text);
-    return {
+    return normalizeObservation({
       imageQuality: parsed.imageQuality === "adequate" ? "adequate" : "limited",
       imageValidity: safeImageValidity(parsed.imageValidity),
       symptoms: safeStructuredSymptoms(parsed.symptoms, allowedSymptoms),
       symptomConfidence: boundedNumber(parsed.symptomConfidence),
       visibleEvidence: typeof parsed.visibleEvidence === "string" ? parsed.visibleEvidence.slice(0, 240) : "",
       unfamiliarObservation: typeof parsed.unfamiliarObservation === "string" ? parsed.unfamiliarObservation.slice(0, 160) : "",
-    };
+    });
   } catch {
     return recoverTruncatedPayload(text, allowedSymptoms);
   }
@@ -74,10 +86,11 @@ export async function extractVisibleSymptoms({ imageDataUrl, cropName, allowedSy
     additionalProperties: false,
   };
 
-  const response = await fetch(apiUrl, {
-    method: "POST",
-    headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify({
+  if (Date.now() < providerState.openUntil) {
+    throw new Error("The visual symptom service is temporarily unavailable. Please try again shortly.");
+  }
+
+  const requestBody = JSON.stringify({
       model: "gemini-3-flash-preview",
       max_tokens: 700,
       response_format: { type: "json_schema", json_schema: { name: "visible_plant_symptoms", strict: true, schema } },
@@ -94,9 +107,34 @@ export async function extractVisibleSymptoms({ imageDataUrl, cropName, allowedSy
           ],
         },
       ],
-    }),
   });
-  if (!response.ok) throw new Error("The visual symptom service is temporarily unavailable.");
-  const body = await response.json();
-  return parseVisibleSymptoms(body?.choices?.[0]?.message?.content, allowedSymptoms);
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+    try {
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
+        body: requestBody,
+        signal: controller.signal,
+      });
+      if (!response.ok) {
+        if ((response.status === 429 || response.status >= 500) && attempt < MAX_ATTEMPTS) continue;
+        throw new Error("The visual symptom service is temporarily unavailable.");
+      }
+      const body = await response.json();
+      providerState.failures = 0;
+      return parseVisibleSymptoms(body?.choices?.[0]?.message?.content, allowedSymptoms);
+    } catch (error) {
+      if (attempt < MAX_ATTEMPTS) continue;
+      providerState.failures += 1;
+      if (providerState.failures >= 3) providerState.openUntil = Date.now() + 30_000;
+      throw new Error(error.name === "AbortError"
+        ? "The visual symptom service timed out. Please try again."
+        : "The visual symptom service is temporarily unavailable.");
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
 }
