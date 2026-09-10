@@ -1,3 +1,5 @@
+import { differentialsForDisease } from "./symptomOntology.js";
+
 function decodeSymptoms(value) {
   if (Array.isArray(value)) return value;
   try {
@@ -35,6 +37,9 @@ export function rankDiseaseRecords(records, { symptoms = [], symptomConfidence =
         conditionalCare: { ar: row.conditional_care_ar, fr: row.conditional_care_fr, en: row.conditional_care_en },
         safety: { ar: row.safety_ar, fr: row.safety_fr, en: row.safety_en },
         sourceUrl: row.source_url,
+        sourceScope: row.source_scope || "crop_group",
+        reviewStatus: row.review_status || "queued",
+        differentials: differentialsForDisease(row.id),
       };
     })
     .filter(candidate => candidate.matchedSymptoms.length > 0)

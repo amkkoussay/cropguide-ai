@@ -11,6 +11,7 @@ const oliveDisease = {
   immediate_care_ar: "إدارة", immediate_care_fr: "Gérer", immediate_care_en: "Manage",
   conditional_care_ar: "علاج مشروط", conditional_care_fr: "Traitement conditionnel", conditional_care_en: "Conditional care",
   safety_ar: "سلامة", safety_fr: "Sécurité", safety_en: "Safety", source_url: "https://example.edu/olive",
+  source_scope: "record_specific", review_status: "reviewed",
 };
 
 describe("disease matcher", () => {
@@ -32,6 +33,8 @@ describe("disease matcher", () => {
       conditionalCare: expect.objectContaining({ ar: expect.any(String) }),
       safety: expect.objectContaining({ ar: expect.any(String) }),
       sourceUrl: expect.stringMatching(/^https:\/\//),
+      sourceScope: "record_specific",
+      reviewStatus: "reviewed",
     })]);
   });
 

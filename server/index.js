@@ -33,7 +33,7 @@ app.post("/api/analyze", async (req, res) => {
       return res.json({
         status: "unsupported_crop",
         detectedPlant: plant.candidate,
-        message: "This image could not be matched to one of the seven supported crops.",
+        message: "This image could not be matched to one of the 40 supported crops.",
       });
     }
     const crop = getCrop(plant.cropId);
