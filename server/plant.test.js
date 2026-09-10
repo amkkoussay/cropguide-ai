@@ -39,4 +39,16 @@ describe("Plant.id crop aliases", () => {
     ]);
     expect(selection).toMatchObject({ status: "low_confidence", cropId: null, cropConfidence: 0.41 });
   });
+
+  it("does not resolve a supported crop when a stronger unsupported suggestion conflicts with it", () => {
+    const selection = selectSupportedCrop([
+      { name: "Lavandula angustifolia", probability: 0.9, details: { common_names: ["lavender"] } },
+      { name: "Olea europaea", probability: 0.6, details: { common_names: ["olive"] } },
+    ]);
+    expect(selection).toMatchObject({ status: "ambiguous", cropId: null, cropConfidence: 0.6 });
+  });
+
+  it("does not map a short alias inside an unrelated word", () => {
+    expect(cropFromPlantCandidate({ name: "Prunus persica", commonNames: ["peach"] })).not.toBe("pea");
+  });
 });

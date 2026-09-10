@@ -46,11 +46,22 @@ function candidateFrom(value) {
   return { name: value.name, probability: clampProbability(value.probability), commonNames };
 }
 
+function normalizedText(value) {
+  return String(value || "").toLowerCase().normalize("NFKD").replace(/[×]/g, "x").replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function matchesAlias(text, alias) {
+  const normalizedAlias = normalizedText(alias);
+  if (!normalizedAlias) return false;
+  const escaped = normalizedAlias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+  return new RegExp(`(^|\\s)${escaped}(?=\\s|$)`, "i").test(normalizedText(text));
+}
+
 export function cropFromPlantCandidate(candidate) {
   if (!candidate) return null;
-  const descriptor = [candidate.name, ...candidate.commonNames].join(" ").toLowerCase();
+  const descriptors = [candidate.name, ...candidate.commonNames];
   for (const [cropId, aliases] of Object.entries(cropAliases)) {
-    if (aliases.some(alias => descriptor.includes(alias))) return cropId;
+    if (aliases.some(alias => descriptors.some(descriptor => matchesAlias(descriptor, alias)))) return cropId;
   }
   return null;
 }
@@ -61,16 +72,20 @@ export function cropFromPlantCandidate(candidate) {
  */
 export function selectSupportedCrop(suggestions, policy = CROP_SELECTION_POLICY) {
   const byCrop = new Map();
+  const rawCandidates = [];
   for (const rawSuggestion of Array.isArray(suggestions) ? suggestions.slice(0, policy.maxSuggestionsConsidered) : []) {
     const candidate = candidateFrom(rawSuggestion);
     const cropId = cropFromPlantCandidate(candidate);
+    if (candidate) rawCandidates.push({ ...candidate, cropId });
     if (!candidate || !cropId) continue;
     const current = byCrop.get(cropId);
     if (!current || candidate.probability > current.probability) byCrop.set(cropId, { cropId, ...candidate });
   }
   const ranked = [...byCrop.values()].sort((a, b) => b.probability - a.probability || a.cropId.localeCompare(b.cropId));
   const top = ranked[0] || null;
-  const runnerUp = ranked[1] || null;
+  const runnerUp = top ? rawCandidates
+    .filter(candidate => candidate.cropId !== top.cropId)
+    .sort((a, b) => b.probability - a.probability || a.name.localeCompare(b.name))[0] || null : null;
   const margin = top && runnerUp ? top.probability - runnerUp.probability : 1;
   const cropCandidates = ranked.map(({ cropId, name, probability }) => ({ cropId, name, support: probability }));
 

@@ -2,7 +2,7 @@ import express from "express";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer as createViteServer } from "vite";
-import { getCrop, listCropVocabulary, matchDiseases } from "./database.js";
+import { getCrop, listVisionVocabulary, matchDiseases } from "./database.js";
 import { identifyPlant } from "./plant.js";
 import { extractVisibleSymptoms } from "./vision.js";
 
@@ -40,12 +40,21 @@ app.post("/api/analyze", async (req, res) => {
       });
     }
     const crop = getCrop(plant.cropId);
-    const allowedSymptoms = listCropVocabulary(plant.cropId);
+    const allowedSymptoms = listVisionVocabulary();
     const observation = await extractVisibleSymptoms({
       imageDataUrl,
       cropName: crop.scientificName,
       allowedSymptoms,
     });
+    if (observation.imageQuality !== "adequate" || observation.imageValidity !== "plant_symptoms_visible") {
+      const status = observation.imageValidity === "unrelated_or_multiple" ? "image_invalid"
+        : observation.imageValidity === "healthy_or_no_clear_symptoms" ? "no_clear_symptoms" : "image_limited";
+      return res.json({
+        status, crop, detectedPlant: plant.candidate, cropSelection: { support: plant.cropConfidence, margin: plant.margin }, observation, diseases: [],
+        message: "The image does not provide enough clear, single-plant symptom evidence to rank diseases safely.",
+        privacy: "The image is sent to Plant.id and the configured visual-analysis provider for this request. CropGuide does not store the image; external providers process it under their own policies.",
+      });
+    }
     const diseases = matchDiseases({
       cropId: plant.cropId,
       symptoms: observation.symptoms,
@@ -53,12 +62,12 @@ app.post("/api/analyze", async (req, res) => {
       cropConfidence: plant.cropConfidence,
     });
     return res.json({
-      status: diseases.length ? "matched" : "inconclusive",
+      status: diseases[0]?.evidenceScore >= 60 ? "matched" : "inconclusive",
       crop,
       detectedPlant: plant.candidate,
       cropSelection: { support: plant.cropConfidence, margin: plant.margin },
       observation,
-      diseases,
+      diseases: diseases[0]?.evidenceScore >= 60 ? diseases : [],
       privacy: "The image is sent to Plant.id and the configured visual-analysis provider for this request. CropGuide does not store the image; external providers process it under their own policies.",
     });
   } catch (error) {

@@ -22,6 +22,11 @@ export function listCropVocabulary(cropId) {
   return filterImageExtractableTokens(collectSymptomVocabulary(rows));
 }
 
+export function listVisionVocabulary() {
+  const rows = getDatabase().prepare("SELECT symptoms_json FROM diseases").all();
+  return filterImageExtractableTokens(collectSymptomVocabulary(rows));
+}
+
 export function matchDiseases({ cropId, symptoms, symptomConfidence, cropConfidence }) {
   const rows = getDatabase()
     .prepare("SELECT * FROM diseases WHERE crop_id = ?")

@@ -65,9 +65,7 @@ function scoreDifferentials(diseaseId, selectedFeatureIds, selectedTokens) {
 }
 
 function visualFeatureIdsForRecord(record) {
-  return new Set(filterImageExtractableTokens(decodeSymptoms(record.symptoms_json))
-    .map(token => describeObservation(token)?.canonicalFeatureId)
-    .filter(Boolean));
+  return new Set(filterImageExtractableTokens(decodeSymptoms(record.symptoms_json)));
 }
 
 function calculateDiagnosticDiscrimination(matchedFeatureIds, visualFeatureSets) {
@@ -103,23 +101,23 @@ export function rankDiseaseRecords(records, { symptoms = [], symptomConfidence =
     if (!matchedSymptoms.length) return null;
     const matchedFeatureIds = [...new Set(matchedSymptoms.map(token => describeObservation(token)?.canonicalFeatureId).filter(Boolean))];
     const coverage = matchedSymptoms.length / Math.max(1, expectedVisualSymptoms.length);
-    const diagnosticDiscrimination = calculateDiagnosticDiscrimination(matchedFeatureIds, visualFeatureSets);
+    const diagnosticDiscrimination = calculateDiagnosticDiscrimination(matchedSymptoms, visualFeatureSets);
     const evidenceSufficiency = Math.min(1, matchedSymptoms.length / MIN_MATCHES_FOR_UNCAPPED_SCORE);
     const differentials = scoreDifferentials(row.id, selectedFeatureIds, observedTokens);
     const differentialPenalty = differentials.reduce((total, rule) => total + rule.penalty, 0);
+    const differentialSupportBonus = Math.min(6, differentials.reduce((total, rule) => total + (rule.supportingCueObserved && !rule.opposingCueObserved ? 3 : 0), 0));
     let scoreCeiling = differentials.reduce((ceiling, rule) => Math.min(ceiling, rule.ceiling), 100);
     if (matchedSymptoms.length < MIN_MATCHES_FOR_UNCAPPED_SCORE) scoreCeiling = Math.min(scoreCeiling, LOW_EVIDENCE_CEILING);
     if (visualConfidence < 0.45) scoreCeiling = Math.min(scoreCeiling, LOW_VISUAL_CONFIDENCE_CEILING);
     if (cropSupport < 0.65) scoreCeiling = Math.min(scoreCeiling, 60);
 
     const rawScore = 100 * ((0.35 * visualConfidence) + (0.25 * coverage) + (0.15 * diagnosticDiscrimination) + (0.15 * cropSupport) + (0.10 * evidenceSufficiency));
-    const evidenceScore = Math.round(clamp(rawScore - differentialPenalty, 0, scoreCeiling));
+    const evidenceScore = Math.round(clamp(rawScore - differentialPenalty + differentialSupportBonus, 0, scoreCeiling));
 
     return {
       id: row.id,
       name: { ar: row.name_ar, fr: row.name_fr, en: row.name_en },
       scientificName: row.scientific_name,
-      confidence: evidenceScore,
       evidenceScore,
       matchedSymptoms,
       evidence: {
@@ -133,6 +131,7 @@ export function rankDiseaseRecords(records, { symptoms = [], symptomConfidence =
         cropSupport,
         coverage: Number(coverage.toFixed(3)),
         diagnosticDiscrimination: Number(diagnosticDiscrimination.toFixed(3)),
+        differentialSupportBonus,
         scoreCeiling,
       },
       fieldCheck: { ar: row.field_check_ar, fr: row.field_check_fr, en: row.field_check_en },

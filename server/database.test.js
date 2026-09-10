@@ -28,7 +28,7 @@ describe("disease matcher", () => {
     expect(candidates).toHaveLength(1);
     expect(candidates).toEqual([expect.objectContaining({
       id: "olive_peacock_spot",
-      confidence: expect.any(Number),
+      evidenceScore: expect.any(Number),
       immediateCare: expect.objectContaining({ ar: expect.any(String) }),
       conditionalCare: expect.objectContaining({ ar: expect.any(String) }),
       safety: expect.objectContaining({ ar: expect.any(String) }),

@@ -1,16 +1,15 @@
 # CropGuide AI
 
-## Version 0.5
+## Version 0.6
 
-This release improves how the app ranks diseases and shows results.
+This release improves how the app handles poor images and unknown signs.
 
 ## What is new
 
-- Improved how the app calculates evidence for each disease.
-- Added descriptive ranges for visual signs (instead of just numbers).
-- Improved logic for missing signs that distinguish between diseases.
-- Added validation notes about project tests.
-- Improved matching rules for better result ranking.
+- Added checks to skip ranking for poor, healthy, or non-plant images.
+- Added support for recording unknown visual signs.
+- Added an audit remediation file to track assessment fixes.
+- Improved logic for missing or internal signs.
 
 ## Run it
 
