@@ -11,6 +11,7 @@ const oliveDisease = {
   immediate_care_ar: "إدارة", immediate_care_fr: "Gérer", immediate_care_en: "Manage",
   conditional_care_ar: "علاج مشروط", conditional_care_fr: "Traitement conditionnel", conditional_care_en: "Conditional care",
   safety_ar: "سلامة", safety_fr: "Sécurité", safety_en: "Safety", source_url: "https://example.edu/olive",
+  source_scope: "record_specific", review_status: "reviewed",
 };
 
 describe("disease matcher", () => {
@@ -27,11 +28,13 @@ describe("disease matcher", () => {
     expect(candidates).toHaveLength(1);
     expect(candidates).toEqual([expect.objectContaining({
       id: "olive_peacock_spot",
-      confidence: expect.any(Number),
+      evidenceScore: expect.any(Number),
       immediateCare: expect.objectContaining({ ar: expect.any(String) }),
       conditionalCare: expect.objectContaining({ ar: expect.any(String) }),
       safety: expect.objectContaining({ ar: expect.any(String) }),
       sourceUrl: expect.stringMatching(/^https:\/\//),
+      sourceScope: "record_specific",
+      reviewStatus: "reviewed",
     })]);
   });
 
@@ -52,5 +55,136 @@ describe("disease matcher", () => {
     });
 
     expect(candidates).toHaveLength(3);
+  });
+
+  it("keeps a one-feature visual match below the low-evidence ceiling", () => {
+    const [candidate] = rankDiseaseRecords([oliveDisease], {
+      symptoms: ["circular_dark_spot"],
+      symptomConfidence: 0.98,
+      cropConfidence: 0.98,
+    });
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(55);
+    expect(candidate.evidence.scoreCeiling).toBeLessThanOrEqual(55);
+  });
+
+  it("keeps low-confidence visual evidence below the visual-confidence ceiling", () => {
+    const [candidate] = rankDiseaseRecords([oliveDisease], {
+      symptoms: ["circular_dark_spot", "yellow_halo", "upper_leaf_spot"],
+      symptomConfidence: 0.2,
+      cropConfidence: 0.98,
+    });
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(45);
+    expect(candidate.evidence.scoreCeiling).toBeLessThanOrEqual(45);
+  });
+
+  it("returns rule-specific visual cues and an evidence gap for a shared mildew sign", () => {
+    const mildewRecord = {
+      ...oliveDisease,
+      id: "cucumber_powdery_mildew",
+      symptoms_json: JSON.stringify(["circular_dark_spot", "white_powdery_growth", "yellow_halo"]),
+    };
+    const [candidate] = rankDiseaseRecords([mildewRecord], {
+      symptoms: ["circular_dark_spot", "yellow_halo"],
+      symptomConfidence: 0.9,
+      cropConfidence: 0.9,
+    });
+    const mildewRule = candidate.differentials.find(rule => rule.id === "mildew-powdery-vs-downy");
+    expect(mildewRule).toEqual(expect.objectContaining({ evidenceGap: true, distinguishingCueObserved: false }));
+    expect(mildewRule.supportingFeatures).toContain("vf.foliage.growth.powdery");
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(60);
+  });
+
+  it("does not treat a shared wilt feature as opposition to the same candidate", () => {
+    const wiltRecord = {
+      ...oliveDisease,
+      id: "tomato_fusarium_wilt",
+      symptoms_json: JSON.stringify(["one_sided_wilting", "vascular_browning", "yellow_halo"]),
+    };
+    const [candidate] = rankDiseaseRecords([wiltRecord], {
+      symptoms: ["one_sided_wilting", "vascular_browning"],
+      symptomConfidence: 0.9,
+      cropConfidence: 0.9,
+    });
+    const wiltRule = candidate.differentials.find(rule => rule.id === "wilt-fusarium-vs-verticillium");
+
+    expect(wiltRule).toEqual(expect.objectContaining({
+      sharedFeatureObserved: true,
+      supportingCueObserved: false,
+      opposingCueObserved: false,
+      conflictingEvidence: false,
+    }));
+    expect(wiltRule.supportingFeatures).toEqual([]);
+    expect(wiltRule.opposingFeatures).toEqual([]);
+  });
+
+  it("calculates coverage only against symptoms that image analysis is permitted to observe", () => {
+    const mixedRecord = {
+      ...oliveDisease,
+      symptoms_json: JSON.stringify(["circular_dark_spot", "yellow_halo", "vascular_browning", "root_galls"]),
+    };
+    const [candidate] = rankDiseaseRecords([mixedRecord], {
+      symptoms: ["circular_dark_spot", "yellow_halo"],
+      symptomConfidence: 0.9,
+      cropConfidence: 0.9,
+    });
+
+    expect(candidate.evidence).toEqual(expect.objectContaining({
+      expectedVisualSymptomCount: 2,
+      coverage: 1,
+    }));
+  });
+
+  it("does not promote a feature merely because it appears in one incomplete record", () => {
+    const singletonFeatureRecord = {
+      ...oliveDisease,
+      id: "tomato_powdery_mildew",
+      symptoms_json: JSON.stringify(["white_powdery_growth"]),
+    };
+    const [candidate] = rankDiseaseRecords([singletonFeatureRecord], {
+      symptoms: ["white_powdery_growth"],
+      symptomConfidence: 0.98,
+      cropConfidence: 0.98,
+    });
+
+    expect(candidate.evidence.diagnosticDiscrimination).toBe(0);
+  });
+
+  it("caps a candidate supported only by two generic observations", () => {
+    const earlyBlight = {
+      ...oliveDisease,
+      id: "tomato_early_blight",
+      symptoms_json: JSON.stringify(["dark_brown_spot", "concentric_ring", "yellow_halo", "older_leaf_spot", "sunken_fruit_lesion"]),
+    };
+    const alternatives = [
+      { ...oliveDisease, id: "tomato_bacterial_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "water_soaked_lesion"]) },
+      { ...oliveDisease, id: "tomato_septoria_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "small_leaf_spot"]) },
+      { ...oliveDisease, id: "tomato_target_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "target_spot"]) },
+    ];
+    const candidates = rankDiseaseRecords([earlyBlight, ...alternatives], {
+      symptoms: ["dark_brown_spot", "yellow_halo"], symptomConfidence: 0.98, cropConfidence: 0.98,
+    });
+    const candidate = candidates.find(result => result.id === "tomato_early_blight");
+
+    expect(candidate).toEqual(expect.objectContaining({ id: "tomato_early_blight" }));
+    expect(candidate.evidence).toMatchObject({ genericOnlyEvidence: true, retrievalSufficient: false });
+    expect(candidate.evidenceScore).toBeLessThanOrEqual(55);
+  });
+
+  it("retains a concentric-ring observation as a bounded detailed evidence unit", () => {
+    const earlyBlight = {
+      ...oliveDisease,
+      id: "tomato_early_blight",
+      symptoms_json: JSON.stringify(["dark_brown_spot", "concentric_ring", "yellow_halo"]),
+    };
+    const alternatives = [
+      { ...oliveDisease, id: "tomato_bacterial_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "water_soaked_lesion"]) },
+      { ...oliveDisease, id: "tomato_septoria_leaf_spot", symptoms_json: JSON.stringify(["dark_brown_spot", "yellow_halo", "small_leaf_spot"]) },
+    ];
+    const [candidate] = rankDiseaseRecords([earlyBlight, ...alternatives], {
+      symptoms: ["dark_brown_spot", "concentric_ring"], symptomConfidence: 0.9, cropConfidence: 0.9,
+    });
+
+    expect(candidate.matchedSymptoms).toEqual(expect.arrayContaining(["dark_brown_spot", "concentric_ring"]));
+    expect(candidate.evidence).toMatchObject({ matchCount: 2, detailedEvidenceUnitCount: 1 });
   });
 });

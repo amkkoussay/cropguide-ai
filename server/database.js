@@ -2,6 +2,7 @@ import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { fileURLToPath } from "node:url";
 import { collectSymptomVocabulary, rankDiseaseRecords } from "./matcher.js";
+import { filterImageExtractableTokens } from "./symptomOntology.js";
 
 const serverDirectory = path.dirname(fileURLToPath(import.meta.url));
 const databasePath = path.resolve(serverDirectory, "../data", "cropguide.sqlite");
@@ -18,15 +19,20 @@ export function listCropVocabulary(cropId) {
   const rows = getDatabase()
     .prepare("SELECT symptoms_json FROM diseases WHERE crop_id = ?")
     .all(cropId);
-  return collectSymptomVocabulary(rows);
+  return filterImageExtractableTokens(collectSymptomVocabulary(rows));
 }
 
-export function matchDiseases({ cropId, symptoms, symptomConfidence }) {
+export function listVisionVocabulary() {
+  const rows = getDatabase().prepare("SELECT symptoms_json FROM diseases").all();
+  return filterImageExtractableTokens(collectSymptomVocabulary(rows));
+}
+
+export function matchDiseases({ cropId, symptoms, symptomConfidence, cropConfidence }) {
   const rows = getDatabase()
     .prepare("SELECT * FROM diseases WHERE crop_id = ?")
     .all(cropId);
 
-  return rankDiseaseRecords(rows, { cropId, symptoms, symptomConfidence });
+  return rankDiseaseRecords(rows, { cropId, symptoms, symptomConfidence, cropConfidence });
 }
 
 export function getCrop(cropId) {

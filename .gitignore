@@ -33,6 +33,7 @@ Thumbs.db
 # Logs
 logs
 *.log
+.manus-logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -100,12 +101,15 @@ jspm_packages/
 # Temporary folders
 tmp/
 temp/
+__pycache__/
+*.pyc
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 !data/cropguide.sqlite
+data/review-runs/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
