@@ -1,6 +1,16 @@
-import { getCrop, listVisionVocabulary, matchDiseases } from "../server/database.js";
-import { identifyPlant } from "../server/plant.js";
-import { extractVisibleSymptoms } from "../server/vision.js";
+import { gunzipSync } from "node:zlib";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+
+const DB_TMP = "/tmp/cropguide.sqlite";
+if (!existsSync(DB_TMP)) {
+  const gz = readFileSync(new URL("../data/cropguide.sqlite.gz", import.meta.url));
+  writeFileSync(DB_TMP, gunzipSync(gz));
+}
+process.env.CROPGUIDE_DB_PATH = DB_TMP;
+
+const { getCrop, listVisionVocabulary, matchDiseases } = await import("../server/database.js");
+const { identifyPlant } = await import("../server/plant.js");
+const { extractVisibleSymptoms } = await import("../server/vision.js");
 
 function imageIsSupported(value) {
   return typeof value === "string" && /^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=\s]+$/.test(value);
