@@ -5,7 +5,7 @@ import { collectSymptomVocabulary, rankDiseaseRecords } from "./matcher.js";
 import { filterImageExtractableTokens } from "./symptomOntology.js";
 
 const serverDirectory = path.dirname(fileURLToPath(import.meta.url));
-const databasePath = path.resolve(serverDirectory, "../data", "cropguide.sqlite");
+const databasePath = process.env.CROPGUIDE_DB_PATH || path.resolve(serverDirectory, "../data", "cropguide.sqlite");
 let database;
 
 function getDatabase() {
