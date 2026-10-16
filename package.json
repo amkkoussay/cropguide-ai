@@ -23,7 +23,8 @@
   "dependencies": {
     "express": "^4.21.2",
     "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "react-dom": "^19.2.1",
+    "lucide-react": "^1.58.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.4",
