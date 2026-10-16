@@ -56,11 +56,11 @@ const copy = {
 const languageOptions = ["ar", "fr", "en"];
 const cropExamples = [
   ["tomato","cropguide-tomato.jpg","Solanum lycopersicum"],
-  ["potato","cropguide-leaf.jpg","Solanum tuberosum"],
+  ["potato","cropguide-potato.jpg","Solanum tuberosum"],
   ["olive","cropguide-specimen.jpg","Olea europaea"],
-  ["wheat","cropguide-leaf.jpg","Triticum aestivum"],
+  ["wheat","cropguide-wheat.jpg","Triticum aestivum"],
   ["pepper","cropguide-tomato.jpg","Capsicum annuum"],
-  ["cucumber","cropguide-leaf.jpg","Cucumis sativus"]
+  ["cucumber","cropguide-cucumber.jpg","Cucumis sativus"]
 ];
 
 function clampImage(file) {
