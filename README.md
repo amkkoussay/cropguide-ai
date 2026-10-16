@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/readme-banner.svg" alt="CropGuide — See the signs. Know the next step." width="100%" />
+  <img src="client/public/assets/readme-banner.svg" alt="CropGuide — See the signs. Know the next step." width="100%" />
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 > The app is live and working. This is not an idea anymore.
 
 <p align="center">
-  <img src="docs/screenshots/cropguide-v2-hero.png" alt="CropGuide app — new design" width="100%" />
+  <img src="client/public/assets/cropguide-v2-hero.png" alt="CropGuide app — new design" width="100%" />
 </p>
 
 ## What you can do
