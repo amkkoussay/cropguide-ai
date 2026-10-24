@@ -4,14 +4,14 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/crops-40-164A3A" alt="40 crops" />
-  <img src="https://img.shields.io/badge/diseases-439-164A3A" alt="439 diseases" />
+  <img src="https://img.shields.io/badge/records-439-164A3A" alt="439 records" />
   <img src="https://img.shields.io/badge/languages-AR_%2F_FR_%2F_EN-D6B65A" alt="Arabic, French, English" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license" />
 </p>
 
 **CropGuide** is a plant-health field guide. You take a photo of a sick leaf or fruit, and the app tells you what the visible signs could mean. It is a first check, not a final answer.
 
-> The app is live and working. This is not an idea anymore.
+> The app is live and working.
 
 <p align="center">
   <img src="client/public/assets/cropguide-v2-hero.png" alt="CropGuide app — new design" width="100%" />
@@ -29,7 +29,7 @@
 
 1. **Find the plant** — the app uses Plant.id to find the plant name. It checks 10 answers and says "I don't know" if it is not sure.
 2. **Read the signs** — an AI looks at the photo and picks signs from a small list (like `yellow_halo` or `leaf_spot`). It does not guess the disease directly.
-3. **Compare the evidence** — the app searches a documented disease knowledge base and shows the best matches. If the signs are not clear enough, it shows no answer. **No answer is better than a wrong answer.**
+3. **Compare the evidence** — the app searches a disease-record knowledge base and shows the best matches (see Coverage below: most records are template-generated, not individually verified). If the signs are not clear enough, it shows no answer. **No answer is better than a wrong answer.**
 
 ## Example
 
@@ -39,7 +39,7 @@
 
 ## Coverage
 
-**40 crops and 439 diseases** — olive, date palm, citrus, almond, fig, grape, tomato, potato, wheat, barley and 30 more.
+**40 crops and 439 disease records** — olive, date palm, citrus, almond, fig, grape, tomato, potato, wheat, barley and 30 more. Of the 439 records, 69 are record-specific and reviewed; the other 370 are template-generated structured entries, not individually verified.
 
 Full list: [`data/coverage.md`](data/coverage.md)
 
@@ -66,7 +66,11 @@ pnpm build
 pnpm start
 ```
 
-You need two keys to make the photo check work: `PLANT_ID_API_KEY` and `BUILT_IN_FORGE_API_KEY`.
+You need three keys to make the photo check work — see `.env.example` (copy it to `.env` and fill in your own keys; never commit real keys):
+
+- `PLANT_ID_API_KEY` — Plant.id, identifies the plant in the photo (`server/plant.js`)
+- `BUILT_IN_FORGE_API_KEY` — Manus Forge, the vision model that reads visible symptoms from the photo (`server/vision.js`)
+- `BUILT_IN_FORGE_API_URL` — Manus Forge API base URL (default `https://forge.manus.im`)
 
 ## Tech
 
