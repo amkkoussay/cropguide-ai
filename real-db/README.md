@@ -23,7 +23,7 @@ guessed.
 Build in progress. Batches are added daily through 30 Oct 2026 and published
 here as they are validated.
 
-Counts as of 2026-10-25: **84 source-verified records across 8 crops.**
+Counts as of 2026-10-27: **124 source-verified records across 12 crops.**
 
 | Crop | Records | Batch files |
 | --- | ---: | --- |
@@ -35,7 +35,11 @@ Counts as of 2026-10-25: **84 source-verified records across 8 crops.**
 | Citrus | 10 | `batches/citrus.jsonl` |
 | Grapevine | 10 | `batches/grapevine.jsonl` |
 | Pepper | 10 | `batches/pepper.jsonl` |
-| **Total** | **84** | |
+| Barley | 10 | `batches/barley.jsonl` |
+| Cucumber | 10 | `batches/cucumber.jsonl` |
+| Watermelon | 10 | `batches/watermelon.jsonl` |
+| Onion | 10 | `batches/onion.jsonl` |
+| **Total** | **124** | |
 
 ## Files
 
@@ -59,6 +63,13 @@ Candidates that did not meet the rule were dropped, not padded in:
   record (same pathogen as the black scorch record already counted — it would
   have duplicated the key) and a Phytophthora gummosis record (the opened page
   named no species, so it would have collided with another record).
+
+Correction, 2026-10-26: the citrus black spot record's provenance fields were
+found scrambled in the 24 Oct file (the URL field held a title string, the
+publisher field held the code). They were fixed to the EPPO datasheet URL,
+title, and publisher with code GUIGCI, verified by opening the EPPO page;
+the evidence text is untouched, and the record still counts in the 24 Oct
+total, not in a later batch.
 
 ## Integration
 
