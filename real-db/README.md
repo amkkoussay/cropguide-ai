@@ -23,7 +23,7 @@ guessed.
 Build in progress. Batches are added daily through 30 Oct 2026 and published
 here as they are validated.
 
-Counts as of 2026-10-27: **124 source-verified records across 12 crops.**
+Counts as of 2026-10-29: **164 source-verified records across 16 crops.**
 
 | Crop | Records | Batch files |
 | --- | ---: | --- |
@@ -39,7 +39,11 @@ Counts as of 2026-10-27: **124 source-verified records across 12 crops.**
 | Cucumber | 10 | `batches/cucumber.jsonl` |
 | Watermelon | 10 | `batches/watermelon.jsonl` |
 | Onion | 10 | `batches/onion.jsonl` |
-| **Total** | **124** | |
+| Chickpea | 10 | `batches/chickpea.jsonl` |
+| Faba bean | 10 | `batches/faba_bean.jsonl` |
+| Strawberry | 10 | `batches/strawberry.jsonl` |
+| Maize | 10 | `batches/maize.jsonl` |
+| **Total** | **164** | |
 
 ## Files
 
@@ -63,6 +67,16 @@ Candidates that did not meet the rule were dropped, not padded in:
   record (same pathogen as the black scorch record already counted — it would
   have duplicated the key) and a Phytophthora gummosis record (the opened page
   named no species, so it would have collided with another record).
+- **Chickpea rust** was dropped: no dedicated accepted source page (only
+  slides, an encyclopedia entry, and a first-report abstract).
+- **Faba bean Fusarium wilt, Fusarium solani root rot, bacterial blight,
+  broad bean wilt virus (as a standalone record), and powdery mildew** were
+  dropped: no dedicated accepted faba-bean pages for them.
+- **Strawberry Fusarium wilt** was dropped: no dedicated accepted strawberry
+  extension page was opened (only a journal abstract and news items); it was
+  replaced by a sourced Phomopsis leaf blight record, keeping strawberry at
+  10 records. Strawberry leather rot was not added: it is the same species
+  as the crown rot record already counted and would have duplicated the key.
 
 Correction, 2026-10-26: the citrus black spot record's provenance fields were
 found scrambled in the 24 Oct file (the URL field held a title string, the
