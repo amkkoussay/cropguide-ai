@@ -18,12 +18,12 @@ design. EPPO codes are recorded only where the code was actually shown on the
 opened source page; everywhere else the field is left blank rather than
 guessed.
 
-## Status
+## Status — FINAL
 
-Build in progress. Batches are added daily through 30 Oct 2026 and published
-here as they are validated.
+Build complete, 30 Oct 2026. No further batches are planned. This is the
+final publish of the build (31 Oct 2026).
 
-Counts as of 2026-10-29: **164 source-verified records across 16 crops.**
+Final counts: **184 source-verified records across 18 crops.**
 
 | Crop | Records | Batch files |
 | --- | ---: | --- |
@@ -43,16 +43,35 @@ Counts as of 2026-10-29: **164 source-verified records across 16 crops.**
 | Faba bean | 10 | `batches/faba_bean.jsonl` |
 | Strawberry | 10 | `batches/strawberry.jsonl` |
 | Maize | 10 | `batches/maize.jsonl` |
-| **Total** | **164** | |
+| Almond | 10 | `batches/almond.jsonl` |
+| Peach | 10 | `batches/peach.jsonl` |
+| **Total** | **184** | |
+
+Final validation (30 Oct 2026 close, re-checked on the merged file at
+publish time): all 19 batch files parse as JSON; every record has all 29
+fields in the SPEC order; every record has a `source_url` (153 distinct
+source URLs across the set) and `review_status="source_verified"`; zero
+duplicate crop + scientific-name keys; zero banned phrases; all symptom
+tokens in the allowed list. The validator reported 0 errors and 0 warnings
+on the final run. The merged file `merged.jsonl` was checked to contain
+exactly the same 184 records as the batches, with the same counts.
 
 ## Files
 
 - `batches/*.jsonl` — one JSON record per line, in the app record schema plus
   source fields (`source_title`, `source_publisher`, `source_url`,
   `source_accessed`, `eppo_code`, `review_status`).
+- `merged.jsonl` — the full dataset in one file: all 184 records from the
+  batches, in the same schema and field order.
 - `sources/*.md` — per-crop notes listing every source page that was opened,
   what each record was taken from, and anything that was dropped and why
   (wheat has two notes files, matching its two batch files).
+
+Note on the SQLite build: the build also produced a `cropguide.sqlite`
+database (crops + diseases tables, in the app schema plus provenance
+columns), but it is a binary file and this repository push route is
+text-only, so the SQLite file is **not** published here — it stays local.
+The text files above carry the complete dataset.
 
 ## Honest notes
 
@@ -77,6 +96,10 @@ Candidates that did not meet the rule were dropped, not padded in:
   replaced by a sourced Phomopsis leaf blight record, keeping strawberry at
   10 records. Strawberry leather rot was not added: it is the same species
   as the crown rot record already counted and would have duplicated the key.
+- **Peach crown gall and oak root rot (Armillaria)** were available in an
+  opened page but not added: the peach batch was already full, not for lack
+  of sources. Peach ripe fruit rot was not added separately because it
+  overlaps the brown rot record.
 
 Correction, 2026-10-26: the citrus black spot record's provenance fields were
 found scrambled in the 24 Oct file (the URL field held a title string, the
@@ -85,7 +108,12 @@ title, and publisher with code GUIGCI, verified by opening the EPPO page;
 the evidence text is untouched, and the record still counts in the 24 Oct
 total, not in a later batch.
 
+Final-close note, 2026-10-30: the olive and potato batch files were
+normalized to the SPEC field order (content unchanged — verified record by
+record against the previously published files). The merged file and the
+SQLite build were generated from the normalized batches.
+
 ## Integration
 
 The CropGuide app does not consume this folder yet. Wiring it into the app is
-a separate step, to be decided after the build completes.
+a separate step, to be decided by قصي.
