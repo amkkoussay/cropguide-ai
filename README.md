@@ -17,6 +17,10 @@
   <img src="client/public/assets/cropguide-v2-hero.png" alt="CropGuide app — new design" width="100%" />
 </p>
 
+<p align="center">
+  <img src="client/public/assets/demo.gif" alt="CropGuide demo — uploading a specimen photo, browsing the method and the crops, and switching the interface to Arabic" width="100%" />
+</p>
+
 ## What you can do
 
 - Take a photo with your phone (JPEG, PNG or WebP, up to 7 MB)
