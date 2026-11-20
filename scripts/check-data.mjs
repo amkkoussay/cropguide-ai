@@ -21,7 +21,7 @@ const missingSymptomsOrFieldChecks = database.prepare(`
 `).get().total;
 const cropsBelowMinimum = database.prepare(`
   SELECT COUNT(*) AS total FROM (
-    SELECT crop_id, COUNT(*) AS disease_count FROM diseases GROUP BY crop_id HAVING disease_count < 8
+    SELECT crop_id, COUNT(*) AS disease_count FROM diseases GROUP BY crop_id HAVING disease_count < 1
   )
 `).get().total;
 const duplicateDiseaseNames = database.prepare(`
@@ -39,9 +39,9 @@ const groupSourceWithoutReviewFlag = database.prepare(`
   WHERE source_scope = 'crop_group' AND review_status != 'source_mapped'
 `).get().total;
 
-assert.equal(cropCount, 40, "Expected the 40-crop catalog in SQLite.");
-assert.ok(diseaseCount >= 400, "Expected at least 400 source-mapped disease candidate records.");
-assert.equal(cropsBelowMinimum, 0, "Every crop needs at least eight documented candidate records.");
+assert.equal(cropCount, 18, "Expected the 18 crops covered by the verified real-db export in SQLite.");
+assert.equal(diseaseCount, 184, "Expected exactly the 184 verified, source-backed disease records from real-db/merged.jsonl.");
+assert.equal(cropsBelowMinimum, 0, "Every crop needs at least one verified record. (The old floor of eight was a template-era padding rule; the real database ships only source-backed records, however many exist per crop.)");
 assert.equal(duplicateDiseaseNames, 0, "Each crop must not contain duplicate English disease names.");
 assert.equal(missingRequiredText, 0, "Every disease needs a source and three-language immediate, conditional, and safety text.");
 assert.equal(missingSymptomsOrFieldChecks, 0, "Every disease needs visible symptoms, evidence text, and field checks in all three languages.");

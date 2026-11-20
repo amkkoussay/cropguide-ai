@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-18T11:37:58.289Z",
+  "generatedAt": "2026-11-20T09:53:46.268Z",
   "scope": "Visual observations in plant images; not a disease-confirmation ontology.",
   "aliasPolicy": "Only exact or near-exact expressions that preserve the same visible meaning may share a canonical feature. Differences in organ, surface, colour, size, distribution, or progression remain distinct attributes.",
   "featureFamilies": [
@@ -404,14 +404,23 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_fire_blight",
-        "pear_fire_blight",
-        "quince_fire_blight"
+        "cucumber_angular_leaf_spot",
+        "cucumber_bacterial_wilt",
+        "maize_gosss_wilt",
+        "olive_olive_knot",
+        "peach_bacterial_spot",
+        "potato_bacterial_wilt_brown_rot",
+        "strawberry_angular_leaf_spot",
+        "wheat_bacterial_leaf_streak"
       ],
       "cropIds": [
-        "apple",
-        "pear",
-        "quince"
+        "cucumber",
+        "maize",
+        "olive",
+        "peach",
+        "potato",
+        "strawberry",
+        "wheat"
       ]
     },
     {
@@ -444,7 +453,7 @@
         "progression": []
       },
       "diseaseIds": [
-        "grape_powdery_mildew"
+        "grapevine_powdery_mildew"
       ],
       "cropIds": [
         "grapevine"
@@ -474,50 +483,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "spinach_anthracnose"
+        "olive_anthracnose"
       ],
       "cropIds": [
-        "spinach"
-      ]
-    },
-    {
-      "id": "obs.black_centered_shoot_spot",
-      "legacyToken": "black_centered_shoot_spot",
-      "canonicalToken": "black_centered_shoot_spot",
-      "canonicalFeatureId": "vf.shoot.decline",
-      "attributes": {
-        "tissue": [
-          "shoot"
-        ],
-        "colour": [
-          "black"
-        ],
-        "surface": [
-          "centered"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "shoot"
-        ],
-        "colour": [
-          "black"
-        ],
-        "geometry": [],
-        "surface": [
-          "centered"
-        ],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "grapevine_phomopsis_cane_leaf_spot"
-      ],
-      "cropIds": [
-        "grapevine"
+        "olive"
       ]
     },
     {
@@ -544,10 +513,15 @@
         "progression": []
       },
       "diseaseIds": [
-        "date_palm_black_scorch"
+        "barley_covered_smut",
+        "barley_loose_smut",
+        "date_palm_black_scorch",
+        "wheat_loose_smut"
       ],
       "cropIds": [
-        "date_palm"
+        "barley",
+        "date_palm",
+        "wheat"
       ]
     },
     {
@@ -574,12 +548,20 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_late_blight",
-        "parsley_septoria_leaf_spot"
+        "chickpea_ascochyta_blight",
+        "date_palm_graphiola",
+        "faba_bean_ascochyta_blight",
+        "grapevine_black_rot",
+        "tomato_septoria_leaf_spot",
+        "wheat_septoria_tritici_blotch"
       ],
       "cropIds": [
-        "celery",
-        "parsley"
+        "chickpea",
+        "date_palm",
+        "faba_bean",
+        "grapevine",
+        "tomato",
+        "wheat"
       ]
     },
     {
@@ -606,10 +588,22 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_pink_rot"
+        "chickpea_dry_root_rot",
+        "chickpea_sclerotinia_stem_rot",
+        "faba_bean_sclerotinia_stem_rot",
+        "onion_neck_rot",
+        "onion_white_rot",
+        "potato_black_scurf_stem_canker",
+        "watermelon_southern_blight",
+        "wheat_ergot"
       ],
       "cropIds": [
-        "celery"
+        "chickpea",
+        "faba_bean",
+        "onion",
+        "potato",
+        "watermelon",
+        "wheat"
       ]
     },
     {
@@ -638,49 +632,16 @@
         ]
       },
       "diseaseIds": [
-        "faba_bean_chocolate_spot"
+        "chickpea_alternaria_blight",
+        "citrus_bacterial_blast",
+        "potato_blackleg_soft_rot",
+        "wheat_bacterial_leaf_streak"
       ],
       "cropIds": [
-        "faba_bean"
-      ]
-    },
-    {
-      "id": "obs.blackened_shoot_tip",
-      "legacyToken": "blackened_shoot_tip",
-      "canonicalToken": "blackened_shoot_tip",
-      "canonicalFeatureId": "vf.shoot.decline",
-      "attributes": {
-        "tissue": [
-          "shoot"
-        ],
-        "surface": [
-          "tip"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "shoot"
-        ],
-        "colour": [],
-        "geometry": [],
-        "surface": [
-          "tip"
-        ],
-        "pattern": [],
-        "progression": [
-          "tissue_decline"
-        ]
-      },
-      "diseaseIds": [
-        "apple_fire_blight",
-        "pear_fire_blight",
-        "quince_fire_blight"
-      ],
-      "cropIds": [
-        "apple",
-        "pear",
-        "quince"
+        "chickpea",
+        "citrus",
+        "potato",
+        "wheat"
       ]
     },
     {
@@ -706,12 +667,14 @@
       },
       "diseaseIds": [
         "barley_fusarium_head_blight",
-        "maize_fusarium_head_blight",
-        "wheat_fusarium_head_blight"
+        "wheat_cephalosporium_stripe",
+        "wheat_eyespot",
+        "wheat_fusarium_head_blight",
+        "wheat_sharp_eyespot",
+        "wheat_take_all"
       ],
       "cropIds": [
         "barley",
-        "maize",
         "wheat"
       ]
     },
@@ -733,7 +696,7 @@
         "progression": []
       },
       "diseaseIds": [
-        "citrus_citrus_greening"
+        "citrus_huanglongbing"
       ],
       "cropIds": [
         "citrus"
@@ -765,9 +728,11 @@
         "progression": []
       },
       "diseaseIds": [
+        "faba_bean_stemphylium_blight",
         "potato_late_blight"
       ],
       "cropIds": [
+        "faba_bean",
         "potato"
       ]
     },
@@ -800,10 +765,28 @@
         "progression": []
       },
       "diseaseIds": [
-        "parsley_bacterial_leaf_spot"
+        "almond_alternaria_leaf_spot",
+        "barley_spot_blotch",
+        "chickpea_stemphylium_blight",
+        "citrus_alternaria_brown_spot",
+        "cucumber_alternaria_leaf_blight",
+        "cucumber_anthracnose",
+        "faba_bean_ascochyta_blight",
+        "faba_bean_chocolate_spot",
+        "faba_bean_rust",
+        "watermelon_alternaria_leaf_blight",
+        "watermelon_anthracnose",
+        "watermelon_bacterial_fruit_blotch",
+        "watermelon_cercospora_leaf_spot"
       ],
       "cropIds": [
-        "parsley"
+        "almond",
+        "barley",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "faba_bean",
+        "watermelon"
       ]
     },
     {
@@ -830,90 +813,19 @@
         "progression": []
       },
       "diseaseIds": [
-        "bean_ascochyta",
-        "chickpea_ascochyta",
-        "faba_bean_ascochyta",
-        "lentil_ascochyta",
-        "pea_ascochyta"
+        "almond_green_fruit_rot",
+        "almond_hull_rot",
+        "citrus_brown_rot",
+        "maize_southern_corn_leaf_blight",
+        "strawberry_gray_mold",
+        "wheat_septoria_nodorum_blotch"
       ],
       "cropIds": [
-        "bean",
-        "chickpea",
-        "faba_bean",
-        "lentil",
-        "pea"
-      ]
-    },
-    {
-      "id": "obs.brown_petiolar_lesion",
-      "legacyToken": "brown_petiolar_lesion",
-      "canonicalToken": "brown_petiolar_lesion",
-      "canonicalFeatureId": "vf.stem.canker",
-      "attributes": {
-        "tissue": [
-          "petiolar"
-        ],
-        "colour": [
-          "brown"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "petiolar"
-        ],
-        "colour": [
-          "brown"
-        ],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "celery_pink_rot",
-        "parsley_bacterial_leaf_spot"
-      ],
-      "cropIds": [
-        "celery",
-        "parsley"
-      ]
-    },
-    {
-      "id": "obs.brown_petiolar_spot",
-      "legacyToken": "brown_petiolar_spot",
-      "canonicalToken": "brown_petiolar_lesion",
-      "canonicalFeatureId": "vf.stem.canker",
-      "attributes": {
-        "tissue": [
-          "petiolar"
-        ],
-        "colour": [
-          "brown"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "petiolar"
-        ],
-        "colour": [
-          "brown"
-        ],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "celery_late_blight"
-      ],
-      "cropIds": [
-        "celery"
+        "almond",
+        "citrus",
+        "maize",
+        "strawberry",
+        "wheat"
       ]
     },
     {
@@ -942,10 +854,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "spinach_anthracnose"
+        "barley_scald"
       ],
       "cropIds": [
-        "spinach"
+        "barley"
       ]
     },
     {
@@ -972,111 +884,14 @@
         ]
       },
       "diseaseIds": [
-        "almond_brown_rot",
-        "almond_brown_rot_blossom_blight",
-        "apple_botrytis",
-        "apricot_brown_rot",
-        "artichoke_botrytis",
-        "bean_botrytis",
-        "carob_botrytis",
-        "chickpea_botrytis",
-        "cucumber_botrytis",
-        "fig_botrytis",
-        "garlic_botrytis",
-        "grapevine_botrytis",
-        "lentil_botrytis",
-        "lettuce_botrytis",
-        "melon_botrytis",
-        "onion_botrytis",
-        "pea_botrytis",
-        "peach_brown_rot",
-        "pear_botrytis",
-        "pepper_botrytis",
-        "pistachio_botrytis",
-        "plum_brown_rot",
-        "pomegranate_botrytis",
-        "pumpkin_botrytis",
-        "quince_botrytis",
-        "spinach_botrytis",
-        "strawberry_botrytis",
-        "tomato_botrytis",
-        "watermelon_botrytis",
-        "zucchini_botrytis"
+        "date_palm_khamedj",
+        "grapevine_botrytis_bunch_rot",
+        "tomato_gray_mold"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "bean",
-        "carob",
-        "chickpea",
-        "cucumber",
-        "fig",
-        "garlic",
+        "date_palm",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "melon",
-        "onion",
-        "pea",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "zucchini"
-      ]
-    },
-    {
-      "id": "obs.bud_rot",
-      "legacyToken": "bud_rot",
-      "canonicalToken": "bud_rot",
-      "canonicalFeatureId": "vf.stem.rot",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "date_palm_black_scorch"
-      ],
-      "cropIds": [
-        "date_palm"
-      ]
-    },
-    {
-      "id": "obs.calyx_end_darkening",
-      "legacyToken": "calyx_end_darkening",
-      "canonicalToken": "calyx_end_darkening",
-      "canonicalFeatureId": "vf.fruit.lesion",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.fruit",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "pomegranate_black_heart"
-      ],
-      "cropIds": [
-        "pomegranate"
+        "tomato"
       ]
     },
     {
@@ -1143,10 +958,17 @@
         "progression": []
       },
       "diseaseIds": [
-        "olive_peacock_spot"
+        "grapevine_black_rot",
+        "grapevine_esca",
+        "pepper_cercospora_leaf_spot",
+        "strawberry_common_leaf_spot",
+        "watermelon_gummy_stem_blight"
       ],
       "cropIds": [
-        "olive"
+        "grapevine",
+        "pepper",
+        "strawberry",
+        "watermelon"
       ]
     },
     {
@@ -1173,13 +995,16 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_early_blight",
-        "celery_late_blight",
-        "spinach_anthracnose"
+        "chickpea_stemphylium_blight",
+        "faba_bean_chocolate_spot",
+        "maize_northern_corn_leaf_blight",
+        "wheat_septoria_tritici_blotch"
       ],
       "cropIds": [
-        "celery",
-        "spinach"
+        "chickpea",
+        "faba_bean",
+        "maize",
+        "wheat"
       ]
     },
     {
@@ -1200,10 +1025,10 @@
         ]
       },
       "diseaseIds": [
-        "almond_brown_rot_blossom_blight"
+        "grapevine_esca"
       ],
       "cropIds": [
-        "almond"
+        "grapevine"
       ]
     },
     {
@@ -1231,33 +1056,24 @@
         "progression": []
       },
       "diseaseIds": [
-        "carob_alternaria_leaf_spot",
-        "carrot_alternaria_leaf_spot",
-        "celery_alternaria_leaf_spot",
-        "citrus_alternaria_leaf_spot",
-        "date_palm_alternaria_leaf_spot",
-        "olive_alternaria_leaf_spot",
-        "parsley_alternaria_leaf_spot",
-        "pepper_alternaria_leaf_spot",
-        "pistachio_alternaria_leaf_spot",
-        "pomegranate_alternaria_leaf_spot",
-        "potato_alternaria_leaf_spot",
-        "tomato_alternaria_leaf_spot",
-        "tomato_early_blight"
+        "chickpea_ascochyta_blight",
+        "cucumber_alternaria_leaf_blight",
+        "faba_bean_alternaria_leaf_spot",
+        "faba_bean_cercospora_leaf_spot",
+        "pepper_anthracnose",
+        "pepper_tomato_spotted_wilt",
+        "potato_early_blight",
+        "tomato_early_blight",
+        "watermelon_alternaria_leaf_blight"
       ],
       "cropIds": [
-        "carob",
-        "carrot",
-        "celery",
-        "citrus",
-        "date_palm",
-        "olive",
-        "parsley",
+        "chickpea",
+        "cucumber",
+        "faba_bean",
         "pepper",
-        "pistachio",
-        "pomegranate",
         "potato",
-        "tomato"
+        "tomato",
+        "watermelon"
       ]
     },
     {
@@ -1289,7 +1105,8 @@
         "progression": []
       },
       "diseaseIds": [
-        "potato_potato_common_scab"
+        "potato_common_scab",
+        "potato_powdery_scab"
       ],
       "cropIds": [
         "potato"
@@ -1319,78 +1136,13 @@
         ]
       },
       "diseaseIds": [
-        "almond_phytophthora_root_rot",
-        "apple_phytophthora_root_rot",
-        "apricot_phytophthora_root_rot",
-        "artichoke_phytophthora_root_rot",
-        "bean_phytophthora_root_rot",
-        "carob_phytophthora_root_rot",
-        "carrot_phytophthora_root_rot",
-        "celery_phytophthora_root_rot",
-        "chickpea_phytophthora_root_rot",
-        "citrus_phytophthora_root_rot",
-        "cucumber_phytophthora_root_rot",
-        "date_palm_phytophthora_root_rot",
-        "faba_bean_phytophthora_root_rot",
-        "fig_phytophthora_root_rot",
-        "grapevine_phytophthora_root_rot",
-        "lentil_phytophthora_root_rot",
-        "lettuce_phytophthora_root_rot",
-        "melon_phytophthora_root_rot",
-        "olive_phytophthora_root_rot",
-        "parsley_phytophthora_root_rot",
-        "pea_phytophthora_root_rot",
-        "peach_phytophthora_root_rot",
-        "pear_phytophthora_root_rot",
-        "pepper_phytophthora_root_rot",
-        "pistachio_phytophthora_root_rot",
-        "plum_phytophthora_root_rot",
-        "pomegranate_phytophthora_root_rot",
-        "potato_phytophthora_root_rot",
-        "pumpkin_phytophthora_root_rot",
-        "quince_phytophthora_root_rot",
-        "spinach_phytophthora_root_rot",
-        "strawberry_phytophthora_root_rot",
-        "tomato_phytophthora_root_rot",
-        "watermelon_phytophthora_root_rot",
-        "zucchini_phytophthora_root_rot"
+        "strawberry_phytophthora_crown_rot",
+        "wheat_common_root_rot",
+        "wheat_eyespot"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
-        "citrus",
-        "cucumber",
-        "date_palm",
-        "faba_bean",
-        "fig",
-        "grapevine",
-        "lentil",
-        "lettuce",
-        "melon",
-        "olive",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
         "strawberry",
-        "tomato",
-        "watermelon",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -1419,76 +1171,25 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_bacterial_leaf_spot",
-        "apricot_bacterial_leaf_spot",
-        "artichoke_bacterial_leaf_spot",
-        "carob_alternaria_leaf_spot",
-        "carrot_alternaria_leaf_spot",
-        "carrot_bacterial_leaf_spot",
-        "celery_alternaria_leaf_spot",
-        "celery_bacterial_leaf_spot",
-        "citrus_alternaria_leaf_spot",
-        "cucumber_bacterial_leaf_spot",
-        "date_palm_alternaria_leaf_spot",
-        "date_palm_bacterial_leaf_spot",
-        "fig_bacterial_leaf_spot",
-        "garlic_bacterial_leaf_spot",
-        "garlic_stemphylium_leaf_blight",
-        "lettuce_bacterial_leaf_spot",
-        "maize_bacterial_leaf_spot",
-        "melon_bacterial_leaf_spot",
-        "olive_alternaria_leaf_spot",
-        "onion_bacterial_leaf_spot",
+        "barley_net_blotch",
+        "barley_spot_blotch",
+        "citrus_black_spot",
+        "onion_smut",
         "onion_stemphylium_leaf_blight",
-        "parsley_alternaria_leaf_spot",
-        "peach_bacterial_leaf_spot",
-        "pepper_alternaria_leaf_spot",
-        "pepper_bacterial_leaf_spot",
-        "pistachio_alternaria_leaf_spot",
-        "plum_bacterial_leaf_spot",
-        "pomegranate_alternaria_leaf_spot",
-        "pomegranate_bacterial_leaf_spot",
-        "potato_alternaria_leaf_spot",
-        "potato_bacterial_leaf_spot",
-        "pumpkin_bacterial_leaf_spot",
-        "spinach_bacterial_leaf_spot",
-        "strawberry_bacterial_leaf_spot",
-        "tomato_alternaria_leaf_spot",
-        "tomato_bacterial_leaf_spot",
-        "tomato_early_blight",
-        "watermelon_bacterial_leaf_spot",
-        "zucchini_bacterial_leaf_spot"
+        "potato_early_blight",
+        "tomato_bacterial_speck",
+        "wheat_fusarium_head_blight",
+        "wheat_leaf_rust",
+        "wheat_stem_rust",
+        "wheat_tan_spot"
       ],
       "cropIds": [
-        "almond",
-        "apricot",
-        "artichoke",
-        "carob",
-        "carrot",
-        "celery",
+        "barley",
         "citrus",
-        "cucumber",
-        "date_palm",
-        "fig",
-        "garlic",
-        "lettuce",
-        "maize",
-        "melon",
-        "olive",
         "onion",
-        "parsley",
-        "peach",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
         "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
         "tomato",
-        "watermelon",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -1515,16 +1216,15 @@
         "progression": []
       },
       "diseaseIds": [
-        "barley_rhizoctonia",
-        "maize_rhizoctonia",
-        "potato_rhizoctonia",
-        "wheat_rhizoctonia"
+        "almond_bacterial_blast_canker",
+        "grapevine_eutypa_dieback",
+        "peach_bacterial_canker",
+        "peach_gummosis"
       ],
       "cropIds": [
-        "barley",
-        "maize",
-        "potato",
-        "wheat"
+        "almond",
+        "grapevine",
+        "peach"
       ]
     },
     {
@@ -1556,50 +1256,28 @@
         "progression": []
       },
       "diseaseIds": [
-        "grapevine_black_rot",
-        "potato_black_rot"
+        "almond_alternaria_leaf_spot",
+        "almond_scab",
+        "citrus_greasy_spot",
+        "citrus_melanose",
+        "cucumber_gummy_stem_blight",
+        "faba_bean_alternaria_leaf_spot",
+        "faba_bean_cercospora_leaf_spot",
+        "faba_bean_stemphylium_blight",
+        "maize_tar_spot",
+        "olive_peacock_spot",
+        "strawberry_phomopsis_leaf_blight",
+        "wheat_leaf_rust"
       ],
       "cropIds": [
-        "grapevine",
-        "potato"
-      ]
-    },
-    {
-      "id": "obs.dark_shoot_spot",
-      "legacyToken": "dark_shoot_spot",
-      "canonicalToken": "dark_shoot_spot",
-      "canonicalFeatureId": "vf.shoot.decline",
-      "attributes": {
-        "tissue": [
-          "shoot"
-        ],
-        "colour": [
-          "dark"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "shoot"
-        ],
-        "colour": [
-          "dark"
-        ],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "grape_powdery_mildew",
-        "grapevine_black_rot",
-        "potato_black_rot"
-      ],
-      "cropIds": [
-        "grapevine",
-        "potato"
+        "almond",
+        "citrus",
+        "cucumber",
+        "faba_bean",
+        "maize",
+        "olive",
+        "strawberry",
+        "wheat"
       ]
     },
     {
@@ -1631,62 +1309,16 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_anthracnose",
-        "apple_anthracnose",
-        "apricot_anthracnose",
-        "bean_anthracnose",
-        "carob_anthracnose",
-        "chickpea_anthracnose",
-        "citrus_anthracnose",
-        "cucumber_anthracnose",
-        "faba_bean_anthracnose",
-        "fig_anthracnose",
-        "grapevine_anthracnose",
-        "lentil_anthracnose",
-        "maize_anthracnose",
-        "melon_anthracnose",
-        "olive_anthracnose",
-        "pea_anthracnose",
-        "peach_anthracnose",
-        "pear_anthracnose",
-        "pepper_anthracnose",
-        "pistachio_anthracnose",
-        "plum_anthracnose",
-        "pomegranate_anthracnose",
-        "pumpkin_anthracnose",
-        "quince_anthracnose",
-        "strawberry_anthracnose",
-        "watermelon_anthracnose",
-        "zucchini_anthracnose"
+        "olive_cercospora_leaf_spot",
+        "potato_black_scurf_stem_canker",
+        "strawberry_anthracnose_fruit_rot",
+        "tomato_early_blight"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "bean",
-        "carob",
-        "chickpea",
-        "citrus",
-        "cucumber",
-        "faba_bean",
-        "fig",
-        "grapevine",
-        "lentil",
-        "maize",
-        "melon",
         "olive",
-        "pea",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "pumpkin",
-        "quince",
+        "potato",
         "strawberry",
-        "watermelon",
-        "zucchini"
+        "tomato"
       ]
     },
     {
@@ -1713,10 +1345,21 @@
         "progression": []
       },
       "diseaseIds": [
-        "carrot_cavity_spot"
+        "chickpea_rhizoctonia_wet_root_rot",
+        "citrus_phytophthora_root_rot",
+        "date_palm_omphalia_root_rot",
+        "faba_bean_aphanomyces_root_rot",
+        "onion_pink_root",
+        "wheat_common_root_rot",
+        "wheat_take_all"
       ],
       "cropIds": [
-        "carrot"
+        "chickpea",
+        "citrus",
+        "date_palm",
+        "faba_bean",
+        "onion",
+        "wheat"
       ]
     },
     {
@@ -1737,10 +1380,26 @@
         ]
       },
       "diseaseIds": [
-        "citrus_tristeza"
+        "chickpea_dry_root_rot",
+        "citrus_phytophthora_root_rot",
+        "date_palm_al_wijam",
+        "date_palm_bayoud",
+        "date_palm_belaat",
+        "date_palm_lethal_bronzing",
+        "date_palm_omphalia_root_rot",
+        "grapevine_crown_gall",
+        "grapevine_pierces_disease",
+        "olive_verticillium_wilt",
+        "olive_xylella_quick_decline",
+        "peach_phytophthora_root_crown_rot"
       ],
       "cropIds": [
-        "citrus"
+        "chickpea",
+        "citrus",
+        "date_palm",
+        "grapevine",
+        "olive",
+        "peach"
       ]
     },
     {
@@ -1770,7 +1429,7 @@
         "progression": []
       },
       "diseaseIds": [
-        "potato_potato_common_scab"
+        "potato_common_scab"
       ],
       "cropIds": [
         "potato"
@@ -1800,74 +1459,12 @@
         ]
       },
       "diseaseIds": [
-        "almond_powdery_mildew",
-        "apple_powdery_mildew",
-        "apricot_powdery_mildew",
-        "artichoke_powdery_mildew",
-        "barley_powdery_mildew",
-        "bean_powdery_mildew",
-        "carob_powdery_mildew",
-        "carrot_powdery_mildew",
-        "celery_powdery_mildew",
-        "chickpea_powdery_mildew",
-        "cucumber_powdery_mildew",
-        "faba_bean_powdery_mildew",
-        "grapevine_powdery_mildew",
-        "lentil_powdery_mildew",
-        "lettuce_powdery_mildew",
-        "maize_powdery_mildew",
-        "melon_powdery_mildew",
-        "parsley_powdery_mildew",
-        "pea_powdery_mildew",
-        "peach_powdery_mildew",
-        "pear_powdery_mildew",
-        "pepper_powdery_mildew",
-        "pistachio_powdery_mildew",
-        "plum_powdery_mildew",
-        "potato_powdery_mildew",
-        "pumpkin_powdery_mildew",
-        "quince_powdery_mildew",
-        "spinach_powdery_mildew",
-        "strawberry_powdery_mildew",
-        "tomato_powdery_mildew",
-        "watermelon_powdery_mildew",
-        "wheat_powdery_mildew",
-        "zucchini_powdery_mildew"
+        "date_palm_black_scorch",
+        "tomato_yellow_leaf_curl_virus"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "barley",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
-        "cucumber",
-        "faba_bean",
-        "grapevine",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "date_palm",
+        "tomato"
       ]
     },
     {
@@ -1892,6 +1489,7 @@
         "progression": []
       },
       "diseaseIds": [
+        "date_palm_bayoud",
         "date_palm_black_scorch"
       ],
       "cropIds": [
@@ -1920,7 +1518,8 @@
         "progression": []
       },
       "diseaseIds": [
-        "date_palm_bayoud"
+        "date_palm_bayoud",
+        "date_palm_belaat"
       ],
       "cropIds": [
         "date_palm"
@@ -1950,10 +1549,19 @@
         "progression": []
       },
       "diseaseIds": [
-        "citrus_citrus_canker"
+        "citrus_greasy_spot",
+        "faba_bean_ascochyta_blight",
+        "faba_bean_botrytis_grey_mould",
+        "faba_bean_cercospora_leaf_spot",
+        "faba_bean_chocolate_spot",
+        "peach_scab",
+        "strawberry_anthracnose_fruit_rot"
       ],
       "cropIds": [
-        "citrus"
+        "citrus",
+        "faba_bean",
+        "peach",
+        "strawberry"
       ]
     },
     {
@@ -1978,12 +1586,18 @@
         "progression": []
       },
       "diseaseIds": [
-        "grapevine_black_rot",
-        "potato_black_rot"
+        "almond_anthracnose",
+        "grapevine_phomopsis",
+        "olive_anthracnose",
+        "peach_brown_rot_blossom_twig_blight",
+        "strawberry_anthracnose_fruit_rot"
       ],
       "cropIds": [
+        "almond",
         "grapevine",
-        "potato"
+        "olive",
+        "peach",
+        "strawberry"
       ]
     },
     {
@@ -2008,66 +1622,29 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_anthracnose",
-        "almond_brown_rot",
-        "apple_anthracnose",
-        "apricot_anthracnose",
-        "apricot_brown_rot",
-        "bean_anthracnose",
-        "carob_anthracnose",
-        "chickpea_anthracnose",
-        "citrus_anthracnose",
-        "cucumber_anthracnose",
-        "faba_bean_anthracnose",
-        "fig_anthracnose",
-        "grapevine_anthracnose",
-        "lentil_anthracnose",
-        "maize_anthracnose",
-        "melon_anthracnose",
+        "almond_green_fruit_rot",
+        "almond_hull_rot",
+        "chickpea_botrytis_gray_mold",
+        "citrus_brown_rot",
+        "date_palm_khamedj",
+        "grapevine_botrytis_bunch_rot",
         "olive_anthracnose",
-        "pea_anthracnose",
-        "peach_anthracnose",
-        "peach_brown_rot",
-        "pear_anthracnose",
         "pepper_anthracnose",
-        "pistachio_anthracnose",
-        "plum_anthracnose",
-        "plum_brown_rot",
-        "pomegranate_anthracnose",
-        "pumpkin_anthracnose",
-        "quince_anthracnose",
-        "strawberry_anthracnose",
-        "watermelon_anthracnose",
-        "zucchini_anthracnose"
+        "pepper_phytophthora_blight",
+        "pepper_southern_blight",
+        "strawberry_gray_mold",
+        "tomato_gray_mold"
       ],
       "cropIds": [
         "almond",
-        "apple",
-        "apricot",
-        "bean",
-        "carob",
         "chickpea",
         "citrus",
-        "cucumber",
-        "faba_bean",
-        "fig",
+        "date_palm",
         "grapevine",
-        "lentil",
-        "maize",
-        "melon",
         "olive",
-        "pea",
-        "peach",
-        "pear",
         "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "pumpkin",
-        "quince",
         "strawberry",
-        "watermelon",
-        "zucchini"
+        "tomato"
       ]
     },
     {
@@ -2095,48 +1672,14 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_scab",
-        "citrus_scab",
-        "pear_scab",
-        "quince_scab"
+        "citrus_melanose",
+        "peach_powdery_mildew",
+        "tomato_bacterial_spot"
       ],
       "cropIds": [
-        "apple",
         "citrus",
-        "pear",
-        "quince"
-      ]
-    },
-    {
-      "id": "obs.gray_brown_target_spot",
-      "legacyToken": "gray_brown_target_spot",
-      "canonicalToken": "gray_brown_target_spot",
-      "canonicalFeatureId": "vf.foliage.spot",
-      "attributes": {
-        "colour": [
-          "gray",
-          "brown"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [
-          "gray",
-          "brown"
-        ],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "faba_bean_chocolate_spot"
-      ],
-      "cropIds": [
-        "faba_bean"
+        "peach",
+        "tomato"
       ]
     },
     {
@@ -2168,10 +1711,14 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_early_blight"
+        "potato_silver_scurf",
+        "strawberry_common_leaf_spot",
+        "tomato_septoria_leaf_spot"
       ],
       "cropIds": [
-        "celery"
+        "potato",
+        "strawberry",
+        "tomato"
       ]
     },
     {
@@ -2198,58 +1745,22 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_botrytis",
-        "artichoke_botrytis",
-        "bean_botrytis",
-        "carob_botrytis",
-        "chickpea_botrytis",
-        "cucumber_botrytis",
-        "fig_botrytis",
-        "garlic_botrytis",
-        "grapevine_botrytis",
-        "lentil_botrytis",
-        "lettuce_botrytis",
-        "melon_botrytis",
-        "onion_botrytis",
-        "pea_botrytis",
-        "pear_botrytis",
-        "pepper_botrytis",
-        "pistachio_botrytis",
-        "pomegranate_botrytis",
-        "pumpkin_botrytis",
-        "quince_botrytis",
-        "spinach_botrytis",
-        "strawberry_botrytis",
-        "tomato_botrytis",
-        "watermelon_botrytis",
-        "zucchini_botrytis"
+        "almond_brown_rot_blossom_blight",
+        "chickpea_botrytis_gray_mold",
+        "faba_bean_botrytis_grey_mould",
+        "grapevine_botrytis_bunch_rot",
+        "onion_neck_rot",
+        "strawberry_gray_mold",
+        "tomato_gray_mold"
       ],
       "cropIds": [
-        "apple",
-        "artichoke",
-        "bean",
-        "carob",
+        "almond",
         "chickpea",
-        "cucumber",
-        "fig",
-        "garlic",
+        "faba_bean",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "melon",
         "onion",
-        "pea",
-        "pear",
-        "pepper",
-        "pistachio",
-        "pomegranate",
-        "pumpkin",
-        "quince",
-        "spinach",
         "strawberry",
-        "tomato",
-        "watermelon",
-        "zucchini"
+        "tomato"
       ]
     },
     {
@@ -2283,83 +1794,12 @@
         "progression": []
       },
       "diseaseIds": [
-        "maize_northern_corn_leaf_blight"
+        "barley_scald",
+        "maize_gray_leaf_spot"
       ],
       "cropIds": [
+        "barley",
         "maize"
-      ]
-    },
-    {
-      "id": "obs.gray_green_margin",
-      "legacyToken": "gray_green_margin",
-      "canonicalToken": "gray_green_margin",
-      "canonicalFeatureId": "vf.general.observable",
-      "attributes": {
-        "colour": [
-          "gray",
-          "green"
-        ],
-        "surface": [
-          "margin"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.general",
-        "tissue": [],
-        "colour": [
-          "gray",
-          "green"
-        ],
-        "geometry": [],
-        "surface": [
-          "margin"
-        ],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "tomato_late_blight"
-      ],
-      "cropIds": [
-        "tomato"
-      ]
-    },
-    {
-      "id": "obs.grayish_brown_angular_spot",
-      "legacyToken": "grayish_brown_angular_spot",
-      "canonicalToken": "grayish_brown_angular_spot",
-      "canonicalFeatureId": "vf.foliage.spot",
-      "attributes": {
-        "colour": [
-          "grayish",
-          "brown"
-        ],
-        "geometry": [
-          "angular"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [
-          "grayish",
-          "brown"
-        ],
-        "geometry": [
-          "angular"
-        ],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot",
-          "angular_pattern"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "parsley_septoria_leaf_spot"
-      ],
-      "cropIds": [
-        "parsley"
       ]
     },
     {
@@ -2378,66 +1818,18 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_bacterial_canker",
-        "apple_bacterial_canker",
-        "apricot_bacterial_canker",
-        "carob_bacterial_canker",
-        "grapevine_bacterial_canker",
-        "olive_bacterial_canker",
+        "almond_anthracnose",
+        "almond_bacterial_blast_canker",
+        "almond_brown_rot_blossom_blight",
+        "almond_shot_hole",
         "peach_bacterial_canker",
-        "pear_bacterial_canker",
-        "pepper_bacterial_canker",
-        "pistachio_bacterial_canker",
-        "plum_bacterial_canker",
-        "potato_bacterial_canker",
-        "quince_bacterial_canker",
-        "tomato_bacterial_canker"
+        "peach_brown_rot_blossom_twig_blight",
+        "peach_gummosis",
+        "peach_shot_hole"
       ],
       "cropIds": [
         "almond",
-        "apple",
-        "apricot",
-        "carob",
-        "grapevine",
-        "olive",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "quince",
-        "tomato"
-      ]
-    },
-    {
-      "id": "obs.gumming_flower_base",
-      "legacyToken": "gumming_flower_base",
-      "canonicalToken": "gumming_flower_base",
-      "canonicalFeatureId": "vf.exudate",
-      "attributes": {
-        "surface": [
-          "base"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [
-          "base"
-        ],
-        "pattern": [],
-        "progression": [
-          "older_tissue"
-        ]
-      },
-      "diseaseIds": [
-        "almond_brown_rot_blossom_blight"
-      ],
-      "cropIds": [
-        "almond"
+        "peach"
       ]
     },
     {
@@ -2456,46 +1848,17 @@
         "progression": []
       },
       "diseaseIds": [
+        "almond_bacterial_spot",
         "cucumber_gummy_stem_blight",
-        "melon_gummy_stem_blight",
-        "pumpkin_gummy_stem_blight",
+        "cucumber_scab",
         "watermelon_gummy_stem_blight",
-        "zucchini_gummy_stem_blight"
+        "wheat_ergot"
       ],
       "cropIds": [
+        "almond",
         "cucumber",
-        "melon",
-        "pumpkin",
         "watermelon",
-        "zucchini"
-      ]
-    },
-    {
-      "id": "obs.internal_fruit_decay",
-      "legacyToken": "internal_fruit_decay",
-      "canonicalToken": "internal_fruit_decay",
-      "canonicalFeatureId": "vf.fruit.rot",
-      "attributes": {
-        "tissue": [
-          "fruit"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.fruit",
-        "tissue": [
-          "fruit"
-        ],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "pomegranate_black_heart"
-      ],
-      "cropIds": [
-        "pomegranate"
+        "wheat"
       ]
     },
     {
@@ -2522,9 +1885,11 @@
         "progression": []
       },
       "diseaseIds": [
+        "potato_late_blight",
         "tomato_late_blight"
       ],
       "cropIds": [
+        "potato",
         "tomato"
       ]
     },
@@ -2552,10 +1917,16 @@
         "progression": []
       },
       "diseaseIds": [
-        "maize_northern_corn_leaf_blight"
+        "maize_gray_leaf_spot",
+        "maize_northern_corn_leaf_blight",
+        "maize_southern_corn_leaf_blight",
+        "potato_late_blight",
+        "wheat_bacterial_leaf_streak"
       ],
       "cropIds": [
-        "maize"
+        "maize",
+        "potato",
+        "wheat"
       ]
     },
     {
@@ -2582,26 +1953,31 @@
         ]
       },
       "diseaseIds": [
-        "barley_bacterial_blight",
         "barley_net_blotch",
-        "bean_bacterial_blight",
-        "chickpea_bacterial_blight",
-        "citrus_bacterial_blight",
-        "faba_bean_bacterial_blight",
-        "lentil_bacterial_blight",
-        "pea_bacterial_blight",
-        "wheat_bacterial_blight",
-        "wheat_net_blotch"
+        "chickpea_verticillium_wilt",
+        "cucumber_downy_mildew",
+        "date_palm_diplodia",
+        "grapevine_pierces_disease",
+        "olive_xylella_quick_decline",
+        "onion_stemphylium_leaf_blight",
+        "strawberry_leaf_scorch",
+        "strawberry_phomopsis_leaf_blight",
+        "strawberry_verticillium_wilt",
+        "tomato_bacterial_speck",
+        "watermelon_downy_mildew",
+        "watermelon_powdery_mildew"
       ],
       "cropIds": [
         "barley",
-        "bean",
         "chickpea",
-        "citrus",
-        "faba_bean",
-        "lentil",
-        "pea",
-        "wheat"
+        "cucumber",
+        "date_palm",
+        "grapevine",
+        "olive",
+        "onion",
+        "strawberry",
+        "tomato",
+        "watermelon"
       ]
     },
     {
@@ -2628,18 +2004,16 @@
         ]
       },
       "diseaseIds": [
-        "cucumber_cucurbit_bacterial_wilt",
-        "melon_cucurbit_bacterial_wilt",
-        "pumpkin_cucurbit_bacterial_wilt",
-        "watermelon_cucurbit_bacterial_wilt",
-        "zucchini_cucurbit_bacterial_wilt"
+        "almond_hull_rot",
+        "onion_downy_mildew",
+        "tomato_late_blight",
+        "wheat_pink_snow_mold"
       ],
       "cropIds": [
-        "cucumber",
-        "melon",
-        "pumpkin",
-        "watermelon",
-        "zucchini"
+        "almond",
+        "onion",
+        "tomato",
+        "wheat"
       ]
     },
     {
@@ -2664,75 +2038,20 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_powdery_mildew",
-        "apple_powdery_mildew",
-        "apricot_powdery_mildew",
-        "artichoke_powdery_mildew",
-        "barley_powdery_mildew",
-        "bean_powdery_mildew",
-        "carob_powdery_mildew",
-        "carrot_powdery_mildew",
-        "celery_powdery_mildew",
-        "chickpea_powdery_mildew",
-        "cucumber_powdery_mildew",
-        "faba_bean_powdery_mildew",
-        "grape_powdery_mildew",
-        "grapevine_powdery_mildew",
-        "lentil_powdery_mildew",
-        "lettuce_powdery_mildew",
-        "maize_powdery_mildew",
-        "melon_powdery_mildew",
-        "parsley_powdery_mildew",
-        "pea_powdery_mildew",
-        "peach_powdery_mildew",
-        "pear_powdery_mildew",
+        "grapevine_leafroll",
+        "peach_leaf_curl",
         "pepper_powdery_mildew",
-        "pistachio_powdery_mildew",
-        "plum_powdery_mildew",
-        "potato_powdery_mildew",
-        "pumpkin_powdery_mildew",
-        "quince_powdery_mildew",
-        "spinach_powdery_mildew",
+        "pepper_tomato_spotted_wilt",
+        "strawberry_leaf_scorch",
         "strawberry_powdery_mildew",
-        "tomato_powdery_mildew",
-        "watermelon_powdery_mildew",
-        "wheat_powdery_mildew",
-        "zucchini_powdery_mildew"
+        "tomato_yellow_leaf_curl_virus"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "barley",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
-        "cucumber",
-        "faba_bean",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "parsley",
-        "pea",
         "peach",
-        "pear",
         "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
         "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "tomato"
       ]
     },
     {
@@ -2757,74 +2076,32 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_virus_mosaic",
-        "artichoke_virus_mosaic",
-        "barley_virus_mosaic",
-        "bean_virus_mosaic",
-        "carrot_virus_mosaic",
-        "celery_virus_mosaic",
-        "chickpea_virus_mosaic",
-        "citrus_virus_mosaic",
-        "cucumber_virus_mosaic",
-        "date_palm_virus_mosaic",
-        "faba_bean_virus_mosaic",
-        "fig_virus_mosaic",
-        "garlic_virus_mosaic",
-        "grapevine_virus_mosaic",
-        "lentil_virus_mosaic",
-        "lettuce_virus_mosaic",
-        "maize_virus_mosaic",
-        "melon_virus_mosaic",
-        "onion_virus_mosaic",
-        "parsley_virus_mosaic",
-        "pea_virus_mosaic",
-        "pear_virus_mosaic",
-        "pepper_virus_mosaic",
-        "pomegranate_virus_mosaic",
-        "potato_virus_mosaic",
-        "pumpkin_virus_mosaic",
-        "quince_virus_mosaic",
-        "spinach_virus_mosaic",
-        "strawberry_virus_mosaic",
-        "tomato_virus_mosaic",
-        "watermelon_virus_mosaic",
-        "wheat_virus_mosaic",
-        "zucchini_virus_mosaic"
+        "chickpea_pea_enation_mosaic",
+        "citrus_melanose",
+        "cucumber_mosaic_virus",
+        "faba_bean_downy_mildew",
+        "grapevine_black_rot",
+        "grapevine_eutypa_dieback",
+        "grapevine_phomopsis",
+        "onion_smut",
+        "peach_leaf_curl",
+        "peach_powdery_mildew",
+        "pepper_mild_mottle_virus",
+        "pepper_tobacco_mosaic_virus",
+        "potato_virus_y",
+        "watermelon_mosaic_virus"
       ],
       "cropIds": [
-        "apple",
-        "artichoke",
-        "barley",
-        "bean",
-        "carrot",
-        "celery",
         "chickpea",
         "citrus",
         "cucumber",
-        "date_palm",
         "faba_bean",
-        "fig",
-        "garlic",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
         "onion",
-        "parsley",
-        "pea",
-        "pear",
+        "peach",
         "pepper",
-        "pomegranate",
         "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "watermelon"
       ]
     },
     {
@@ -2849,82 +2126,49 @@
         "progression": []
       },
       "diseaseIds": [
+        "almond_alternaria_leaf_spot",
         "almond_rust",
-        "almond_shot_hole",
-        "apple_rust",
-        "apricot_rust",
-        "artichoke_downy_mildew",
-        "bean_downy_mildew",
-        "bean_rust",
-        "carob_rust",
-        "carrot_rust",
-        "celery_rust",
-        "chickpea_downy_mildew",
-        "chickpea_rust",
+        "almond_scab",
+        "chickpea_alternaria_blight",
+        "chickpea_stemphylium_blight",
+        "citrus_alternaria_brown_spot",
+        "citrus_bacterial_blast",
+        "citrus_canker",
+        "citrus_greasy_spot",
+        "citrus_phytophthora_root_rot",
+        "citrus_stubborn",
         "cucumber_downy_mildew",
-        "faba_bean_downy_mildew",
-        "faba_bean_rust",
-        "fig_rust",
-        "garlic_downy_mildew",
-        "garlic_rust",
+        "date_palm_lethal_yellowing",
+        "faba_bean_cercospora_leaf_spot",
+        "faba_bean_chocolate_spot",
         "grapevine_downy_mildew",
-        "grapevine_rust",
-        "lentil_downy_mildew",
-        "lentil_rust",
-        "lettuce_downy_mildew",
-        "maize_rust",
-        "melon_downy_mildew",
+        "grapevine_esca",
+        "olive_cercospora_leaf_spot",
         "olive_peacock_spot",
-        "olive_rust",
-        "onion_downy_mildew",
-        "onion_rust",
-        "parsley_rust",
-        "pea_downy_mildew",
-        "pea_rust",
-        "peach_rust",
-        "pear_rust",
-        "pistachio_rust",
-        "plum_rust",
-        "pomegranate_rust",
-        "pumpkin_downy_mildew",
-        "quince_rust",
-        "spinach_downy_mildew",
-        "watermelon_downy_mildew",
-        "zucchini_downy_mildew"
+        "olive_xylella_quick_decline",
+        "peach_leaf_curl",
+        "pepper_bacterial_spot",
+        "pepper_cercospora_leaf_spot",
+        "pepper_powdery_mildew",
+        "potato_virus_y",
+        "tomato_early_blight",
+        "tomato_septoria_leaf_spot",
+        "watermelon_cercospora_leaf_spot"
       ],
       "cropIds": [
         "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
         "chickpea",
+        "citrus",
         "cucumber",
+        "date_palm",
         "faba_bean",
-        "fig",
-        "garlic",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
         "olive",
-        "onion",
-        "parsley",
-        "pea",
         "peach",
-        "pear",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "watermelon",
-        "zucchini"
+        "pepper",
+        "potato",
+        "tomato",
+        "watermelon"
       ]
     },
     {
@@ -2949,10 +2193,22 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_shot_hole"
+        "almond_bacterial_spot",
+        "almond_shot_hole",
+        "cucumber_angular_leaf_spot",
+        "cucumber_anthracnose",
+        "cucumber_scab",
+        "peach_bacterial_spot",
+        "peach_shot_hole",
+        "tomato_bacterial_spot",
+        "watermelon_anthracnose"
       ],
       "cropIds": [
-        "almond"
+        "almond",
+        "cucumber",
+        "peach",
+        "tomato",
+        "watermelon"
       ]
     },
     {
@@ -2979,71 +2235,28 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_anthracnose",
-        "apple_anthracnose",
-        "apple_scab",
-        "apricot_anthracnose",
-        "bean_anthracnose",
-        "carob_anthracnose",
-        "chickpea_anthracnose",
-        "citrus_anthracnose",
-        "citrus_scab",
-        "cucumber_anthracnose",
-        "cucumber_gummy_stem_blight",
-        "faba_bean_anthracnose",
-        "fig_anthracnose",
-        "grapevine_anthracnose",
-        "lentil_anthracnose",
-        "maize_anthracnose",
-        "melon_anthracnose",
-        "melon_gummy_stem_blight",
-        "olive_anthracnose",
-        "pea_anthracnose",
-        "peach_anthracnose",
-        "pear_anthracnose",
-        "pear_scab",
-        "pepper_anthracnose",
-        "pistachio_anthracnose",
-        "plum_anthracnose",
-        "pomegranate_anthracnose",
-        "pumpkin_anthracnose",
-        "pumpkin_gummy_stem_blight",
-        "quince_anthracnose",
-        "quince_scab",
-        "strawberry_anthracnose",
-        "watermelon_anthracnose",
-        "watermelon_gummy_stem_blight",
-        "zucchini_anthracnose",
-        "zucchini_gummy_stem_blight"
+        "almond_bacterial_blast_canker",
+        "barley_leaf_rust",
+        "chickpea_ascochyta_blight",
+        "faba_bean_alternaria_leaf_spot",
+        "faba_bean_botrytis_grey_mould",
+        "faba_bean_rust",
+        "faba_bean_stemphylium_blight",
+        "maize_southern_rust",
+        "peach_bacterial_canker",
+        "wheat_leaf_rust",
+        "wheat_septoria_nodorum_blotch",
+        "wheat_stem_rust",
+        "wheat_tan_spot"
       ],
       "cropIds": [
         "almond",
-        "apple",
-        "apricot",
-        "bean",
-        "carob",
+        "barley",
         "chickpea",
-        "citrus",
-        "cucumber",
         "faba_bean",
-        "fig",
-        "grapevine",
-        "lentil",
         "maize",
-        "melon",
-        "olive",
-        "pea",
         "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "pumpkin",
-        "quince",
-        "strawberry",
-        "watermelon",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -3075,16 +2288,15 @@
         ]
       },
       "diseaseIds": [
-        "garlic_botrytis_leaf_blight",
-        "garlic_onion_purple_blotch",
-        "garlic_stemphylium_leaf_blight",
-        "onion_botrytis_leaf_blight",
-        "onion_onion_purple_blotch",
-        "onion_stemphylium_leaf_blight"
+        "barley_yellow_dwarf",
+        "onion_fusarium_basal_rot",
+        "onion_pink_root",
+        "wheat_barley_yellow_dwarf"
       ],
       "cropIds": [
-        "garlic",
-        "onion"
+        "barley",
+        "onion",
+        "wheat"
       ]
     },
     {
@@ -3111,13 +2323,65 @@
         ]
       },
       "diseaseIds": [
-        "barley_stripe_rust",
-        "parsley_septoria_leaf_spot",
+        "barley_powdery_mildew",
+        "barley_yellow_dwarf",
+        "chickpea_fusarium_wilt",
+        "chickpea_verticillium_wilt",
+        "citrus_greasy_spot",
+        "citrus_phytophthora_root_rot",
+        "citrus_stubborn",
+        "cucumber_powdery_mildew",
+        "date_palm_al_wijam",
+        "date_palm_diplodia",
+        "date_palm_lethal_bronzing",
+        "date_palm_lethal_yellowing",
+        "date_palm_omphalia_root_rot",
+        "faba_bean_aphanomyces_root_rot",
+        "grapevine_eutypa_dieback",
+        "grapevine_leafroll",
+        "maize_dwarf_mosaic_virus",
+        "maize_stewarts_wilt",
+        "olive_cercospora_leaf_spot",
+        "olive_verticillium_wilt",
+        "onion_purple_blotch",
+        "onion_white_rot",
+        "peach_leaf_curl",
+        "peach_phytophthora_root_crown_rot",
+        "peach_plum_pox_virus",
+        "pepper_cercospora_leaf_spot",
+        "pepper_powdery_mildew",
+        "pepper_tomato_spotted_wilt",
+        "potato_blackleg_soft_rot",
+        "potato_early_blight",
+        "strawberry_red_stele",
+        "strawberry_verticillium_wilt",
+        "tomato_yellow_leaf_curl_virus",
+        "watermelon_cercospora_leaf_spot",
+        "watermelon_fusarium_wilt",
+        "watermelon_southern_blight",
+        "wheat_barley_yellow_dwarf",
+        "wheat_cephalosporium_stripe",
+        "wheat_powdery_mildew",
+        "wheat_streak_mosaic_virus",
         "wheat_stripe_rust"
       ],
       "cropIds": [
         "barley",
-        "parsley",
+        "chickpea",
+        "citrus",
+        "cucumber",
+        "date_palm",
+        "faba_bean",
+        "grapevine",
+        "maize",
+        "olive",
+        "onion",
+        "peach",
+        "pepper",
+        "potato",
+        "strawberry",
+        "tomato",
+        "watermelon",
         "wheat"
       ]
     },
@@ -3152,10 +2416,15 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_late_blight"
+        "faba_bean_downy_mildew",
+        "grapevine_downy_mildew",
+        "onion_downy_mildew",
+        "onion_iris_yellow_spot_virus"
       ],
       "cropIds": [
-        "celery"
+        "faba_bean",
+        "grapevine",
+        "onion"
       ]
     },
     {
@@ -3189,26 +2458,10 @@
         ]
       },
       "diseaseIds": [
-        "artichoke_septoria",
-        "barley_septoria",
-        "carrot_septoria",
-        "celery_septoria",
-        "lettuce_septoria",
-        "parsley_septoria",
-        "spinach_septoria",
-        "tomato_septoria",
-        "wheat_septoria"
+        "tomato_septoria_leaf_spot"
       ],
       "cropIds": [
-        "artichoke",
-        "barley",
-        "carrot",
-        "celery",
-        "lettuce",
-        "parsley",
-        "spinach",
-        "tomato",
-        "wheat"
+        "tomato"
       ]
     },
     {
@@ -3229,74 +2482,26 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_virus_mosaic",
-        "artichoke_virus_mosaic",
-        "barley_virus_mosaic",
-        "bean_virus_mosaic",
-        "carrot_virus_mosaic",
-        "celery_virus_mosaic",
-        "chickpea_virus_mosaic",
-        "citrus_virus_mosaic",
-        "cucumber_virus_mosaic",
-        "date_palm_virus_mosaic",
-        "faba_bean_virus_mosaic",
-        "fig_virus_mosaic",
-        "garlic_virus_mosaic",
-        "grapevine_virus_mosaic",
-        "lentil_virus_mosaic",
-        "lettuce_virus_mosaic",
-        "maize_virus_mosaic",
-        "melon_virus_mosaic",
-        "onion_virus_mosaic",
-        "parsley_virus_mosaic",
-        "pea_virus_mosaic",
-        "pear_virus_mosaic",
-        "pepper_virus_mosaic",
-        "pomegranate_virus_mosaic",
-        "potato_virus_mosaic",
-        "pumpkin_virus_mosaic",
-        "quince_virus_mosaic",
-        "spinach_virus_mosaic",
-        "strawberry_virus_mosaic",
-        "tomato_virus_mosaic",
-        "watermelon_virus_mosaic",
-        "wheat_virus_mosaic",
-        "zucchini_virus_mosaic"
+        "chickpea_pea_enation_mosaic",
+        "cucumber_mosaic_virus",
+        "maize_dwarf_mosaic_virus",
+        "peach_plum_pox_virus",
+        "pepper_mild_mottle_virus",
+        "pepper_tobacco_mosaic_virus",
+        "potato_virus_y",
+        "watermelon_mosaic_virus",
+        "wheat_cephalosporium_stripe",
+        "wheat_streak_mosaic_virus"
       ],
       "cropIds": [
-        "apple",
-        "artichoke",
-        "barley",
-        "bean",
-        "carrot",
-        "celery",
         "chickpea",
-        "citrus",
         "cucumber",
-        "date_palm",
-        "faba_bean",
-        "fig",
-        "garlic",
-        "grapevine",
-        "lentil",
-        "lettuce",
         "maize",
-        "melon",
-        "onion",
-        "parsley",
-        "pea",
-        "pear",
+        "peach",
         "pepper",
-        "pomegranate",
         "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "strawberry",
-        "tomato",
         "watermelon",
-        "wheat",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -3321,7 +2526,8 @@
         "progression": []
       },
       "diseaseIds": [
-        "grapevine_phomopsis_cane_leaf_spot"
+        "grapevine_black_rot",
+        "grapevine_botrytis_bunch_rot"
       ],
       "cropIds": [
         "grapevine"
@@ -3356,34 +2562,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "barley_net_blotch",
-        "wheat_net_blotch"
+        "barley_net_blotch"
       ],
       "cropIds": [
-        "barley",
-        "wheat"
-      ]
-    },
-    {
-      "id": "obs.no_secondary_soft_rot",
-      "legacyToken": "no_secondary_soft_rot",
-      "canonicalToken": "no_secondary_soft_rot",
-      "canonicalFeatureId": "vf.general.observable",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.general",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "carrot_cavity_spot"
-      ],
-      "cropIds": [
-        "carrot"
+        "barley"
       ]
     },
     {
@@ -3417,9 +2599,15 @@
         ]
       },
       "diseaseIds": [
+        "cucumber_alternaria_leaf_blight",
+        "date_palm_graphiola",
+        "potato_early_blight",
         "tomato_early_blight"
       ],
       "cropIds": [
+        "cucumber",
+        "date_palm",
+        "potato",
         "tomato"
       ]
     },
@@ -3453,27 +2641,11 @@
         ]
       },
       "diseaseIds": [
-        "almond_verticillium_wilt",
-        "apricot_verticillium_wilt",
-        "olive_verticillium_wilt",
-        "peach_verticillium_wilt",
-        "pepper_verticillium_wilt",
-        "pistachio_verticillium_wilt",
-        "plum_verticillium_wilt",
-        "potato_verticillium_wilt",
-        "strawberry_verticillium_wilt",
-        "tomato_verticillium_wilt"
+        "cucumber_fusarium_wilt",
+        "tomato_fusarium_wilt"
       ],
       "cropIds": [
-        "almond",
-        "apricot",
-        "olive",
-        "peach",
-        "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "strawberry",
+        "cucumber",
         "tomato"
       ]
     },
@@ -3501,16 +2673,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_scab",
-        "citrus_scab",
-        "pear_scab",
-        "quince_scab"
+        "olive_peacock_spot"
       ],
       "cropIds": [
-        "apple",
-        "citrus",
-        "pear",
-        "quince"
+        "olive"
       ]
     },
     {
@@ -3561,65 +2727,19 @@
         ]
       },
       "diseaseIds": [
-        "almond_verticillium_wilt",
-        "apricot_verticillium_wilt",
-        "artichoke_fusarium_wilt",
-        "bean_fusarium_wilt",
         "chickpea_fusarium_wilt",
-        "cucumber_fusarium_wilt",
-        "date_palm_fusarium_wilt",
-        "faba_bean_fusarium_wilt",
-        "garlic_fusarium_wilt",
-        "lentil_fusarium_wilt",
-        "lettuce_fusarium_wilt",
-        "maize_fusarium_wilt",
-        "melon_fusarium_wilt",
         "olive_verticillium_wilt",
-        "onion_fusarium_wilt",
-        "pea_fusarium_wilt",
-        "peach_verticillium_wilt",
-        "pepper_fusarium_wilt",
-        "pepper_verticillium_wilt",
-        "pistachio_verticillium_wilt",
-        "plum_verticillium_wilt",
-        "potato_fusarium_wilt",
-        "potato_verticillium_wilt",
-        "pumpkin_fusarium_wilt",
-        "spinach_fusarium_wilt",
-        "strawberry_verticillium_wilt",
+        "onion_fusarium_basal_rot",
+        "tomato_bacterial_canker",
         "tomato_fusarium_wilt",
-        "tomato_verticillium_wilt",
-        "watermelon_fusarium_wilt",
-        "zucchini_fusarium_wilt"
+        "watermelon_fusarium_wilt"
       ],
       "cropIds": [
-        "almond",
-        "apricot",
-        "artichoke",
-        "bean",
         "chickpea",
-        "cucumber",
-        "date_palm",
-        "faba_bean",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
         "olive",
         "onion",
-        "pea",
-        "peach",
-        "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
         "tomato",
-        "watermelon",
-        "zucchini"
+        "watermelon"
       ]
     },
     {
@@ -3646,187 +2766,20 @@
         "progression": []
       },
       "diseaseIds": [
+        "barley_leaf_rust",
         "barley_stripe_rust",
+        "faba_bean_rust",
+        "maize_common_rust",
+        "maize_southern_rust",
+        "wheat_leaf_rust",
+        "wheat_stem_rust",
         "wheat_stripe_rust"
       ],
       "cropIds": [
         "barley",
-        "wheat"
-      ]
-    },
-    {
-      "id": "obs.orange_underside_pustules",
-      "legacyToken": "orange_underside_pustules",
-      "canonicalToken": "orange_underside_pustules",
-      "canonicalFeatureId": "vf.pustule",
-      "attributes": {
-        "colour": [
-          "orange"
-        ],
-        "surface": [
-          "underside"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [
-          "orange"
-        ],
-        "geometry": [],
-        "surface": [
-          "underside"
-        ],
-        "pattern": [
-          "surface_growth_or_structure"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "almond_rust",
-        "apple_rust",
-        "apricot_rust",
-        "bean_rust",
-        "carob_rust",
-        "carrot_rust",
-        "celery_rust",
-        "chickpea_rust",
-        "faba_bean_rust",
-        "fig_rust",
-        "garlic_rust",
-        "grapevine_rust",
-        "lentil_rust",
-        "maize_rust",
-        "olive_rust",
-        "onion_rust",
-        "parsley_rust",
-        "pea_rust",
-        "peach_rust",
-        "pear_rust",
-        "pistachio_rust",
-        "plum_rust",
-        "pomegranate_rust",
-        "quince_rust"
-      ],
-      "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
         "faba_bean",
-        "fig",
-        "garlic",
-        "grapevine",
-        "lentil",
         "maize",
-        "olive",
-        "onion",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "quince"
-      ]
-    },
-    {
-      "id": "obs.oval_petiolar_spot",
-      "legacyToken": "oval_petiolar_spot",
-      "canonicalToken": "oval_petiolar_spot",
-      "canonicalFeatureId": "vf.stem.canker",
-      "attributes": {
-        "tissue": [
-          "petiolar"
-        ],
-        "geometry": [
-          "oval"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "petiolar"
-        ],
-        "colour": [],
-        "geometry": [
-          "oval"
-        ],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "parsley_septoria_leaf_spot"
-      ],
-      "cropIds": [
-        "parsley"
-      ]
-    },
-    {
-      "id": "obs.pale_gray_underside_growth",
-      "legacyToken": "pale_gray_underside_growth",
-      "canonicalToken": "pale_gray_underside_growth",
-      "canonicalFeatureId": "vf.foliage.growth.underside",
-      "attributes": {
-        "colour": [
-          "pale",
-          "gray"
-        ],
-        "surface": [
-          "underside"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [
-          "pale",
-          "gray"
-        ],
-        "geometry": [],
-        "surface": [
-          "underside"
-        ],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "carrot_cercospora_leaf_blight"
-      ],
-      "cropIds": [
-        "carrot"
-      ]
-    },
-    {
-      "id": "obs.papery_cracked_lesion",
-      "legacyToken": "papery_cracked_lesion",
-      "canonicalToken": "papery_cracked_lesion",
-      "canonicalFeatureId": "vf.foliage.necrosis",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "celery_early_blight"
-      ],
-      "cropIds": [
-        "celery"
+        "wheat"
       ]
     },
     {
@@ -3852,103 +2805,17 @@
       },
       "diseaseIds": [
         "barley_fusarium_head_blight",
-        "maize_fusarium_head_blight",
+        "cucumber_anthracnose",
+        "olive_anthracnose",
+        "watermelon_anthracnose",
         "wheat_fusarium_head_blight"
       ],
       "cropIds": [
         "barley",
-        "maize",
+        "cucumber",
+        "olive",
+        "watermelon",
         "wheat"
-      ]
-    },
-    {
-      "id": "obs.pink_surrounding_tissue",
-      "legacyToken": "pink_surrounding_tissue",
-      "canonicalToken": "pink_surrounding_tissue",
-      "canonicalFeatureId": "vf.general.observable",
-      "attributes": {
-        "colour": [
-          "pink"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.general",
-        "tissue": [],
-        "colour": [
-          "pink"
-        ],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "celery_pink_rot"
-      ],
-      "cropIds": [
-        "celery"
-      ]
-    },
-    {
-      "id": "obs.plant_base_collapse",
-      "legacyToken": "plant_base_collapse",
-      "canonicalToken": "plant_base_collapse",
-      "canonicalFeatureId": "vf.seedling.condition",
-      "attributes": {
-        "surface": [
-          "base"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.whole-plant",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [
-          "base"
-        ],
-        "pattern": [],
-        "progression": [
-          "tissue_decline"
-        ]
-      },
-      "diseaseIds": [
-        "celery_pink_rot"
-      ],
-      "cropIds": [
-        "celery"
-      ]
-    },
-    {
-      "id": "obs.pod_spot",
-      "legacyToken": "pod_spot",
-      "canonicalToken": "pod_spot",
-      "canonicalFeatureId": "vf.foliage.spot",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "bean_ascochyta",
-        "chickpea_ascochyta",
-        "faba_bean_ascochyta",
-        "lentil_ascochyta",
-        "pea_ascochyta"
-      ],
-      "cropIds": [
-        "bean",
-        "chickpea",
-        "faba_bean",
-        "lentil",
-        "pea"
       ]
     },
     {
@@ -3967,58 +2834,16 @@
         "progression": []
       },
       "diseaseIds": [
-        "artichoke_damping_off",
-        "barley_damping_off",
-        "bean_damping_off",
-        "carrot_damping_off",
-        "celery_damping_off",
-        "chickpea_damping_off",
-        "cucumber_damping_off",
-        "faba_bean_damping_off",
-        "garlic_damping_off",
-        "lentil_damping_off",
-        "lettuce_damping_off",
-        "maize_damping_off",
-        "melon_damping_off",
-        "onion_damping_off",
-        "parsley_damping_off",
-        "pea_damping_off",
-        "pepper_damping_off",
-        "potato_damping_off",
-        "pumpkin_damping_off",
-        "spinach_damping_off",
-        "strawberry_damping_off",
-        "tomato_damping_off",
-        "watermelon_damping_off",
-        "wheat_damping_off",
-        "zucchini_damping_off"
+        "chickpea_rhizoctonia_wet_root_rot",
+        "potato_black_scurf_stem_canker",
+        "potato_blackleg_soft_rot",
+        "wheat_common_root_rot",
+        "wheat_pink_snow_mold"
       ],
       "cropIds": [
-        "artichoke",
-        "barley",
-        "bean",
-        "carrot",
-        "celery",
         "chickpea",
-        "cucumber",
-        "faba_bean",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "onion",
-        "parsley",
-        "pea",
-        "pepper",
         "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -4043,47 +2868,29 @@
         "progression": []
       },
       "diseaseIds": [
-        "pomegranate_black_heart"
+        "almond_bacterial_spot",
+        "almond_shot_hole",
+        "citrus_alternaria_brown_spot",
+        "citrus_black_spot",
+        "citrus_brown_rot",
+        "citrus_canker",
+        "citrus_huanglongbing",
+        "date_palm_lethal_bronzing",
+        "date_palm_lethal_yellowing",
+        "grapevine_pierces_disease",
+        "olive_anthracnose",
+        "peach_bacterial_spot",
+        "peach_shot_hole",
+        "tomato_yellow_leaf_curl_virus"
       ],
       "cropIds": [
-        "pomegranate"
-      ]
-    },
-    {
-      "id": "obs.purple_elliptical_spot",
-      "legacyToken": "purple_elliptical_spot",
-      "canonicalToken": "purple_elliptical_spot",
-      "canonicalFeatureId": "vf.foliage.spot",
-      "attributes": {
-        "colour": [
-          "purple"
-        ],
-        "geometry": [
-          "elliptical"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [
-          "purple"
-        ],
-        "geometry": [
-          "elliptical"
-        ],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "garlic_onion_purple_blotch",
-        "onion_onion_purple_blotch"
-      ],
-      "cropIds": [
-        "garlic",
-        "onion"
+        "almond",
+        "citrus",
+        "date_palm",
+        "grapevine",
+        "olive",
+        "peach",
+        "tomato"
       ]
     },
     {
@@ -4112,10 +2919,18 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_shot_hole"
+        "barley_yellow_dwarf",
+        "grapevine_leafroll",
+        "onion_purple_blotch",
+        "strawberry_leaf_scorch",
+        "wheat_barley_yellow_dwarf"
       ],
       "cropIds": [
-        "almond"
+        "barley",
+        "grapevine",
+        "onion",
+        "strawberry",
+        "wheat"
       ]
     },
     {
@@ -4145,7 +2960,8 @@
         "progression": []
       },
       "diseaseIds": [
-        "date_palm_bayoud"
+        "date_palm_bayoud",
+        "date_palm_diplodia"
       ],
       "cropIds": [
         "date_palm"
@@ -4177,10 +2993,19 @@
         "progression": []
       },
       "diseaseIds": [
-        "citrus_citrus_canker"
+        "citrus_canker",
+        "citrus_melanose",
+        "pepper_bacterial_spot",
+        "potato_common_scab",
+        "potato_powdery_scab",
+        "tomato_bacterial_speck",
+        "tomato_bacterial_spot"
       ],
       "cropIds": [
-        "citrus"
+        "citrus",
+        "pepper",
+        "potato",
+        "tomato"
       ]
     },
     {
@@ -4212,10 +3037,17 @@
         "progression": []
       },
       "diseaseIds": [
-        "faba_bean_chocolate_spot"
+        "chickpea_alternaria_blight",
+        "grapevine_esca",
+        "strawberry_angular_leaf_spot",
+        "strawberry_common_leaf_spot",
+        "strawberry_phomopsis_leaf_blight",
+        "strawberry_powdery_mildew"
       ],
       "cropIds": [
-        "faba_bean"
+        "chickpea",
+        "grapevine",
+        "strawberry"
       ]
     },
     {
@@ -4240,72 +3072,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_root_knot",
-        "apple_root_knot",
-        "apricot_root_knot",
-        "barley_root_knot",
-        "carob_root_knot",
-        "carrot_root_knot",
-        "celery_root_knot",
-        "citrus_root_knot",
-        "cucumber_root_knot",
-        "date_palm_root_knot",
-        "fig_root_knot",
-        "garlic_root_knot",
-        "grapevine_root_knot",
-        "maize_root_knot",
-        "melon_root_knot",
-        "olive_root_knot",
-        "onion_root_knot",
-        "parsley_root_knot",
-        "peach_root_knot",
-        "pear_root_knot",
-        "pepper_root_knot",
-        "pistachio_root_knot",
-        "plum_root_knot",
-        "pomegranate_root_knot",
-        "potato_root_knot",
-        "pumpkin_root_knot",
-        "quince_root_knot",
-        "strawberry_root_knot",
-        "tomato_root_knot",
-        "watermelon_root_knot",
-        "wheat_root_knot",
-        "zucchini_root_knot"
+        "potato_powdery_scab"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "barley",
-        "carob",
-        "carrot",
-        "celery",
-        "citrus",
-        "cucumber",
-        "date_palm",
-        "fig",
-        "garlic",
-        "grapevine",
-        "maize",
-        "melon",
-        "olive",
-        "onion",
-        "parsley",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "potato",
-        "pumpkin",
-        "quince",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "potato"
       ]
     },
     {
@@ -4330,9 +3100,13 @@
         "progression": []
       },
       "diseaseIds": [
+        "grapevine_crown_gall",
+        "maize_common_smut",
         "olive_olive_knot"
       ],
       "cropIds": [
+        "grapevine",
+        "maize",
         "olive"
       ]
     },
@@ -4368,7 +3142,8 @@
         "progression": []
       },
       "diseaseIds": [
-        "potato_potato_common_scab"
+        "potato_common_scab",
+        "potato_silver_scurf"
       ],
       "cropIds": [
         "potato"
@@ -4390,7 +3165,7 @@
         "progression": []
       },
       "diseaseIds": [
-        "grapevine_phomopsis_cane_leaf_spot"
+        "grapevine_phomopsis"
       ],
       "cropIds": [
         "grapevine"
@@ -4414,88 +3189,12 @@
         ]
       },
       "diseaseIds": [
-        "artichoke_damping_off",
-        "barley_damping_off",
-        "barley_rhizoctonia",
-        "bean_damping_off",
-        "carrot_damping_off",
-        "celery_damping_off",
-        "chickpea_damping_off",
-        "cucumber_damping_off",
-        "faba_bean_damping_off",
-        "garlic_damping_off",
-        "lentil_damping_off",
-        "lettuce_damping_off",
-        "maize_damping_off",
-        "maize_rhizoctonia",
-        "melon_damping_off",
-        "onion_damping_off",
-        "parsley_damping_off",
-        "pea_damping_off",
-        "pepper_damping_off",
-        "potato_damping_off",
-        "potato_rhizoctonia",
-        "pumpkin_damping_off",
-        "spinach_damping_off",
-        "strawberry_damping_off",
-        "tomato_damping_off",
-        "watermelon_damping_off",
-        "wheat_damping_off",
-        "wheat_rhizoctonia",
-        "zucchini_damping_off"
+        "chickpea_rhizoctonia_wet_root_rot",
+        "wheat_pink_snow_mold"
       ],
       "cropIds": [
-        "artichoke",
-        "barley",
-        "bean",
-        "carrot",
-        "celery",
         "chickpea",
-        "cucumber",
-        "faba_bean",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "onion",
-        "parsley",
-        "pea",
-        "pepper",
-        "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
-      ]
-    },
-    {
-      "id": "obs.shepherd_crook",
-      "legacyToken": "shepherd_crook",
-      "canonicalToken": "shepherd_crook",
-      "canonicalFeatureId": "vf.general.observable",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.general",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "apple_fire_blight",
-        "pear_fire_blight",
-        "quince_fire_blight"
-      ],
-      "cropIds": [
-        "apple",
-        "pear",
-        "quince"
+        "wheat"
       ]
     },
     {
@@ -4522,56 +3221,32 @@
         ]
       },
       "diseaseIds": [
-        "barley_bacterial_blight",
-        "bean_bacterial_blight",
-        "chickpea_bacterial_blight",
-        "citrus_bacterial_blight",
-        "faba_bean_bacterial_blight",
-        "lentil_bacterial_blight",
+        "almond_anthracnose",
+        "almond_brown_rot_blossom_blight",
+        "almond_hull_rot",
+        "citrus_bacterial_blast",
+        "date_palm_belaat",
+        "date_palm_black_scorch",
+        "date_palm_diplodia",
+        "date_palm_lethal_bronzing",
+        "date_palm_lethal_yellowing",
+        "grapevine_crown_gall",
+        "grapevine_eutypa_dieback",
         "olive_olive_knot",
-        "pea_bacterial_blight",
-        "wheat_bacterial_blight"
+        "olive_peacock_spot",
+        "olive_xylella_quick_decline",
+        "peach_bacterial_canker",
+        "peach_brown_rot_blossom_twig_blight",
+        "peach_gummosis",
+        "peach_phytophthora_root_crown_rot"
       ],
       "cropIds": [
-        "barley",
-        "bean",
-        "chickpea",
+        "almond",
         "citrus",
-        "faba_bean",
-        "lentil",
+        "date_palm",
+        "grapevine",
         "olive",
-        "pea",
-        "wheat"
-      ]
-    },
-    {
-      "id": "obs.shoot_lesion",
-      "legacyToken": "shoot_lesion",
-      "canonicalToken": "shoot_lesion",
-      "canonicalFeatureId": "vf.stem.canker",
-      "attributes": {
-        "tissue": [
-          "shoot"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "shoot"
-        ],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "parsley_bacterial_leaf_spot"
-      ],
-      "cropIds": [
-        "parsley"
+        "peach"
       ]
     },
     {
@@ -4596,13 +3271,17 @@
         "progression": []
       },
       "diseaseIds": [
+        "barley_covered_smut",
         "barley_fusarium_head_blight",
-        "maize_fusarium_head_blight",
-        "wheat_fusarium_head_blight"
+        "barley_loose_smut",
+        "wheat_cephalosporium_stripe",
+        "wheat_common_bunt",
+        "wheat_fusarium_head_blight",
+        "wheat_loose_smut",
+        "wheat_septoria_nodorum_blotch"
       ],
       "cropIds": [
         "barley",
-        "maize",
         "wheat"
       ]
     },
@@ -4632,10 +3311,15 @@
         "progression": []
       },
       "diseaseIds": [
-        "spinach_anthracnose"
+        "onion_purple_blotch",
+        "onion_stemphylium_leaf_blight",
+        "pepper_cercospora_leaf_spot",
+        "watermelon_bacterial_fruit_blotch"
       ],
       "cropIds": [
-        "spinach"
+        "onion",
+        "pepper",
+        "watermelon"
       ]
     },
     {
@@ -4667,61 +3351,22 @@
         "progression": []
       },
       "diseaseIds": [
-        "artichoke_septoria",
-        "barley_septoria",
-        "carrot_septoria",
-        "celery_septoria",
-        "lettuce_septoria",
-        "parsley_septoria",
-        "spinach_septoria",
-        "tomato_septoria",
-        "wheat_septoria"
+        "almond_shot_hole",
+        "date_palm_graphiola",
+        "maize_tar_spot",
+        "peach_scab",
+        "peach_shot_hole",
+        "tomato_bacterial_spot",
+        "tomato_septoria_leaf_spot",
+        "wheat_tan_spot"
       ],
       "cropIds": [
-        "artichoke",
-        "barley",
-        "carrot",
-        "celery",
-        "lettuce",
-        "parsley",
-        "spinach",
+        "almond",
+        "date_palm",
+        "maize",
+        "peach",
         "tomato",
         "wheat"
-      ]
-    },
-    {
-      "id": "obs.small_horizontal_root_cavity",
-      "legacyToken": "small_horizontal_root_cavity",
-      "canonicalToken": "small_horizontal_root_cavity",
-      "canonicalFeatureId": "vf.root.gall",
-      "attributes": {
-        "tissue": [
-          "root"
-        ],
-        "geometry": [
-          "small",
-          "horizontal"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.root-crown-internal",
-        "tissue": [
-          "root"
-        ],
-        "colour": [],
-        "geometry": [
-          "small",
-          "horizontal"
-        ],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "carrot_cavity_spot"
-      ],
-      "cropIds": [
-        "carrot"
       ]
     },
     {
@@ -4751,10 +3396,18 @@
         "progression": []
       },
       "diseaseIds": [
-        "citrus_citrus_greening"
+        "citrus_huanglongbing",
+        "citrus_stubborn",
+        "cucumber_mosaic_virus",
+        "pepper_mild_mottle_virus",
+        "pepper_tobacco_mosaic_virus",
+        "watermelon_mosaic_virus"
       ],
       "cropIds": [
-        "citrus"
+        "citrus",
+        "cucumber",
+        "pepper",
+        "watermelon"
       ]
     },
     {
@@ -4791,10 +3444,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "garlic_botrytis_leaf_blight"
+        "tomato_bacterial_canker"
       ],
       "cropIds": [
-        "garlic"
+        "tomato"
       ]
     },
     {
@@ -4826,10 +3479,26 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_early_blight"
+        "almond_rust",
+        "almond_scab",
+        "barley_powdery_mildew",
+        "chickpea_pea_enation_mosaic",
+        "cucumber_powdery_mildew",
+        "grapevine_powdery_mildew",
+        "watermelon_downy_mildew",
+        "watermelon_powdery_mildew",
+        "wheat_septoria_nodorum_blotch",
+        "wheat_streak_mosaic_virus",
+        "wheat_stripe_rust"
       ],
       "cropIds": [
-        "celery"
+        "almond",
+        "barley",
+        "chickpea",
+        "cucumber",
+        "grapevine",
+        "watermelon",
+        "wheat"
       ]
     },
     {
@@ -4848,58 +3517,13 @@
         "progression": []
       },
       "diseaseIds": [
-        "apple_botrytis",
-        "artichoke_botrytis",
-        "bean_botrytis",
-        "carob_botrytis",
-        "chickpea_botrytis",
-        "cucumber_botrytis",
-        "fig_botrytis",
-        "garlic_botrytis",
-        "grapevine_botrytis",
-        "lentil_botrytis",
-        "lettuce_botrytis",
-        "melon_botrytis",
-        "onion_botrytis",
-        "pea_botrytis",
-        "pear_botrytis",
-        "pepper_botrytis",
-        "pistachio_botrytis",
-        "pomegranate_botrytis",
-        "pumpkin_botrytis",
-        "quince_botrytis",
-        "spinach_botrytis",
-        "strawberry_botrytis",
-        "tomato_botrytis",
-        "watermelon_botrytis",
-        "zucchini_botrytis"
+        "onion_bacterial_soft_rot",
+        "onion_neck_rot",
+        "potato_blackleg_soft_rot"
       ],
       "cropIds": [
-        "apple",
-        "artichoke",
-        "bean",
-        "carob",
-        "chickpea",
-        "cucumber",
-        "fig",
-        "garlic",
-        "grapevine",
-        "lentil",
-        "lettuce",
-        "melon",
         "onion",
-        "pea",
-        "pear",
-        "pepper",
-        "pistachio",
-        "pomegranate",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "zucchini"
+        "potato"
       ]
     },
     {
@@ -4918,95 +3542,14 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_pink_rot"
+        "grapevine_downy_mildew",
+        "onion_bacterial_soft_rot",
+        "tomato_gray_mold"
       ],
       "cropIds": [
-        "celery"
-      ]
-    },
-    {
-      "id": "obs.stem_base_rot",
-      "legacyToken": "stem_base_rot",
-      "canonicalToken": "stem_base_rot",
-      "canonicalFeatureId": "vf.stem.rot",
-      "attributes": {
-        "tissue": [
-          "stem"
-        ],
-        "surface": [
-          "base"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.aerial-structure",
-        "tissue": [
-          "stem"
-        ],
-        "colour": [],
-        "geometry": [],
-        "surface": [
-          "base"
-        ],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "artichoke_damping_off",
-        "barley_damping_off",
-        "barley_rhizoctonia",
-        "bean_damping_off",
-        "carrot_damping_off",
-        "celery_damping_off",
-        "chickpea_damping_off",
-        "cucumber_damping_off",
-        "faba_bean_damping_off",
-        "garlic_damping_off",
-        "lentil_damping_off",
-        "lettuce_damping_off",
-        "maize_damping_off",
-        "maize_rhizoctonia",
-        "melon_damping_off",
-        "onion_damping_off",
-        "parsley_damping_off",
-        "pea_damping_off",
-        "pepper_damping_off",
-        "potato_damping_off",
-        "potato_rhizoctonia",
-        "pumpkin_damping_off",
-        "spinach_damping_off",
-        "strawberry_damping_off",
-        "tomato_damping_off",
-        "watermelon_damping_off",
-        "wheat_damping_off",
-        "wheat_rhizoctonia",
-        "zucchini_damping_off"
-      ],
-      "cropIds": [
-        "artichoke",
-        "barley",
-        "bean",
-        "carrot",
-        "celery",
-        "chickpea",
-        "cucumber",
-        "faba_bean",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
+        "grapevine",
         "onion",
-        "parsley",
-        "pea",
-        "pepper",
-        "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "tomato"
       ]
     },
     {
@@ -5034,17 +3577,13 @@
       },
       "diseaseIds": [
         "cucumber_gummy_stem_blight",
-        "melon_gummy_stem_blight",
-        "pumpkin_gummy_stem_blight",
-        "watermelon_gummy_stem_blight",
-        "zucchini_gummy_stem_blight"
+        "potato_black_scurf_stem_canker",
+        "tomato_bacterial_canker"
       ],
       "cropIds": [
         "cucumber",
-        "melon",
-        "pumpkin",
-        "watermelon",
-        "zucchini"
+        "potato",
+        "tomato"
       ]
     },
     {
@@ -5071,48 +3610,30 @@
         "progression": []
       },
       "diseaseIds": [
-        "bean_ascochyta",
-        "chickpea_ascochyta",
-        "faba_bean_ascochyta",
-        "lentil_ascochyta",
-        "pea_ascochyta",
-        "potato_late_blight"
+        "chickpea_ascochyta_blight",
+        "chickpea_botrytis_gray_mold",
+        "chickpea_rhizoctonia_wet_root_rot",
+        "chickpea_sclerotinia_stem_rot",
+        "chickpea_stemphylium_blight",
+        "faba_bean_ascochyta_blight",
+        "peach_scab",
+        "pepper_phytophthora_blight",
+        "pepper_southern_blight",
+        "tomato_gray_mold",
+        "tomato_late_blight",
+        "watermelon_gummy_stem_blight",
+        "wheat_eyespot",
+        "wheat_sharp_eyespot",
+        "wheat_stem_rust"
       ],
       "cropIds": [
-        "bean",
         "chickpea",
         "faba_bean",
-        "lentil",
-        "pea",
-        "potato"
-      ]
-    },
-    {
-      "id": "obs.stem_pitting",
-      "legacyToken": "stem_pitting",
-      "canonicalToken": "stem_pitting",
-      "canonicalFeatureId": "vf.general.observable",
-      "attributes": {
-        "tissue": [
-          "stem"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.general",
-        "tissue": [
-          "stem"
-        ],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "citrus_tristeza"
-      ],
-      "cropIds": [
-        "citrus"
+        "peach",
+        "pepper",
+        "tomato",
+        "watermelon",
+        "wheat"
       ]
     },
     {
@@ -5137,46 +3658,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_sclerotinia",
-        "apricot_sclerotinia",
-        "artichoke_sclerotinia",
-        "bean_sclerotinia",
-        "carrot_sclerotinia",
-        "celery_sclerotinia",
-        "chickpea_sclerotinia",
-        "faba_bean_sclerotinia",
-        "fig_sclerotinia",
-        "lentil_sclerotinia",
-        "lettuce_sclerotinia",
-        "parsley_sclerotinia",
-        "pea_sclerotinia",
-        "peach_sclerotinia",
-        "pistachio_sclerotinia",
-        "plum_sclerotinia",
-        "pomegranate_sclerotinia",
-        "spinach_sclerotinia",
-        "strawberry_sclerotinia"
+        "faba_bean_sclerotinia_stem_rot"
       ],
       "cropIds": [
-        "almond",
-        "apricot",
-        "artichoke",
-        "bean",
-        "carrot",
-        "celery",
-        "chickpea",
-        "faba_bean",
-        "fig",
-        "lentil",
-        "lettuce",
-        "parsley",
-        "pea",
-        "peach",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "spinach",
-        "strawberry"
+        "faba_bean"
       ]
     },
     {
@@ -5195,113 +3680,53 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_root_knot",
-        "apple_root_knot",
-        "apple_virus_mosaic",
-        "apricot_root_knot",
-        "artichoke_virus_mosaic",
-        "barley_root_knot",
-        "barley_virus_mosaic",
-        "bean_virus_mosaic",
-        "carob_root_knot",
-        "carrot_root_knot",
-        "carrot_virus_mosaic",
-        "celery_root_knot",
-        "celery_virus_mosaic",
-        "chickpea_virus_mosaic",
-        "citrus_root_knot",
-        "citrus_virus_mosaic",
-        "cucumber_root_knot",
-        "cucumber_virus_mosaic",
-        "date_palm_root_knot",
-        "date_palm_virus_mosaic",
-        "faba_bean_virus_mosaic",
-        "fig_root_knot",
-        "fig_virus_mosaic",
-        "garlic_root_knot",
-        "garlic_virus_mosaic",
-        "grapevine_root_knot",
-        "grapevine_virus_mosaic",
-        "lentil_virus_mosaic",
-        "lettuce_virus_mosaic",
-        "maize_root_knot",
-        "maize_virus_mosaic",
-        "melon_root_knot",
-        "melon_virus_mosaic",
-        "olive_root_knot",
-        "onion_root_knot",
-        "onion_virus_mosaic",
-        "parsley_root_knot",
-        "parsley_virus_mosaic",
-        "pea_virus_mosaic",
-        "peach_root_knot",
-        "pear_root_knot",
-        "pear_virus_mosaic",
-        "pepper_root_knot",
-        "pepper_virus_mosaic",
-        "pistachio_root_knot",
-        "plum_root_knot",
-        "pomegranate_root_knot",
-        "pomegranate_virus_mosaic",
-        "potato_root_knot",
-        "potato_virus_mosaic",
-        "pumpkin_root_knot",
-        "pumpkin_virus_mosaic",
-        "quince_root_knot",
-        "quince_virus_mosaic",
-        "spinach_virus_mosaic",
-        "strawberry_root_knot",
-        "strawberry_virus_mosaic",
-        "tomato_root_knot",
-        "tomato_virus_mosaic",
-        "watermelon_root_knot",
-        "watermelon_virus_mosaic",
-        "wheat_root_knot",
-        "wheat_virus_mosaic",
-        "zucchini_root_knot",
-        "zucchini_virus_mosaic"
+        "barley_yellow_dwarf",
+        "chickpea_pea_enation_mosaic",
+        "citrus_stubborn",
+        "cucumber_fusarium_wilt",
+        "cucumber_mosaic_virus",
+        "date_palm_omphalia_root_rot",
+        "grapevine_eutypa_dieback",
+        "grapevine_leafroll",
+        "maize_dwarf_mosaic_virus",
+        "onion_downy_mildew",
+        "onion_iris_yellow_spot_virus",
+        "onion_pink_root",
+        "onion_smut",
+        "pepper_bacterial_wilt",
+        "pepper_mild_mottle_virus",
+        "pepper_tomato_spotted_wilt",
+        "potato_bacterial_wilt_brown_rot",
+        "potato_black_scurf_stem_canker",
+        "potato_virus_y",
+        "strawberry_phytophthora_crown_rot",
+        "strawberry_red_stele",
+        "strawberry_verticillium_wilt",
+        "tomato_fusarium_wilt",
+        "tomato_yellow_leaf_curl_virus",
+        "watermelon_mosaic_virus",
+        "wheat_barley_yellow_dwarf",
+        "wheat_cephalosporium_stripe",
+        "wheat_common_bunt",
+        "wheat_common_root_rot",
+        "wheat_powdery_mildew",
+        "wheat_streak_mosaic_virus"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
         "barley",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
         "chickpea",
         "citrus",
         "cucumber",
         "date_palm",
-        "faba_bean",
-        "fig",
-        "garlic",
         "grapevine",
-        "lentil",
-        "lettuce",
         "maize",
-        "melon",
-        "olive",
         "onion",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
         "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
         "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
         "strawberry",
         "tomato",
         "watermelon",
-        "wheat",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -5322,10 +3747,12 @@
         ]
       },
       "diseaseIds": [
-        "parsley_bacterial_leaf_spot"
+        "date_palm_al_wijam",
+        "wheat_take_all"
       ],
       "cropIds": [
-        "parsley"
+        "date_palm",
+        "wheat"
       ]
     },
     {
@@ -5346,18 +3773,24 @@
         ]
       },
       "diseaseIds": [
-        "cucumber_cucurbit_bacterial_wilt",
-        "melon_cucurbit_bacterial_wilt",
-        "pumpkin_cucurbit_bacterial_wilt",
-        "watermelon_cucurbit_bacterial_wilt",
-        "zucchini_cucurbit_bacterial_wilt"
+        "chickpea_dry_root_rot",
+        "cucumber_bacterial_wilt",
+        "faba_bean_sclerotinia_stem_rot",
+        "olive_verticillium_wilt",
+        "pepper_bacterial_wilt",
+        "pepper_phytophthora_blight",
+        "pepper_southern_blight",
+        "potato_bacterial_wilt_brown_rot",
+        "strawberry_phytophthora_crown_rot"
       ],
       "cropIds": [
+        "chickpea",
         "cucumber",
-        "melon",
-        "pumpkin",
-        "watermelon",
-        "zucchini"
+        "faba_bean",
+        "olive",
+        "pepper",
+        "potato",
+        "strawberry"
       ]
     },
     {
@@ -5389,43 +3822,24 @@
         "progression": []
       },
       "diseaseIds": [
-        "tomato_early_blight"
+        "almond_anthracnose",
+        "citrus_black_spot",
+        "cucumber_anthracnose",
+        "cucumber_gummy_stem_blight",
+        "cucumber_scab",
+        "olive_anthracnose",
+        "pepper_anthracnose",
+        "watermelon_alternaria_leaf_blight",
+        "watermelon_anthracnose",
+        "watermelon_gummy_stem_blight"
       ],
       "cropIds": [
-        "tomato"
-      ]
-    },
-    {
-      "id": "obs.tan_elliptical_petioles",
-      "legacyToken": "tan_elliptical_petioles",
-      "canonicalToken": "tan_elliptical_petioles",
-      "canonicalFeatureId": "vf.general.observable",
-      "attributes": {
-        "colour": [
-          "tan"
-        ],
-        "geometry": [
-          "elliptical"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.general",
-        "tissue": [],
-        "colour": [
-          "tan"
-        ],
-        "geometry": [
-          "elliptical"
-        ],
-        "surface": [],
-        "pattern": [],
-        "progression": []
-      },
-      "diseaseIds": [
-        "carrot_cercospora_leaf_blight"
-      ],
-      "cropIds": [
-        "carrot"
+        "almond",
+        "citrus",
+        "cucumber",
+        "olive",
+        "pepper",
+        "watermelon"
       ]
     },
     {
@@ -5462,10 +3876,14 @@
         "progression": []
       },
       "diseaseIds": [
-        "grapevine_phomopsis_cane_leaf_spot"
+        "grapevine_phomopsis",
+        "tomato_bacterial_speck",
+        "wheat_septoria_tritici_blotch"
       ],
       "cropIds": [
-        "grapevine"
+        "grapevine",
+        "tomato",
+        "wheat"
       ]
     },
     {
@@ -5490,6 +3908,7 @@
         "progression": []
       },
       "diseaseIds": [
+        "potato_blackleg_soft_rot",
         "potato_late_blight"
       ],
       "cropIds": [
@@ -5520,41 +3939,12 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_bacterial_canker",
-        "almond_brown_rot",
         "almond_brown_rot_blossom_blight",
-        "apple_bacterial_canker",
-        "apricot_bacterial_canker",
-        "apricot_brown_rot",
-        "carob_bacterial_canker",
-        "grapevine_bacterial_canker",
-        "olive_bacterial_canker",
-        "peach_bacterial_canker",
-        "peach_brown_rot",
-        "pear_bacterial_canker",
-        "pepper_bacterial_canker",
-        "pistachio_bacterial_canker",
-        "plum_bacterial_canker",
-        "plum_brown_rot",
-        "potato_bacterial_canker",
-        "quince_bacterial_canker",
-        "tomato_bacterial_canker"
+        "peach_brown_rot_blossom_twig_blight"
       ],
       "cropIds": [
         "almond",
-        "apple",
-        "apricot",
-        "carob",
-        "grapevine",
-        "olive",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "quince",
-        "tomato"
+        "peach"
       ]
     },
     {
@@ -5612,75 +4002,20 @@
         "progression": []
       },
       "diseaseIds": [
-        "artichoke_downy_mildew",
-        "bean_downy_mildew",
-        "chickpea_downy_mildew",
         "cucumber_downy_mildew",
         "faba_bean_downy_mildew",
-        "garlic_downy_mildew",
         "grapevine_downy_mildew",
-        "lentil_downy_mildew",
-        "lettuce_downy_mildew",
-        "melon_downy_mildew",
+        "olive_cercospora_leaf_spot",
         "onion_downy_mildew",
-        "pea_downy_mildew",
-        "pumpkin_downy_mildew",
-        "spinach_downy_mildew",
-        "watermelon_downy_mildew",
-        "zucchini_downy_mildew"
+        "watermelon_downy_mildew"
       ],
       "cropIds": [
-        "artichoke",
-        "bean",
-        "chickpea",
         "cucumber",
         "faba_bean",
-        "garlic",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "melon",
+        "olive",
         "onion",
-        "pea",
-        "pumpkin",
-        "spinach",
-        "watermelon",
-        "zucchini"
-      ]
-    },
-    {
-      "id": "obs.upper_leaf_spot",
-      "legacyToken": "upper_leaf_spot",
-      "canonicalToken": "upper_leaf_spot",
-      "canonicalFeatureId": "vf.foliage.spot",
-      "attributes": {
-        "tissue": [
-          "leaf"
-        ],
-        "surface": [
-          "upper"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [
-          "leaf"
-        ],
-        "colour": [],
-        "geometry": [],
-        "surface": [
-          "upper"
-        ],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "olive_peacock_spot"
-      ],
-      "cropIds": [
-        "olive"
+        "watermelon"
       ]
     },
     {
@@ -5701,70 +4036,26 @@
         ]
       },
       "diseaseIds": [
-        "almond_verticillium_wilt",
-        "apricot_verticillium_wilt",
-        "artichoke_fusarium_wilt",
-        "bean_fusarium_wilt",
         "chickpea_fusarium_wilt",
-        "cucumber_cucurbit_bacterial_wilt",
+        "chickpea_verticillium_wilt",
         "cucumber_fusarium_wilt",
-        "date_palm_fusarium_wilt",
-        "faba_bean_fusarium_wilt",
-        "garlic_fusarium_wilt",
-        "lentil_fusarium_wilt",
-        "lettuce_fusarium_wilt",
-        "maize_fusarium_wilt",
-        "melon_cucurbit_bacterial_wilt",
-        "melon_fusarium_wilt",
-        "olive_verticillium_wilt",
-        "onion_fusarium_wilt",
-        "pea_fusarium_wilt",
-        "peach_verticillium_wilt",
-        "pepper_fusarium_wilt",
-        "pepper_verticillium_wilt",
-        "pistachio_verticillium_wilt",
-        "plum_verticillium_wilt",
-        "potato_fusarium_wilt",
-        "potato_verticillium_wilt",
-        "pumpkin_cucurbit_bacterial_wilt",
-        "pumpkin_fusarium_wilt",
-        "spinach_fusarium_wilt",
-        "strawberry_verticillium_wilt",
+        "onion_fusarium_basal_rot",
+        "pepper_bacterial_wilt",
+        "potato_bacterial_wilt_brown_rot",
+        "tomato_bacterial_canker",
         "tomato_fusarium_wilt",
-        "tomato_verticillium_wilt",
-        "watermelon_cucurbit_bacterial_wilt",
         "watermelon_fusarium_wilt",
-        "zucchini_cucurbit_bacterial_wilt",
-        "zucchini_fusarium_wilt"
+        "wheat_cephalosporium_stripe"
       ],
       "cropIds": [
-        "almond",
-        "apricot",
-        "artichoke",
-        "bean",
         "chickpea",
         "cucumber",
-        "date_palm",
-        "faba_bean",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "olive",
         "onion",
-        "pea",
-        "peach",
         "pepper",
-        "pistachio",
-        "plum",
         "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
         "tomato",
         "watermelon",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -5791,36 +4082,23 @@
         "progression": []
       },
       "diseaseIds": [
-        "garlic_botrytis_leaf_blight"
+        "chickpea_alternaria_blight",
+        "chickpea_ascochyta_blight",
+        "chickpea_botrytis_gray_mold",
+        "cucumber_angular_leaf_spot",
+        "maize_gosss_wilt",
+        "maize_stewarts_wilt",
+        "strawberry_angular_leaf_spot",
+        "watermelon_bacterial_fruit_blotch",
+        "wheat_bacterial_leaf_streak"
       ],
       "cropIds": [
-        "garlic"
-      ]
-    },
-    {
-      "id": "obs.water_soaked_necrotic_lesion",
-      "legacyToken": "water_soaked_necrotic_lesion",
-      "canonicalToken": "water_soaked_necrotic_lesion",
-      "canonicalFeatureId": "vf.foliage.necrosis",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": [
-          "tissue_decline"
-        ]
-      },
-      "diseaseIds": [
-        "parsley_bacterial_leaf_spot"
-      ],
-      "cropIds": [
-        "parsley"
+        "chickpea",
+        "cucumber",
+        "maize",
+        "strawberry",
+        "watermelon",
+        "wheat"
       ]
     },
     {
@@ -5841,75 +4119,27 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_bacterial_leaf_spot",
-        "apricot_bacterial_leaf_spot",
-        "artichoke_bacterial_leaf_spot",
-        "barley_bacterial_blight",
-        "bean_bacterial_blight",
-        "carrot_bacterial_leaf_spot",
-        "carrot_cercospora_leaf_blight",
-        "celery_bacterial_leaf_spot",
-        "chickpea_bacterial_blight",
-        "citrus_bacterial_blight",
-        "cucumber_bacterial_leaf_spot",
-        "date_palm_bacterial_leaf_spot",
-        "faba_bean_bacterial_blight",
-        "fig_bacterial_leaf_spot",
-        "garlic_bacterial_leaf_spot",
-        "lentil_bacterial_blight",
-        "lettuce_bacterial_leaf_spot",
-        "maize_bacterial_leaf_spot",
-        "melon_bacterial_leaf_spot",
-        "onion_bacterial_leaf_spot",
-        "onion_botrytis_leaf_blight",
-        "pea_bacterial_blight",
-        "peach_bacterial_leaf_spot",
-        "pepper_bacterial_leaf_spot",
-        "plum_bacterial_leaf_spot",
-        "pomegranate_bacterial_leaf_spot",
-        "potato_bacterial_leaf_spot",
-        "potato_late_blight",
-        "pumpkin_bacterial_leaf_spot",
-        "spinach_bacterial_leaf_spot",
-        "strawberry_bacterial_leaf_spot",
-        "tomato_bacterial_leaf_spot",
-        "watermelon_bacterial_leaf_spot",
-        "wheat_bacterial_blight",
-        "zucchini_bacterial_leaf_spot"
+        "almond_bacterial_spot",
+        "almond_green_fruit_rot",
+        "barley_scald",
+        "citrus_bacterial_blast",
+        "cucumber_scab",
+        "onion_bacterial_soft_rot",
+        "peach_bacterial_spot",
+        "pepper_anthracnose",
+        "pepper_bacterial_spot",
+        "pepper_phytophthora_blight",
+        "tomato_bacterial_spot"
       ],
       "cropIds": [
         "almond",
-        "apricot",
-        "artichoke",
         "barley",
-        "bean",
-        "carrot",
-        "celery",
-        "chickpea",
         "citrus",
         "cucumber",
-        "date_palm",
-        "faba_bean",
-        "fig",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
         "onion",
-        "pea",
         "peach",
         "pepper",
-        "plum",
-        "pomegranate",
-        "potato",
-        "pumpkin",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "wheat",
-        "zucchini"
+        "tomato"
       ]
     },
     {
@@ -5936,50 +4166,15 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_sclerotinia",
-        "apricot_sclerotinia",
-        "artichoke_sclerotinia",
-        "bean_sclerotinia",
-        "carrot_sclerotinia",
-        "celery_sclerotinia",
-        "chickpea_sclerotinia",
-        "faba_bean_sclerotinia",
-        "fig_sclerotinia",
-        "garlic_white_rot",
-        "lentil_sclerotinia",
-        "lettuce_sclerotinia",
-        "onion_white_rot",
-        "parsley_sclerotinia",
-        "pea_sclerotinia",
-        "peach_sclerotinia",
-        "pistachio_sclerotinia",
-        "plum_sclerotinia",
-        "pomegranate_sclerotinia",
-        "spinach_sclerotinia",
-        "strawberry_sclerotinia"
+        "chickpea_sclerotinia_stem_rot",
+        "faba_bean_sclerotinia_stem_rot",
+        "wheat_pink_snow_mold",
+        "wheat_powdery_mildew"
       ],
       "cropIds": [
-        "almond",
-        "apricot",
-        "artichoke",
-        "bean",
-        "carrot",
-        "celery",
         "chickpea",
         "faba_bean",
-        "fig",
-        "garlic",
-        "lentil",
-        "lettuce",
-        "onion",
-        "parsley",
-        "pea",
-        "peach",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "spinach",
-        "strawberry"
+        "wheat"
       ]
     },
     {
@@ -6006,10 +4201,20 @@
         "progression": []
       },
       "diseaseIds": [
-        "celery_pink_rot"
+        "citrus_brown_rot",
+        "date_palm_khamedj",
+        "onion_white_rot",
+        "pepper_southern_blight",
+        "watermelon_southern_blight",
+        "wheat_sharp_eyespot"
       ],
       "cropIds": [
-        "celery"
+        "citrus",
+        "date_palm",
+        "onion",
+        "pepper",
+        "watermelon",
+        "wheat"
       ]
     },
     {
@@ -6036,75 +4241,24 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_powdery_mildew",
-        "apple_powdery_mildew",
-        "apricot_powdery_mildew",
-        "artichoke_powdery_mildew",
         "barley_powdery_mildew",
-        "bean_powdery_mildew",
-        "carob_powdery_mildew",
-        "carrot_powdery_mildew",
-        "celery_powdery_mildew",
-        "chickpea_powdery_mildew",
         "cucumber_powdery_mildew",
-        "faba_bean_powdery_mildew",
-        "grape_powdery_mildew",
         "grapevine_powdery_mildew",
-        "lentil_powdery_mildew",
-        "lettuce_powdery_mildew",
-        "maize_powdery_mildew",
-        "melon_powdery_mildew",
-        "parsley_powdery_mildew",
-        "pea_powdery_mildew",
         "peach_powdery_mildew",
-        "pear_powdery_mildew",
         "pepper_powdery_mildew",
-        "pistachio_powdery_mildew",
-        "plum_powdery_mildew",
-        "potato_powdery_mildew",
-        "pumpkin_powdery_mildew",
-        "quince_powdery_mildew",
-        "spinach_powdery_mildew",
         "strawberry_powdery_mildew",
-        "tomato_powdery_mildew",
         "watermelon_powdery_mildew",
-        "wheat_powdery_mildew",
-        "zucchini_powdery_mildew"
+        "wheat_powdery_mildew"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
         "barley",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
         "cucumber",
-        "faba_bean",
         "grapevine",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "parsley",
-        "pea",
         "peach",
-        "pear",
         "pepper",
-        "pistachio",
-        "plum",
-        "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
         "strawberry",
-        "tomato",
         "watermelon",
-        "wheat",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -6160,150 +4314,39 @@
         ]
       },
       "diseaseIds": [
-        "almond_bacterial_canker",
-        "almond_phytophthora_root_rot",
-        "almond_root_knot",
-        "almond_sclerotinia",
-        "apple_bacterial_canker",
-        "apple_phytophthora_root_rot",
-        "apple_root_knot",
-        "apricot_bacterial_canker",
-        "apricot_phytophthora_root_rot",
-        "apricot_root_knot",
-        "apricot_sclerotinia",
-        "artichoke_phytophthora_root_rot",
-        "artichoke_sclerotinia",
-        "barley_root_knot",
-        "bean_phytophthora_root_rot",
-        "bean_sclerotinia",
-        "carob_bacterial_canker",
-        "carob_phytophthora_root_rot",
-        "carob_root_knot",
-        "carrot_phytophthora_root_rot",
-        "carrot_root_knot",
-        "carrot_sclerotinia",
-        "celery_phytophthora_root_rot",
-        "celery_root_knot",
-        "celery_sclerotinia",
-        "chickpea_phytophthora_root_rot",
-        "chickpea_sclerotinia",
-        "citrus_phytophthora_root_rot",
-        "citrus_root_knot",
-        "cucumber_phytophthora_root_rot",
-        "cucumber_root_knot",
-        "date_palm_phytophthora_root_rot",
-        "date_palm_root_knot",
-        "faba_bean_phytophthora_root_rot",
-        "faba_bean_sclerotinia",
-        "fig_phytophthora_root_rot",
-        "fig_root_knot",
-        "fig_sclerotinia",
-        "garlic_root_knot",
-        "garlic_white_rot",
-        "grapevine_bacterial_canker",
-        "grapevine_phytophthora_root_rot",
-        "grapevine_root_knot",
-        "lentil_phytophthora_root_rot",
-        "lentil_sclerotinia",
-        "lettuce_phytophthora_root_rot",
-        "lettuce_sclerotinia",
-        "maize_root_knot",
-        "melon_phytophthora_root_rot",
-        "melon_root_knot",
-        "olive_bacterial_canker",
-        "olive_phytophthora_root_rot",
-        "olive_root_knot",
-        "onion_root_knot",
+        "chickpea_dry_root_rot",
+        "chickpea_fusarium_wilt",
+        "chickpea_sclerotinia_stem_rot",
+        "chickpea_verticillium_wilt",
+        "cucumber_bacterial_wilt",
+        "cucumber_fusarium_wilt",
+        "faba_bean_aphanomyces_root_rot",
+        "maize_gosss_wilt",
+        "maize_stewarts_wilt",
+        "olive_xylella_quick_decline",
         "onion_white_rot",
-        "parsley_phytophthora_root_rot",
-        "parsley_root_knot",
-        "parsley_sclerotinia",
-        "pea_phytophthora_root_rot",
-        "pea_sclerotinia",
-        "peach_bacterial_canker",
-        "peach_phytophthora_root_rot",
-        "peach_root_knot",
-        "peach_sclerotinia",
-        "pear_bacterial_canker",
-        "pear_phytophthora_root_rot",
-        "pear_root_knot",
-        "pepper_bacterial_canker",
-        "pepper_phytophthora_root_rot",
-        "pepper_root_knot",
-        "pistachio_bacterial_canker",
-        "pistachio_phytophthora_root_rot",
-        "pistachio_root_knot",
-        "pistachio_sclerotinia",
-        "plum_bacterial_canker",
-        "plum_phytophthora_root_rot",
-        "plum_root_knot",
-        "plum_sclerotinia",
-        "pomegranate_phytophthora_root_rot",
-        "pomegranate_root_knot",
-        "pomegranate_sclerotinia",
-        "potato_bacterial_canker",
-        "potato_phytophthora_root_rot",
-        "potato_root_knot",
-        "pumpkin_phytophthora_root_rot",
-        "pumpkin_root_knot",
-        "quince_bacterial_canker",
-        "quince_phytophthora_root_rot",
-        "quince_root_knot",
-        "spinach_phytophthora_root_rot",
-        "spinach_sclerotinia",
-        "strawberry_phytophthora_root_rot",
-        "strawberry_root_knot",
-        "strawberry_sclerotinia",
+        "potato_bacterial_wilt_brown_rot",
+        "potato_blackleg_soft_rot",
+        "strawberry_red_stele",
+        "strawberry_verticillium_wilt",
         "tomato_bacterial_canker",
-        "tomato_phytophthora_root_rot",
-        "tomato_root_knot",
-        "watermelon_phytophthora_root_rot",
-        "watermelon_root_knot",
-        "wheat_root_knot",
-        "zucchini_phytophthora_root_rot",
-        "zucchini_root_knot"
+        "tomato_fusarium_wilt",
+        "watermelon_fusarium_wilt",
+        "watermelon_southern_blight",
+        "wheat_take_all"
       ],
       "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "barley",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
         "chickpea",
-        "citrus",
         "cucumber",
-        "date_palm",
         "faba_bean",
-        "fig",
-        "garlic",
-        "grapevine",
-        "lentil",
-        "lettuce",
         "maize",
-        "melon",
         "olive",
         "onion",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
         "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
         "strawberry",
         "tomato",
         "watermelon",
-        "wheat",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -6336,40 +4379,13 @@
         "progression": []
       },
       "diseaseIds": [
-        "artichoke_downy_mildew",
-        "bean_downy_mildew",
-        "chickpea_downy_mildew",
+        "cucumber_angular_leaf_spot",
         "cucumber_downy_mildew",
-        "faba_bean_downy_mildew",
-        "garlic_downy_mildew",
-        "grapevine_downy_mildew",
-        "lentil_downy_mildew",
-        "lettuce_downy_mildew",
-        "melon_downy_mildew",
-        "onion_downy_mildew",
-        "pea_downy_mildew",
-        "pumpkin_downy_mildew",
-        "spinach_downy_mildew",
-        "watermelon_downy_mildew",
-        "zucchini_downy_mildew"
+        "grapevine_downy_mildew"
       ],
       "cropIds": [
-        "artichoke",
-        "bean",
-        "chickpea",
         "cucumber",
-        "faba_bean",
-        "garlic",
-        "grapevine",
-        "lentil",
-        "lettuce",
-        "melon",
-        "onion",
-        "pea",
-        "pumpkin",
-        "spinach",
-        "watermelon",
-        "zucchini"
+        "grapevine"
       ]
     },
     {
@@ -6396,97 +4412,42 @@
         "progression": []
       },
       "diseaseIds": [
-        "almond_bacterial_leaf_spot",
-        "almond_shot_hole",
-        "apricot_bacterial_leaf_spot",
-        "artichoke_bacterial_leaf_spot",
-        "artichoke_septoria",
-        "barley_net_blotch",
-        "barley_septoria",
-        "carob_alternaria_leaf_spot",
-        "carrot_alternaria_leaf_spot",
-        "carrot_bacterial_leaf_spot",
-        "carrot_cercospora_leaf_blight",
-        "carrot_septoria",
-        "celery_alternaria_leaf_spot",
-        "celery_bacterial_leaf_spot",
-        "celery_septoria",
-        "citrus_alternaria_leaf_spot",
-        "citrus_citrus_canker",
-        "cucumber_bacterial_leaf_spot",
-        "date_palm_alternaria_leaf_spot",
-        "date_palm_bacterial_leaf_spot",
-        "fig_bacterial_leaf_spot",
-        "garlic_bacterial_leaf_spot",
-        "garlic_botrytis_leaf_blight",
-        "garlic_onion_purple_blotch",
-        "garlic_stemphylium_leaf_blight",
-        "lettuce_bacterial_leaf_spot",
-        "lettuce_septoria",
-        "maize_bacterial_leaf_spot",
-        "melon_bacterial_leaf_spot",
-        "olive_alternaria_leaf_spot",
+        "almond_bacterial_blast_canker",
+        "barley_spot_blotch",
+        "citrus_alternaria_brown_spot",
+        "citrus_black_spot",
+        "citrus_canker",
+        "cucumber_alternaria_leaf_blight",
+        "faba_bean_rust",
+        "maize_common_rust",
+        "maize_southern_corn_leaf_blight",
         "olive_peacock_spot",
-        "onion_bacterial_leaf_spot",
-        "onion_botrytis_leaf_blight",
-        "onion_onion_purple_blotch",
-        "onion_stemphylium_leaf_blight",
-        "parsley_alternaria_leaf_spot",
-        "parsley_septoria",
-        "peach_bacterial_leaf_spot",
-        "pepper_alternaria_leaf_spot",
-        "pepper_bacterial_leaf_spot",
-        "pistachio_alternaria_leaf_spot",
-        "plum_bacterial_leaf_spot",
-        "pomegranate_alternaria_leaf_spot",
-        "pomegranate_bacterial_leaf_spot",
-        "potato_alternaria_leaf_spot",
-        "potato_bacterial_leaf_spot",
-        "pumpkin_bacterial_leaf_spot",
-        "spinach_bacterial_leaf_spot",
-        "spinach_septoria",
-        "strawberry_bacterial_leaf_spot",
-        "tomato_alternaria_leaf_spot",
-        "tomato_bacterial_leaf_spot",
+        "onion_purple_blotch",
+        "potato_early_blight",
+        "strawberry_angular_leaf_spot",
+        "tomato_bacterial_speck",
+        "tomato_bacterial_spot",
         "tomato_early_blight",
-        "tomato_septoria",
-        "watermelon_bacterial_leaf_spot",
-        "wheat_net_blotch",
-        "wheat_septoria",
-        "zucchini_bacterial_leaf_spot"
+        "watermelon_alternaria_leaf_blight",
+        "watermelon_cercospora_leaf_spot",
+        "wheat_septoria_nodorum_blotch",
+        "wheat_septoria_tritici_blotch",
+        "wheat_tan_spot"
       ],
       "cropIds": [
         "almond",
-        "apricot",
-        "artichoke",
         "barley",
-        "carob",
-        "carrot",
-        "celery",
         "citrus",
         "cucumber",
-        "date_palm",
-        "fig",
-        "garlic",
-        "lettuce",
+        "faba_bean",
         "maize",
-        "melon",
         "olive",
         "onion",
-        "parsley",
-        "peach",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
         "potato",
-        "pumpkin",
-        "spinach",
         "strawberry",
         "tomato",
         "watermelon",
-        "wheat",
-        "zucchini"
+        "wheat"
       ]
     },
     {
@@ -6546,214 +4507,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "citrus_citrus_greening"
+        "citrus_huanglongbing"
       ],
       "cropIds": [
         "citrus"
-      ]
-    },
-    {
-      "id": "obs.yellow_upper_leaf_spot",
-      "legacyToken": "yellow_upper_leaf_spot",
-      "canonicalToken": "yellow_upper_leaf_spot",
-      "canonicalFeatureId": "vf.foliage.yellowing",
-      "attributes": {
-        "tissue": [
-          "leaf"
-        ],
-        "colour": [
-          "yellow"
-        ],
-        "surface": [
-          "upper"
-        ]
-      },
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [
-          "leaf"
-        ],
-        "colour": [
-          "yellow"
-        ],
-        "geometry": [],
-        "surface": [
-          "upper"
-        ],
-        "pattern": [
-          "lesion_or_spot"
-        ],
-        "progression": []
-      },
-      "diseaseIds": [
-        "almond_rust",
-        "apple_rust",
-        "apricot_rust",
-        "bean_rust",
-        "carob_rust",
-        "carrot_rust",
-        "celery_rust",
-        "chickpea_rust",
-        "faba_bean_rust",
-        "fig_rust",
-        "garlic_rust",
-        "grapevine_rust",
-        "lentil_rust",
-        "maize_rust",
-        "olive_rust",
-        "onion_rust",
-        "parsley_rust",
-        "pea_rust",
-        "peach_rust",
-        "pear_rust",
-        "pistachio_rust",
-        "plum_rust",
-        "pomegranate_rust",
-        "quince_rust"
-      ],
-      "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
-        "faba_bean",
-        "fig",
-        "garlic",
-        "grapevine",
-        "lentil",
-        "maize",
-        "olive",
-        "onion",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "quince"
-      ]
-    },
-    {
-      "id": "obs.yellowing",
-      "legacyToken": "yellowing",
-      "canonicalToken": "yellowing",
-      "canonicalFeatureId": "vf.foliage.yellowing",
-      "attributes": {},
-      "evidenceVector": {
-        "familyId": "ff.foliage",
-        "tissue": [],
-        "colour": [],
-        "geometry": [],
-        "surface": [],
-        "pattern": [],
-        "progression": [
-          "tissue_decline"
-        ]
-      },
-      "diseaseIds": [
-        "almond_phytophthora_root_rot",
-        "apple_phytophthora_root_rot",
-        "apricot_phytophthora_root_rot",
-        "artichoke_fusarium_wilt",
-        "artichoke_phytophthora_root_rot",
-        "bean_fusarium_wilt",
-        "bean_phytophthora_root_rot",
-        "carob_phytophthora_root_rot",
-        "carrot_phytophthora_root_rot",
-        "celery_phytophthora_root_rot",
-        "chickpea_fusarium_wilt",
-        "chickpea_phytophthora_root_rot",
-        "citrus_phytophthora_root_rot",
-        "citrus_tristeza",
-        "cucumber_fusarium_wilt",
-        "cucumber_phytophthora_root_rot",
-        "date_palm_fusarium_wilt",
-        "date_palm_phytophthora_root_rot",
-        "faba_bean_fusarium_wilt",
-        "faba_bean_phytophthora_root_rot",
-        "fig_phytophthora_root_rot",
-        "garlic_fusarium_wilt",
-        "garlic_white_rot",
-        "grapevine_phytophthora_root_rot",
-        "lentil_fusarium_wilt",
-        "lentil_phytophthora_root_rot",
-        "lettuce_fusarium_wilt",
-        "lettuce_phytophthora_root_rot",
-        "maize_fusarium_wilt",
-        "melon_fusarium_wilt",
-        "melon_phytophthora_root_rot",
-        "olive_phytophthora_root_rot",
-        "onion_fusarium_wilt",
-        "onion_white_rot",
-        "parsley_phytophthora_root_rot",
-        "pea_fusarium_wilt",
-        "pea_phytophthora_root_rot",
-        "peach_phytophthora_root_rot",
-        "pear_phytophthora_root_rot",
-        "pepper_fusarium_wilt",
-        "pepper_phytophthora_root_rot",
-        "pistachio_phytophthora_root_rot",
-        "plum_phytophthora_root_rot",
-        "pomegranate_phytophthora_root_rot",
-        "potato_fusarium_wilt",
-        "potato_phytophthora_root_rot",
-        "pumpkin_fusarium_wilt",
-        "pumpkin_phytophthora_root_rot",
-        "quince_phytophthora_root_rot",
-        "spinach_fusarium_wilt",
-        "spinach_phytophthora_root_rot",
-        "strawberry_phytophthora_root_rot",
-        "tomato_fusarium_wilt",
-        "tomato_phytophthora_root_rot",
-        "watermelon_fusarium_wilt",
-        "watermelon_phytophthora_root_rot",
-        "zucchini_fusarium_wilt",
-        "zucchini_phytophthora_root_rot"
-      ],
-      "cropIds": [
-        "almond",
-        "apple",
-        "apricot",
-        "artichoke",
-        "bean",
-        "carob",
-        "carrot",
-        "celery",
-        "chickpea",
-        "citrus",
-        "cucumber",
-        "date_palm",
-        "faba_bean",
-        "fig",
-        "garlic",
-        "grapevine",
-        "lentil",
-        "lettuce",
-        "maize",
-        "melon",
-        "olive",
-        "onion",
-        "parsley",
-        "pea",
-        "peach",
-        "pear",
-        "pepper",
-        "pistachio",
-        "plum",
-        "pomegranate",
-        "potato",
-        "pumpkin",
-        "quince",
-        "spinach",
-        "strawberry",
-        "tomato",
-        "watermelon",
-        "zucchini"
       ]
     },
     {
@@ -6788,10 +4545,10 @@
         "progression": []
       },
       "diseaseIds": [
-        "grapevine_phomopsis_cane_leaf_spot"
+        "tomato_bacterial_canker"
       ],
       "cropIds": [
-        "grapevine"
+        "tomato"
       ]
     }
   ],
@@ -6812,15 +4569,10 @@
       "alias": "brown_petiolar_spot",
       "canonicalToken": "brown_petiolar_lesion",
       "policy": "exact_or_near_exact_visible_meaning",
-      "isUsedByCurrentLegacyToken": true
+      "isUsedByCurrentLegacyToken": false
     }
   ],
   "aliasesResolved": [
-    {
-      "alias": "brown_petiolar_spot",
-      "canonicalToken": "brown_petiolar_lesion",
-      "observationId": "obs.brown_petiolar_spot"
-    },
     {
       "alias": "gumming",
       "canonicalToken": "gummy_exudate",
@@ -6833,13 +4585,13 @@
     }
   ],
   "validation": {
-    "observationCount": 139,
+    "observationCount": 108,
     "featureCount": 30,
     "featureFamilyCount": 10,
     "featuresWithoutFamilyCount": 0,
     "observationsWithoutFeatureCount": 0,
-    "currentLegacyTokensResolvedThroughAliasCount": 3,
+    "currentLegacyTokensResolvedThroughAliasCount": 2,
     "unmappedObservationCount": 0,
-    "fieldOnlyObservationCount": 5
+    "fieldOnlyObservationCount": 4
   }
 }

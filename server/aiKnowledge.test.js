@@ -10,7 +10,7 @@ const graph = readJson("knowledge-graph.json");
 
 describe("AI knowledge exports", () => {
   it("covers each disease record with provenance and at least one retrieval-safe visual feature", () => {
-    expect(dataset.diseaseRecords).toHaveLength(439);
+    expect(dataset.diseaseRecords).toHaveLength(184);
     for (const record of dataset.diseaseRecords) {
       expect(record.provenance.url).toMatch(/^https?:\/\//);
       expect(record.visualFeatures.length).toBeGreaterThan(0);

@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/crops-40-164A3A" alt="40 crops" />
-  <img src="https://img.shields.io/badge/records-439-164A3A" alt="439 records" />
+  <img src="https://img.shields.io/badge/crops-18-164A3A" alt="18 crops" />
+  <img src="https://img.shields.io/badge/records-184-164A3A" alt="184 records" />
   <img src="https://img.shields.io/badge/languages-AR_%2F_FR_%2F_EN-D6B65A" alt="Arabic, French, English" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license" />
 </p>
@@ -43,7 +43,7 @@
 
 ## Coverage
 
-**40 crops and 439 disease records** — olive, date palm, citrus, almond, fig, grape, tomato, potato, wheat, barley and 30 more. Of the 439 records, 69 are record-specific and reviewed; the other 370 are template-generated structured entries, not individually verified.
+**18 crops and 184 disease records** — olive, date palm, citrus, almond, grape, tomato, potato, wheat, barley, chickpea, cucumber, faba bean, maize, onion, peach, pepper, strawberry and watermelon. Every record is source-backed and individually verified, exported from [`real-db/`](real-db/) — the shipped knowledge base contains no template-generated entries.
 
 Full list: [`data/coverage.md`](data/coverage.md)
 

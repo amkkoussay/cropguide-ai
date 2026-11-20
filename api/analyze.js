@@ -3,8 +3,14 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 
 const DB_TMP = "/tmp/cropguide.sqlite";
 if (!existsSync(DB_TMP)) {
-  const gz = readFileSync(new URL("../data/cropguide.sqlite.gz", import.meta.url));
-  writeFileSync(DB_TMP, gunzipSync(gz));
+  const gzUrl = new URL("../data/cropguide.sqlite.gz", import.meta.url);
+  if (existsSync(gzUrl)) {
+    writeFileSync(DB_TMP, gunzipSync(readFileSync(gzUrl)));
+  } else {
+    // No gzipped copy is committed; fall back to the plain database so
+    // this endpoint does not fail at import time.
+    writeFileSync(DB_TMP, readFileSync(new URL("../data/cropguide.sqlite", import.meta.url)));
+  }
 }
 process.env.CROPGUIDE_DB_PATH = DB_TMP;
 
